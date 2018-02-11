@@ -1,0 +1,26 @@
+<div class="col-sm-12 col-md-6">
+  <div class="newsletter">
+    <img src="/assets/images/footer/homeIcon7.png" alt="" class="newsletterIcon">
+    <h4>Newsletter Subscription</h4>
+    <p>Subscribe to our newsletters and get daily updates and happenings, straight into your inbox.</p>
+    <div class="form-group" [ngClass]="{'has-danger': newsletterForm.controls.email.invalid && newsletterForm.controls.email.dirty,'has-success': newsletterForm.controls.email.valid && newsletterForm.controls.email.dirty}">
+          <form name="newsletterForm" (ngSubmit)="subscribe()" [formGroup]="newsletterForm" >
+                <label class="input" for="file">
+                <input
+                      name="email"
+                      class="form-control"
+                      placeholder="Enter Email"
+                      type="email"
+                      formControlName="email" >
+                </label>
+                <button
+                    name="submitButton"
+                    type="submit"
+                    class=" btn btn-success">Subscribe
+                </button>
+          </form>
+    <div class="newsBox sky-form form-group" [ngClass]="{'has-danger': email.invalid && (email.dirty || email.touched), 'has-success': email.valid && (email.dirty || email.touched)}"></div>
+    <div class="form-control-feedback" *ngIf="newsletterForm.controls.email.invalid && (email.dirty || email.touched)">  <p >Check the email address</p>  </div>
+  </div>
+  </div>
+</div>
