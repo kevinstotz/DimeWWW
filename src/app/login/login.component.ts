@@ -1,9 +1,8 @@
+import { Environment } from '../environments/index';
 ﻿import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { AlertService, AuthenticationService } from '../_services/index';
 import { User, Authentication } from '../_models/index';
-import { GlobalVariable } from '../globals/index';
-
 
 @Component({
     moduleId: 'module.id',
@@ -11,15 +10,21 @@ import { GlobalVariable } from '../globals/index';
 })
 
 export class LoginComponent implements OnInit {
-    private user = new User();
-    private loading = false;
+    private user: User;
+    private loading: boolean;
     private returnUrl: string;
+    private environment: Environment;
 
     constructor(
         private route: ActivatedRoute,
         private router: Router,
         private authenticationService: AuthenticationService,
-        private alertService: AlertService) { }
+        private alertService: AlertService) {
+            this.user = new User();
+            this.loading = false;
+            this.returnUrl= "";
+            this.environment = new Environment();
+        }
 
     ngOnInit() {
         // reset login status
@@ -35,9 +40,7 @@ export class LoginComponent implements OnInit {
             .subscribe(
                   (authenticationResponse: Authentication) => {
                     console.log(authenticationResponse);
-                    window.location.href=GlobalVariable.DASHBOARD_URL;
-
-                    //this.router.navigate([GlobalVariable.DASHBOARD_URL]);
+                    window.location.href=this.environment.global.DASHBOARD_URL;
                     this.loading = false;
                 },
                 error => {
