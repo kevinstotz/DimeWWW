@@ -58,7 +58,7 @@ export class Environment  {
             this.COOKIE_EXPIRATION = new Date(new Date().setFullYear(new Date().getFullYear() + 1));
         }
         if (environment.envName == 'prod') {
-            enableProdMode();
+          //  enableProdMode();
             this.PRODUCTION = true;
             this.PROTOCOL = this.SECURE;
             this.DOMAIN = '.yogishouse.com';
