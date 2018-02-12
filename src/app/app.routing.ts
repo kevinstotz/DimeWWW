@@ -6,10 +6,11 @@ import { HomeComponent }          from './home/index';
 import { AboutComponent }         from './about/index';
 import { LoginComponent }         from './login/index';
 import { LogoutComponent }        from './logout/index';
-import { DashboardComponent }     from './dashboard/index';
 import { RegisterComponent }      from './register/index';
 import { VerifyComponent }        from './verify/index';
 import { AuthGuard }              from './_guards/index';
+import { DisclaimerComponent }    from './disclaimer/index';
+import { FaqComponent }           from './faq/index';
 
 const appRoutes: Routes = [
     { path: '',  component: HomeComponent },
@@ -18,7 +19,8 @@ const appRoutes: Routes = [
     { path: 'register', component: RegisterComponent },
     { path: 'register/verify/:authenticationCode', component: VerifyComponent },
     { path: 'about', component: AboutComponent },
-    { path: 'dashboard',  component: DashboardComponent, canActivate: [AuthGuard] },
+    { path: 'disclaimer', component: DisclaimerComponent },
+    { path: 'faq', component: FaqComponent },
 
     // otherwise redirect to home
     { path: '**', pathMatch: 'full', component: PageNotFoundComponent }

@@ -421,14 +421,14 @@ transform: translate(-50%,-50%);
 /* ------------------------------------------------------ footer css ------------------------------------------------------*/
 
 
-.footerSection { background-color:#222222; padding:45px 0px;}
+.footerSection { background-color:#21b082; padding:10px 0px;}
 
-.headerTop { border-bottom: solid 2px #3a3a3a;}
-.newsletter { margin-bottom:50px; padding:0px 0px 0px 70px; position:relative;}
+.headerTop { border-bottom: solid 2px #FFFFFF;    position: relative; top: 100px;  border: 1px ;}
+.newsletter { margin-bottom:10px; padding:0px 0px 0px 70px; position:relative;}
 .newsletter h4 { font-size:20px; line-height:20px; color:#ffffff; padding-bottom:7px; font-family: 'ProximaNovaBold';}
 .newsletter p { font-size:16px; color:#fff; line-height:20px;}
 .newsletterIcon { position:absolute; top:0; left:0;}
-.newsBox { width:100%; max-width:450px; margin-top:20px;}
+.newsBox { width:100%; max-width:450px; margin-top:10px;}
 
 
 .btnMore3 { font-size:15px; margin-top:10px;  color: #fff; background-color:#21b082; text-decoration: none; border: solid 1px #21b082; border-radius:25px; padding:10px 24px; text-transform:uppercase;
@@ -441,11 +441,11 @@ transform: translate(-50%,-50%);
 
 
 
-.footerAbout { margin-bottom:50px; padding:0px 0px 0px 100px; position:relative;}
+.footerAbout { margin-bottom:10px; padding:0px 0px 0px 100px; position:relative;}
 .footerAbout p { font-size:14px; color:#fff; line-height:20px; padding-bottom:35px;}
 .footerAbout h6 { font-size:15px; color:#fff; padding-bottom:5px;}
 
-.headerBottom { padding:40px 0px 0px 0px;}
+.headerBottom { padding:10px 0px 0px 0px;}
 .headerBottom {text-align:center;}
 .headerBottom li {display:inline;}
 .headerBottom a {text-decoration:none; padding:0 8px; color:#fff;}

@@ -34,7 +34,6 @@ import { LoginComponent } from './login/index';
 import { RegisterComponent } from './register/index';
 import { HeaderComponent } from './header/index';
 import { FooterComponent } from './footer/index';
-import { DashboardComponent } from './dashboard/index';
 import { BannerComponent } from './banner/index';
 import { Bodypart2Component } from './bodypart2/index';
 import { Bodypart3Component } from './bodypart3/index';
@@ -48,6 +47,8 @@ import { NewsletterComponent } from './newsletter/index';
 import { NewsletterResponseDialogComponent } from './newsletter/newsletter-response-dialog/index';
 import { VerifyComponent } from './verify/index';
 import { LogoutComponent } from './logout/index';
+import { DisclaimerComponent } from './disclaimer/index';
+import { FaqComponent } from './faq/index';
 
 export function getAuthServiceConfigs() {
   let config = new AuthServiceConfig(
@@ -91,7 +92,6 @@ export function getAuthServiceConfigs() {
         RegisterComponent,
         HeaderComponent,
         FooterComponent,
-        DashboardComponent,
         BannerComponent,
         Bodypart2Component,
         Bodypart3Component,
@@ -104,7 +104,9 @@ export function getAuthServiceConfigs() {
         NewsletterComponent,
         NewsletterResponseDialogComponent,
         VerifyComponent,
-        LogoutComponent
+        LogoutComponent,
+        DisclaimerComponent,
+        FaqComponent
     ],
     entryComponents: [
         NewsletterResponseDialogComponent
