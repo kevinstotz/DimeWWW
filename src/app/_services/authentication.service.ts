@@ -1,4 +1,4 @@
-﻿import { Injectable } from '@angular/core';
+﻿import { Injectable, Component, OnInit } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map'
@@ -10,15 +10,15 @@ import { CookieService, CookieOptions } from 'ngx-cookie';
 export class AuthenticationService {
     private oauth2 = new Oauth2();
     public loggedin: boolean = false;
-    private cookieOptions: CookieOptions
+    private cookieOptions: CookieOptions;
 
     constructor(
       private http: HttpClient,
-      private cookieService: CookieService
-    ) { }
+      private cookieService: CookieService) { 
+        this.cookieOptions = { domain: GlobalVariable.DOMAIN };
+    }
 
     ngOnInit() {
-        this.cookieOptions = { domain: GlobalVariable.DOMAIN };
     }
 
     login(username: string, password: string) {
@@ -34,7 +34,7 @@ export class AuthenticationService {
                     // store user details and jwt token in local storage to keep user logged in between page refreshes
                     localStorage.setItem('currentUser', JSON.stringify(authenticationResponse));
                     sessionStorage.setItem('currentUser', JSON.stringify(authenticationResponse));
-                    this.cookieService.put('currentUser', JSON.stringify(authenticationResponse), this.cookieOptions);
+                    this.cookieService.put('currentUser', JSON.stringify(authenticationResponse), { domain: GlobalVariable.DOMAIN });
                     this.loggedin = true;
                 }
 
