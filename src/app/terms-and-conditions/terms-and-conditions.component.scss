@@ -1,0 +1,15 @@
+element.style {
+  display: unset;
+}
+
+.div, ul, ol, li {
+  padding: inherit;
+}
+
+ul,ol,li {
+  .number-style {list-style: decimal;  margin-left: 0px; margin-bottom: 10px;}
+  .upper-roman {list-style: upper-roman; margin-left: 20px; margin-bottom: 10px;}
+  .lower-roman {list-style: lower-roman; margin-left: 20px; margin-bottom: 10px;}
+  .upper-alpha {list-style: upper-alpha; margin-left: 20px; margin-bottom: 10px;}
+  .lower-alpha {list-style: lower-alpha; margin-left: 20px; margin-bottom: 10px;}
+}
