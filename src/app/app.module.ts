@@ -49,6 +49,8 @@ import { VerifyComponent } from './verify/index';
 import { LogoutComponent } from './logout/index';
 import { DisclaimerComponent } from './disclaimer/index';
 import { FaqComponent } from './faq/index';
+import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
+import { TermsAndConditionsComponent } from './terms-and-conditions/terms-and-conditions.component';
 
 export function getAuthServiceConfigs() {
   let config = new AuthServiceConfig(
@@ -106,7 +108,9 @@ export function getAuthServiceConfigs() {
         VerifyComponent,
         LogoutComponent,
         DisclaimerComponent,
-        FaqComponent
+        FaqComponent,
+        PrivacypolicyComponent,
+        TermsAndConditionsComponent
     ],
     entryComponents: [
         NewsletterResponseDialogComponent

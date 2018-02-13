@@ -1,15 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
-@import 'styles/css/hover.css';
-@import 'styles/css/animate.css';
-@import 'styles/css/sky-forms.css';
-@import 'styles/css/font-awesome.css';
-@import 'styles/css/bootstrap-3.3.7-dist/css/bootstrap.css';
-@import 'styles/css/style.css';
-@import 'styles/css/responsive.css';
+@import 'assets/styles/css/hover.css';
+
+@import 'assets/styles/css/animate.css';
+@import 'assets/styles/css/sky-forms.css';
+
+@import 'assets/styles/css/fontawesome-all.css';
+@import 'assets/styles/css/bootstrap-3.3.7-dist/css/bootstrap.css';
+
+@import 'assets/styles/css/style.css';
+@import 'assets/styles/css/responsive.css';
 
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-/*
-$roboto-font-path: '~font-awesome/scss/font-awesome.scss';
-*/
+//@import url('https://fonts.googleapis.com/icon?family=Material+Icons');

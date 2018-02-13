@@ -11,6 +11,8 @@ import { VerifyComponent }        from './verify/index';
 import { AuthGuard }              from './_guards/index';
 import { DisclaimerComponent }    from './disclaimer/index';
 import { FaqComponent }           from './faq/index';
+import { PrivacypolicyComponent } from './privacypolicy/index';
+import { TermsAndConditionsComponent } from './terms-and-conditions/index';
 
 const appRoutes: Routes = [
     { path: '',  component: HomeComponent },
@@ -20,6 +22,8 @@ const appRoutes: Routes = [
     { path: 'register/verify/:authenticationCode', component: VerifyComponent },
     { path: 'about', component: AboutComponent },
     { path: 'disclaimer', component: DisclaimerComponent },
+    { path: 'privacy', component: PrivacypolicyComponent },
+    { path: 'toc', component: TermsAndConditionsComponent },
     { path: 'faq', component: FaqComponent },
 
     // otherwise redirect to home
