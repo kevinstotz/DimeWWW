@@ -1,0 +1,13 @@
+element.style {
+  display: unset;
+}
+.h3 {
+  color: green;
+}
+.div, ul, ol, li {
+  padding: inherit;
+}
+
+ul,ol,li {
+  .number-style {list-style: decimal;  margin-left: 0px; margin-bottom: 1px;}
+}

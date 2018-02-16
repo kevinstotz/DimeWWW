@@ -1,11 +1,23 @@
-<section class="bodyPartFive">
+
 	<div class="container">
-    	<div class="indexPrices">
+
         	<h3>Dime Index Prices</h3>
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Perspiciatis unde omnis iste natus error sit.</p>
-            <div class="indexPricesPic wow fadeInDown">
-           			<img src="/assets/images/dimeindextable/homePic5.jpg"  alt="">
+            <div>
+							<ngx-charts-line-chart
+					      [view]="view"
+					      [scheme]="colorScheme"
+					      [results]="multi"
+					      [gradient]="gradient"
+					      [xAxis]="showXAxis"
+					      [yAxis]="showYAxis"
+					      [legend]="showLegend"
+					      [showXAxisLabel]="showXAxisLabel"
+					      [showYAxisLabel]="showYAxisLabel"
+					      [xAxisLabel]="xAxisLabel"
+					      [yAxisLabel]="yAxisLabel"
+					      [autoScale]="autoScale"
+					      (select)="onSelect($event)">
+					    </ngx-charts-line-chart>
             </div>
-        </div>
+
     </div>
-</section>
