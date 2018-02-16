@@ -1,4 +1,4 @@
-﻿import { Component } from '@angular/core';
+﻿import { Component, OnInit } from '@angular/core';
 
 @Component({
     moduleId: ' module.id',
@@ -6,6 +6,11 @@
     templateUrl: './app.component.html'
 })
 
-export class AppComponent {
+export class AppComponent implements OnInit {
+
+
   title = 'Login';
+
+  ngOnInit() { }
+
 }

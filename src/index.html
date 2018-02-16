@@ -11,13 +11,25 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>The Dime</title>
   <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="shortcut icon" href="/favicon.ico?v=2" type="image/x-icon">
   <link rel="icon" href="/favicon.ico?v=2" type="image/x-icon">
+  <style>
+  .se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(assets/images/LoadingCircle.gif) center no-repeat #fff;
+}
+</style>
 </head>
 <body>
-  <app-root>Loading...</app-root>
+<app-root><div class="se-pre-con"></div></app-root>
 </body>
 </html>

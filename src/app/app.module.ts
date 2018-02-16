@@ -7,8 +7,12 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { PageErrorsModule }  from './modules/page-errors/index';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { DeviceDetectorModule } from 'ngx-device-detector';
-import { MatTableModule } from '@angular/material';
-import { MatDialogModule } from '@angular/material';
+import { MatDialogModule, MatTableModule } from '@angular/material';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { LoadingModule } from 'ngx-loading';
+//Ngx-Charts
+import {NgxChartsModule} from '@swimlane/ngx-charts';
+
 import {
     SocialLoginModule,
     AuthServiceConfig,
@@ -71,46 +75,48 @@ export function getAuthServiceConfigs() {
 @NgModule({
     imports: [
         BrowserModule,
-        FormsModule,
-        ReactiveFormsModule,
-        HttpClientModule,
-        SocialLoginModule,
-        PageErrorsModule,
+        CookieModule.forRoot(),
         AppRoutingModule,
         BrowserModule,
         BrowserAnimationsModule,
-        HttpClientModule,
-        MatTableModule,
-        MatDialogModule,
-        MDBBootstrapModule.forRoot(),
         DeviceDetectorModule.forRoot(),
-        CookieModule.forRoot()
+        FormsModule,
+        HttpClientModule,
+        LoadingModule,
+        MatTableModule,
+        MatProgressSpinnerModule,
+        MDBBootstrapModule.forRoot(),
+        NgxChartsModule,
+        MatDialogModule,
+        PageErrorsModule,
+        ReactiveFormsModule,
+        SocialLoginModule
     ],
     declarations: [
+        AboutComponent,
         AppComponent,
         AlertComponent,
-        HomeComponent,
-        LoginComponent,
-        RegisterComponent,
-        HeaderComponent,
-        FooterComponent,
         BannerComponent,
         Bodypart2Component,
         Bodypart3Component,
         Bodypart4Component,
         DimeindextableComponent,
-        TheteamComponent,
-        PartnersComponent,
-        ScrollComponent,
-        AboutComponent,
-        NewsletterComponent,
-        NewsletterResponseDialogComponent,
-        VerifyComponent,
-        LogoutComponent,
         DisclaimerComponent,
         FaqComponent,
+        FooterComponent,
+        HeaderComponent,
+        HomeComponent,
+        LoginComponent,
+        LogoutComponent,
+        NewsletterComponent,
+        NewsletterResponseDialogComponent,
+        TheteamComponent,
+        PartnersComponent,
         PrivacypolicyComponent,
-        TermsAndConditionsComponent
+        RegisterComponent,
+        ScrollComponent,
+        TermsAndConditionsComponent,
+        VerifyComponent
     ],
     entryComponents: [
         NewsletterResponseDialogComponent
@@ -119,6 +125,10 @@ export function getAuthServiceConfigs() {
         AuthGuard,
         AlertService,
         AuthenticationService,
+        CookieService,
+        fakeBackendProvider,
+        NewsletterService,
+        RegisterService,
         UserService,
         {
             provide: HTTP_INTERCEPTORS,
@@ -128,12 +138,8 @@ export function getAuthServiceConfigs() {
         {
             provide: AuthServiceConfig,
             useFactory: getAuthServiceConfigs
-        },
+        }
         // provider used to create fake backend
-        fakeBackendProvider,
-        NewsletterService,
-        RegisterService,
-        CookieService
     ],
     schemas: [ NO_ERRORS_SCHEMA ],
     bootstrap: [AppComponent]

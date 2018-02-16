@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DimeindextableComponent } from '../dimeindextable/index';
 
 @Component({
   selector: 'app-bodypart2',
