@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DimeindextableComponent } from '../dimeindextable/index';
 
+
 @Component({
   selector: 'app-bodypart2',
   templateUrl: './bodypart2.component.html',
@@ -8,7 +9,9 @@ import { DimeindextableComponent } from '../dimeindextable/index';
 })
 export class Bodypart2Component implements OnInit {
 
-  constructor() { }
+  constructor() {
+
+  }
 
   ngOnInit() {
   }

@@ -31,7 +31,6 @@ export class AuthenticationService implements OnInit {
         this.oauth2.password = password;
         this.oauth2.client_id = "HJ4fGABHYt3jBamsPsmnW3qziY3JAT4Oz4h6NZUe";
 
-        console.log(this.environment.api.LOGIN_URL);
         return this.http.post<Authentication>(this.environment.api.LOGIN_URL, this.oauth2)
             .map((authenticationResponse: Authentication) => {
                 // login successful if there's a jwt token in the response

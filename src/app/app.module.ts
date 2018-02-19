@@ -30,8 +30,7 @@ import { AuthGuard } from './_guards/index';
 import { JwtInterceptor } from './_helpers/index';
 
 import { AlertService, AuthenticationService, UserService } from './_services/index';
-import { RegisterService } from './_services/index';
-import { NewsletterService } from './_services/index';
+import { RegisterService, NewsletterService, DimeService } from './_services/index';
 
 import { HomeComponent } from './home/index';
 import { LoginComponent } from './login/index';
@@ -129,6 +128,7 @@ export function getAuthServiceConfigs() {
         fakeBackendProvider,
         NewsletterService,
         RegisterService,
+        DimeService,
         UserService,
         {
             provide: HTTP_INTERCEPTORS,
