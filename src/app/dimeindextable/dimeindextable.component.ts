@@ -10,40 +10,62 @@ import { AlertService, DimeService } from '../_services/index';
 export class DimeindextableComponent {
 
     multi: any[];
-
-    view: any[] = [500, 400];
-
-    // options
+    view = [800, 400];
     showXAxis = true;
     showYAxis = true;
     gradient = false;
     showLegend = false;
     showXAxisLabel = true;
-    xAxisLabel = 'Date';
+    //xAxisLabel = 'Date';
+    timeline = true;
     showYAxisLabel = true;
-    yAxisLabel = 'Earnings';
-
+    yAxisLabel = 'Value';
+    autoScale = true;
     colorScheme = {
         domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA']
     };
 
-    // line, area
-    autoScale = true;
 
-      constructor(private dimeService: DimeService) {
+    constructor(private dimeService: DimeService) {
         this.dimeService.getDime()
-        .subscribe(
-            data => {
-              var multi = [ {
-                  "name": "Value",
-                  "series":  data } ];
-              Object.assign(this, {multi });
-            },
-            errorResponse => {
-              console.log(errorResponse);
-        });
-      var multi = [];
-      Object.assign(this, { multi });
+          .subscribe(
+              data => {
+                var multi = [ {
+                    "name": "Value",
+                    "series":  data } ];
+                Object.assign(this, {multi });
+              },
+              errorResponse => {
+                console.log(errorResponse);
+              }
+          );
+        var multi = [];
+        Object.assign(this, { multi });
+    }
+
+
+    xAxisTickFormatting(value){
+      var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",  "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+      var date1 = new Date(value);
+      return monthNames[date1.getMonth()] + " " + date1.getFullYear();
+      if (date1.getDay() == 1) {
+          return monthNames[date1.getMonth()] + " " + date1.getFullYear();
+      } else {
+          return '';
+      }
+    }
+
+    yAxisTickFormatting(value){
+
+          var formatter = new Intl.NumberFormat('en-US', {
+              style: 'currency',
+              currency: 'USD',
+              minimumFractionDigits: 2,
+              // the default value for minimumFractionDigits depends on the currency
+              // and is usually already 2
+          });
+
+      return formatter.format(value);
     }
 
     onSelect(event) {

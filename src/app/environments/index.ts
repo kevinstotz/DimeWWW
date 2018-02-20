@@ -34,6 +34,7 @@ export class Environment  {
     private REGISTER_VERIFY_URL: string;
 
     private DIME: string;
+    private DIME_PIE_CHART: string;
 
     constructor() {
         this.SECURE = 'https://';
@@ -87,6 +88,7 @@ export class Environment  {
         this.REGISTER_URL = this.API_URL.concat(this.API_PATH, '/register/');
         this.REGISTER_VERIFY_URL = this.API_URL.concat(this.API_PATH, '/register/verify/');
         this.DIME = this.API_URL.concat(this.API_PATH, '/dime/');
+        this.DIME_PIE_CHART = this.API_URL.concat(this.API_PATH, '/dime/piechart/');
 
         this.global = {
             'PRODUCTION':         this.PRODUCTION,
@@ -109,6 +111,7 @@ export class Environment  {
             'DIME':                 this.DIME,
             'NEWSLETTER_URL':       this.NEWSLETTER_URL,
             'LOGIN_URL':            this.LOGIN_URL,
+            'DIME_PIE_CHART':                 this.DIME_PIE_CHART,
             'REGISTER_URL':         this.REGISTER_URL,
             'REGISTER_VERIFY_URL':  this.REGISTER_VERIFY_URL
         }

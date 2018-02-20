@@ -1,20 +1,30 @@
 
+		<ngx-charts-line-chart
+      [scheme]="colorScheme"
+      [results]="multi"
+      [view]="view"
+      [gradient]="gradient"
+      [xAxis]="showXAxis"
+      [yAxis]="showYAxis"
+      [legend]="showLegend"
+      [timeline]="timeline"
+      [showXAxisLabel]="showXAxisLabel"
+      [showYAxisLabel]="showYAxisLabel"
+      [xAxisLabel]="xAxisLabel"
+      [yAxisLabel]="yAxisLabel"
+      [xAxisTickFormatting]="xAxisTickFormatting"
+      [yAxisTickFormatting]="yAxisTickFormatting"
+      [autoScale]="autoScale"
+      [tooltipTemplate]="tooltipTemplate"
+      [seriesTooltipTemplate]="seriesTooltipTemplate"
+      (select)="onSelect($event)">
 
-        	<h3>Dime Index Prices</h3>
-            <div>
-							<ngx-charts-line-chart
-					      [view]="view"
-					      [scheme]="colorScheme"
-					      [results]="multi"
-					      [gradient]="gradient"
-					      [xAxis]="showXAxis"
-					      [yAxis]="showYAxis"
-					      [legend]="showLegend"
-					      [showXAxisLabel]="showXAxisLabel"
-					      [showYAxisLabel]="showYAxisLabel"
-					      [xAxisLabel]="xAxisLabel"
-					      [yAxisLabel]="yAxisLabel"
-					      [autoScale]="autoScale"
-					      (select)="onSelect($event)">
-					    </ngx-charts-line-chart>
-            </div>
+      <ng-template #tooltipTemplate  let-model="model">
+        <h5>{{ model.value | currency : symbol : fractionSize}}</h5>
+      </ng-template>
+
+      <ng-template #seriesTooltipTemplate  let-model="model">
+        <h5>{{ model.value | currency : symbol : fractionSize}}</h5>
+      </ng-template>
+
+    </ngx-charts-line-chart>

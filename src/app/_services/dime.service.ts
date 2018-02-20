@@ -17,6 +17,10 @@ export class DimeService {
         };
     }
 
+    getPieChart() {
+        return this.http.get<Dime[]>(this.environment.api.DIME_PIE_CHART, this.httpOptions);
+    }
+
     getDime() {
         return this.http.get<Dime[]>(this.environment.api.DIME, this.httpOptions);
     }
