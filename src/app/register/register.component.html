@@ -1,43 +1,61 @@
 
 <section class="bodyPartTwo">
 	<div class="container">
+    <div class="bodyInnerPage fadeInDown">
+      ﻿<div class="row">
+				<div class="col-sm-3 col-md-3 col-lg-3"></div>
+				<div class="col-sm-6 col-md-6 col-lg-6">
+					<mat-card class="register-card">
+						<mat-card-header>
+							<mat-card-title><h4>Start Investing</h4></mat-card-title>
+						</mat-card-header>
+						<mat-card-content>
+							<form [formGroup]="registerForm" name="registerForm" (ngSubmit)="registerUser(contactusForm)">
+									<mat-form-field class="card-full-width">
+												<input matInput placeholder="First Name"
+															[errorStateMatcher]="matcher"
+															formControlName="firstName">
+											<mat-hint></mat-hint>
+											<mat-error *ngIf=" !registerForm.controls.firstName.hasError('required')">Please enter a valid First name</mat-error>
+											<mat-error *ngIf="registerForm.controls.firstName.hasError('required')">First Name is <strong>required</strong></mat-error>
+									</mat-form-field>
 
-    <div class="bodyInnerPage col-rs-6 col-xs-6 col-sm-6 col-md-6 col-lg-6 col-md-offset-3 col-xs-offset-3 col-sm-offset-3 col-lg-offset-3 fadeInDown">
-      <div class="row">
-        <h2><span class="col col-4"><br>Register</span></h2>
-        <span class="col col-8" *ngIf="message" [ngClass]="{ 'alert': message, 'alert-success': message.type === 'success', 'alert-danger': message.type === 'error' }">{{message.text}}</span>
-      </div>
+									<mat-form-field class="card-full-width">
+												<input matInput placeholder="Last Name"
+															[errorStateMatcher]="matcher"
+															formControlName="lastName">
+											<mat-hint></mat-hint>
+											<mat-error *ngIf=" !registerForm.controls.lastName.hasError('required')">Please enter a valid Last name</mat-error>
+											<mat-error *ngIf="registerForm.controls.lastName.hasError('required')">Last Name is <strong>required</strong></mat-error>
+									</mat-form-field>
 
-      ﻿<div class="row col-md-6 col-lg-6">
+									<mat-form-field class="card-full-width">
+												<input matInput placeholder="Email"
+															[errorStateMatcher]="matcher"
+															formControlName="email">
+											<mat-hint></mat-hint>
+											<mat-error *ngIf=" !registerForm.controls.email.hasError('required')">Please enter a valid email</mat-error>
+											<mat-error *ngIf="registerForm.controls.email.hasError('required')">Email is <strong>required</strong></mat-error>
+									</mat-form-field>
 
-          <form name="form" (ngSubmit)="f.form.valid && registerUser()" #f="ngForm" novalidate>
-						<div class="form-group" [ngClass]="{ 'has-error': f.submitted && !firstName.valid }">
-								<label for="firstName">First Name</label>
-								<input type="text" class="form-control" name="firstName" [(ngModel)]="register.firstName" #firstName="ngModel" required />
-								<div *ngIf="f.submitted && !firstName.valid" class="help-block">First Name is required</div>
-						</div>
-						<div class="form-group" [ngClass]="{ 'has-error': f.submitted && !lastName.valid }">
-								<label for="lastName">Last Name</label>
-								<input type="lastName" class="form-control" name="lastName" [(ngModel)]="register.lastName" #lastName="ngModel" required />
-								<div *ngIf="f.submitted && !lastName.valid" class="help-block">Last Name is required</div>
-						</div>
-              <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !email.valid }">
-                  <label for="email">Email</label>
-                  <input type="text" class="form-control" name="email" [(ngModel)]="register.email" #email="ngModel" required />
-                  <div *ngIf="f.submitted && !email.valid" class="help-block">Email is required</div>
-              </div>
-              <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !password.valid }">
-                  <label for="password">Password</label>
-                  <input type="password" class="form-control" name="password" [(ngModel)]="register.password" #password="ngModel" required />
-                  <div *ngIf="f.submitted && !password.valid" class="help-block">Password is required</div>
-              </div>
-              <div class="form-group">
-                  <button [disabled]="loading" class="btn btn-primary">Register</button>
-                  <img *ngIf="loading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
-                  <a [routerLink]="['/login']" class="btn btn-link">Cancel</a>
-              </div>
-          </form>
-				<alert></alert>
+									<mat-form-field class="card-full-width">
+												<input matInput placeholder="Zipcode"
+															[errorStateMatcher]="matcher"
+															formControlName="zipCode">
+											<mat-hint>5 digits</mat-hint>
+											<mat-error *ngIf=" !registerForm.controls.zipCode.hasError('required')">Please enter a valid zipcode</mat-error>
+											<mat-error *ngIf="registerForm.controls.zipCode.hasError('required')">Zipcode is <strong>required</strong></mat-error>
+									</mat-form-field>
+
+									<input matInput formControlName="url">
+									<button class="text-right" mat-button type="submit" color="primary">Register</button>
+
+	          </form>
+						</mat-card-content>
+					</mat-card>
+					<alert></alert>
+				</div>
+				<div class="col-sm-3 col-md-3 col-lg-3"></div>
       </div>
     </div>
   </div>

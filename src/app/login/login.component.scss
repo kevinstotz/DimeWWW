@@ -1,10 +1,19 @@
 input.prvntspm {
   display:none;
 }
-.contactus-card {
+.login-card {
   max-width: 400px;
+  min-width: 400px;
+  min-height:250px;
+  max-height:250px;
 }
 
+.social-card {
+  max-width: 270px;
+  min-width: 270px;
+  min-height:250px;
+  max-height:250px;
+}
 .card-full-width {
     display: flex;
     flex-direction: column;
