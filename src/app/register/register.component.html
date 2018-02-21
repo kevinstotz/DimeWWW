@@ -10,7 +10,7 @@
 							<mat-card-title><h4>Start Investing</h4></mat-card-title>
 						</mat-card-header>
 						<mat-card-content>
-							<form [formGroup]="registerForm" name="registerForm" (ngSubmit)="registerUser(contactusForm)">
+							<form [formGroup]="registerForm" name="registerForm" (ngSubmit)="registerUser(registerForm)">
 									<mat-form-field class="card-full-width">
 												<input matInput placeholder="First Name"
 															[errorStateMatcher]="matcher"
