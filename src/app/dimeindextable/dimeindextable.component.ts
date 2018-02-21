@@ -48,11 +48,7 @@ export class DimeindextableComponent {
       var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",  "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
       var date1 = new Date(value);
       return monthNames[date1.getMonth()] + " " + date1.getFullYear();
-      if (date1.getDay() == 1) {
-          return monthNames[date1.getMonth()] + " " + date1.getFullYear();
-      } else {
-          return '';
-      }
+
     }
 
     yAxisTickFormatting(value){

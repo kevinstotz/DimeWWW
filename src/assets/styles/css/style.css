@@ -2,26 +2,17 @@
 /* CSS Document */
 
 @font-face {
-    font-family: 'ProximaNovaRegular';
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'ProximaNovaBold';
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'Helvetica LT Std';
-    font-weight: 500;
-    font-style: normal;
+    font-weight: normal;
+  	font-style: normal;
+  	font-size:15px;
+  	padding: 0px 0px 0px 0px;
+  	margin: 0px 0px 0px 0px;
 }
 
 
 body {
-	font-family: 'ProximaNovaRegular';
+	font-family: 'Helvetica LT Std';
 	font-weight: normal;
 	font-style: normal;
 	font-size:15px;
@@ -221,7 +212,7 @@ transform: translate(-50%,-50%);
 
 .bodyPartTwo {}
 .investBox { padding:35px 0px 40px 0px; border-bottom: solid 2px #b6b6b6;}
-.investBox h2 { font-size:38px; line-height:40px; color:#484848; padding-bottom:20px; font-family: 'Helvetica LT Std'; }
+.investBox h2 { font-size:38px; line-height:40px; color:#484848; padding-bottom:20px;}
 .investBox p { font-size:16px; line-height:30px; color:#484848; padding-bottom:20px;}
 
 .investPic {height: 360px; font-size: 0; text-align: center; max-width: 100%; position: relative; overflow: hidden;}
@@ -257,7 +248,7 @@ transform: translate(-50%,-50%);
 
 .bodyPartThree { padding:40px 0px 10px 0px;}
 .muturalFundCon { margin-bottom:20px;}
-.muturalFundCon h3 { font-size:36px; line-height:36px; color:#2d2d2d; font-family: 'Helvetica LT Std'; padding-bottom:40px;}
+.muturalFundCon h3 { font-size:36px; line-height:36px; color:#2d2d2d; padding-bottom:40px;}
 .muturalFundCon p { font-size:16px; line-height:24px; color:#2d2d2d; padding-bottom:30px;}
 .muturalFundPic {}
 
@@ -292,11 +283,11 @@ transform: translate(-50%,-50%);
 
 
 .bodyPartFour { padding:50px 0px 50px 0px; background-color:#21b082;}
-.bodyPartFour h3 {font-size:36px; line-height:36px; color:#fff; font-family: 'Helvetica LT Std'; padding-bottom:10px; text-align:center;}
+.bodyPartFour h3 {font-size:36px; line-height:36px; color:#fff; padding-bottom:10px; text-align:center;}
 .bodyPartFour h5 {font-size:20px; line-height:20px; color:#fff; text-align:center;}
 
 .howWorksBox { width:100%; max-width:370px; margin:40px auto auto auto; text-align:center; }
-.howWorksBox h4 { font-size:24px; line-height:26px; color:#204b35; font-family: 'Helvetica LT Std'; padding:15px 0px;}
+.howWorksBox h4 { font-size:24px; line-height:26px; color:#204b35; padding:15px 0px;}
 .howWorksBox p { font-size:15px; line-height:20px; color:#fff;}
 
 
@@ -319,7 +310,7 @@ transform: translate(-50%,-50%);
 .bodyPartFive { }
 .indexPrices {padding:50px 0px 50px 0px; border-bottom: solid 2px #b6b6b6;}
 
-.indexPrices h3 {font-size:36px; line-height:36px; color:#2d2d2d; font-family: 'Helvetica LT Std'; padding-bottom:10px; text-align:center;}
+.indexPrices h3 {font-size:36px; line-height:36px; color:#2d2d2d; padding-bottom:10px; text-align:center;}
 .indexPrices p { font-size:16px; line-height:24px; color:#525252; text-align:center; width:100%; max-width:770px; margin:auto; }
 
 .indexPricesPic { height: 380px; font-size: 0; text-align: center; max-width: 100%; position: relative; overflow: hidden; margin-top:40px; }
@@ -339,15 +330,15 @@ transform: translate(-50%,-50%);
 
 .bodyPartSix { }
 .meetTeam {padding:50px 0px 30px 0px; border-bottom: solid 2px #b6b6b6;}
-.meetTeam h3 {font-size:36px; line-height:36px; color:#2d2d2d; font-family: 'Helvetica LT Std'; padding-bottom:40px; text-align:center;}
+.meetTeam h3 {font-size:36px; line-height:36px; color:#2d2d2d; padding-bottom:40px; text-align:center;}
 
 .team { text-align:center; margin-bottom:30px; }
-.team h4 {text-align:center; font-family: 'Helvetica LT Std'; font-size:26px; line-height:26px; background-image:url(../images/titleLine.jpg); background-position:center center; background-repeat:repeat-x; margin-bottom:35px;}
+.team h4 {text-align:center; font-size:26px; line-height:26px; background-image:url(../images/titleLine.jpg); background-position:center center; background-repeat:repeat-x; margin-bottom:35px;}
 .team h4 span { padding:10px; background-color:#FFF;}
 .teamBox  { width:100%; max-width:170px; margin:auto auto 30px auto; text-align:center; }
 
 .teamBox {}
-.teamBox h5 { font-size:18px; color:#454545; font-family: 'ProximaNovaBold'; padding:10px 0px 5px 0px;}
+.teamBox h5 { font-size:18px; color:#454545; padding:10px 0px 5px 0px;}
 .teamBox p { font-size:12px; line-height:16px; color:#454545; text-transform:uppercase;}
 
 .teamBoxPic { height: 100px; font-size: 0; text-align: center; max-width: 100%; position: relative; overflow: hidden; border-radius:100%;}
@@ -366,7 +357,7 @@ transform: translate(-50%,-50%);
 
 
 .advisors {text-align:center; margin-bottom:30px;}
-.advisors h4 {text-align:center; font-family: 'Helvetica LT Std'; font-size:26px; line-height:26px; background-image:url(../images/titleLine.jpg); background-position:center center; background-repeat:repeat-x; margin-bottom:35px;}
+.advisors h4 {text-align:center; font-size:26px; line-height:26px; background-image:url(../images/titleLine.jpg); background-position:center center; background-repeat:repeat-x; margin-bottom:35px;}
 .advisors h4 span { padding:10px; background-color:#FFF;}
 
 
@@ -382,7 +373,7 @@ transform: translate(-50%,-50%);
 
 
 .bodyPartSeven { padding:50px 0px 30px 0px; border-bottom: solid 2px #b6b6b6; }
-.bodyPartSeven h3 {font-size:36px; line-height:36px; color:#2d2d2d; font-family: 'Helvetica LT Std'; padding-bottom:30px; text-align:center;}
+.bodyPartSeven h3 {font-size:36px; line-height:36px; color:#2d2d2d; padding-bottom:30px; text-align:center;}
 
 
 .partnerBox { height: 80px; font-size: 0; text-align: center; max-width: 100%; position: relative; overflow: hidden; margin-bottom:20px; }
@@ -407,7 +398,7 @@ transform: translate(-50%,-50%);
 
 .headerTop { border-bottom: solid 2px #FFFFFF;    position: relative; top: 100px;  border: 1px ;}
 .newsletter { margin-bottom:10px; padding:0px 0px 0px 70px; position:relative;}
-.newsletter h4 { font-size:20px; line-height:20px; color:#ffffff; padding-bottom:7px; font-family: 'ProximaNovaBold';}
+.newsletter h4 { font-size:20px; line-height:20px; color:#ffffff; padding-bottom:7px;}
 .newsletter p { font-size:16px; color:#fff; line-height:20px;}
 .newsletterIcon { position:absolute; top:0; left:0;}
 .newsBox { width:100%; max-width:450px; margin-top:10px;}
@@ -440,7 +431,7 @@ transform: translate(-50%,-50%);
 /* ------------------------------------------------------ charts css ------------------------------------------------------*/
 
 .bodyInnerPage {margin:67px 0px 0px 0px; padding:0px 0px 40px 0px; }
-.bodyInnerPage h1 {font-size:38px; line-height:40px; color:#484848; padding-bottom:45px; font-family: 'Helvetica LT Std'; text-align:center;}
+.bodyInnerPage h1 {font-size:38px; line-height:40px; color:#484848; padding-bottom:45px; text-align:center;}
 .chartindexPrices {border-bottom:none !important;}
 
 

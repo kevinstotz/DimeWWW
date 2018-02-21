@@ -8,7 +8,7 @@
         <span class="col col-8" *ngIf="message" [ngClass]="{ 'alert': message, 'alert-success': message.type === 'success', 'alert-danger': message.type === 'error' }">{{message.text}}</span>
       </div>
 
-      ﻿<div class="row col-md-6col-md-offset-0">
+      ﻿<div class="row col-md-6 col-lg-6">
 
           <form name="form" (ngSubmit)="f.form.valid && registerUser()" #f="ngForm" novalidate>
 						<div class="form-group" [ngClass]="{ 'has-error': f.submitted && !firstName.valid }">

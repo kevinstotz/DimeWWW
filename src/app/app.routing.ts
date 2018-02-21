@@ -12,6 +12,7 @@ import { AuthGuard }              from './_guards/index';
 import { DisclaimerComponent }    from './disclaimer/index';
 import { FaqComponent }           from './faq/index';
 import { PrivacypolicyComponent } from './privacypolicy/index';
+import { ContactComponent }       from './contact/index';
 import { TermsAndConditionsComponent } from './terms-and-conditions/index';
 
 const appRoutes: Routes = [
@@ -24,6 +25,7 @@ const appRoutes: Routes = [
     { path: 'disclaimer', component: DisclaimerComponent },
     { path: 'privacy', component: PrivacypolicyComponent },
     { path: 'toc', component: TermsAndConditionsComponent },
+    { path: 'contact', component: ContactComponent },
     { path: 'faq', component: FaqComponent },
 
     // otherwise redirect to home

@@ -32,6 +32,7 @@ export class Environment  {
     private LOGIN_URL: string;
     private REGISTER_URL: string;
     private REGISTER_VERIFY_URL: string;
+    private CONTACTUS_URL: string;
 
     private DIME: string;
     private DIME_PIE_CHART: string;
@@ -89,6 +90,7 @@ export class Environment  {
         this.REGISTER_VERIFY_URL = this.API_URL.concat(this.API_PATH, '/register/verify/');
         this.DIME = this.API_URL.concat(this.API_PATH, '/dime/');
         this.DIME_PIE_CHART = this.API_URL.concat(this.API_PATH, '/dime/piechart/');
+        this.CONTACTUS_URL = this.API_URL.concat(this.API_PATH, '/contactus/');
 
         this.global = {
             'PRODUCTION':         this.PRODUCTION,
@@ -108,10 +110,11 @@ export class Environment  {
             'API_URL':              this.API_URL,
             'API_HOSTNAME':         this.API_HOSTNAME,
             'API_PATH':             this.API_PATH,
+            'CONTACTUS_URL':        this.CONTACTUS_URL,
             'DIME':                 this.DIME,
             'NEWSLETTER_URL':       this.NEWSLETTER_URL,
             'LOGIN_URL':            this.LOGIN_URL,
-            'DIME_PIE_CHART':                 this.DIME_PIE_CHART,
+            'DIME_PIE_CHART':       this.DIME_PIE_CHART,
             'REGISTER_URL':         this.REGISTER_URL,
             'REGISTER_VERIFY_URL':  this.REGISTER_VERIFY_URL
         }

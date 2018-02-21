@@ -7,7 +7,9 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { PageErrorsModule }  from './modules/page-errors/index';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { DeviceDetectorModule } from 'ngx-device-detector';
-import { MatDialogModule, MatTableModule } from '@angular/material';
+import { MatDialogModule, MatTableModule, MatFormFieldModule, MatInputModule } from '@angular/material';
+import { MatCardModule, MatToolbarModule, MatIconModule, MatButtonModule } from '@angular/material';
+import { MatMenuModule } from '@angular/material/menu';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { LoadingModule } from 'ngx-loading';
 //Ngx-Charts
@@ -31,6 +33,7 @@ import { JwtInterceptor } from './_helpers/index';
 
 import { AlertService, AuthenticationService, UserService } from './_services/index';
 import { RegisterService, NewsletterService, DimeService } from './_services/index';
+import { ContactusService } from './_services/index';
 
 import { HomeComponent } from './home/index';
 import { LoginComponent } from './login/index';
@@ -52,20 +55,22 @@ import { VerifyComponent } from './verify/index';
 import { LogoutComponent } from './logout/index';
 import { DisclaimerComponent } from './disclaimer/index';
 import { FaqComponent } from './faq/index';
-import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
-import { TermsAndConditionsComponent } from './terms-and-conditions/terms-and-conditions.component';
-import { DimepiechartComponent } from './dimepiechart/dimepiechart.component';
+import { PrivacypolicyComponent } from './privacypolicy/index';
+import { TermsAndConditionsComponent } from './terms-and-conditions/index';
+import { DimepiechartComponent } from './dimepiechart/index';
+import { SocialsigninComponent } from './socialsignin/index';
+import { ContactComponent } from './contact/index';
 
 export function getAuthServiceConfigs() {
   let config = new AuthServiceConfig(
       [
         {
           id: FacebookLoginProvider.PROVIDER_ID,
-          provider: new FacebookLoginProvider("Your-Facebook-app-id")
+          provider: new FacebookLoginProvider("196070577648287")
         },
         {
           id: GoogleLoginProvider.PROVIDER_ID,
-          provider: new GoogleLoginProvider("Your-Google-Client-Id")
+          provider: new GoogleLoginProvider("428652396965-l4iettcbn7edvdhv7v0ia85iikva5tjg.apps.googleusercontent.com")
         },
       ]
   );
@@ -83,11 +88,17 @@ export function getAuthServiceConfigs() {
         FormsModule,
         HttpClientModule,
         LoadingModule,
+        MatButtonModule,
+        MatCardModule,
+        MatDialogModule,
+        MatFormFieldModule,
+        MatMenuModule,
+        MatInputModule,
         MatTableModule,
+        MatToolbarModule,
         MatProgressSpinnerModule,
         MDBBootstrapModule.forRoot(),
         NgxChartsModule,
-        MatDialogModule,
         PageErrorsModule,
         ReactiveFormsModule,
         SocialLoginModule
@@ -117,20 +128,30 @@ export function getAuthServiceConfigs() {
         ScrollComponent,
         TermsAndConditionsComponent,
         VerifyComponent,
-        DimepiechartComponent
+        DimepiechartComponent,
+        SocialsigninComponent,
+        ContactComponent
     ],
     entryComponents: [
         NewsletterResponseDialogComponent
+    ],
+    exports: [
+        MatToolbarModule,
+        MatIconModule,
+        MatButtonModule,
+        MatMenuModule,
+        MatCardModule
     ],
     providers: [
         AuthGuard,
         AlertService,
         AuthenticationService,
+        ContactusService,
         CookieService,
+        DimeService,
         fakeBackendProvider,
         NewsletterService,
         RegisterService,
-        DimeService,
         UserService,
         {
             provide: HTTP_INTERCEPTORS,

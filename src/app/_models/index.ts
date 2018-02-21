@@ -7,3 +7,4 @@ export * from './registerVerify';
 export * from './authentication';
 export * from './oauth2';
 export * from './dime';
+export * from './contactus';

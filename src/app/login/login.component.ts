@@ -3,6 +3,8 @@ import { Environment } from '../environments/index';
 import { Router, ActivatedRoute } from '@angular/router';
 import { AlertService, AuthenticationService } from '../_services/index';
 import { User, Authentication } from '../_models/index';
+import { SocialsigninComponent } from '../socialsignin/index';
+
 
 @Component({
     moduleId: 'module.id',
