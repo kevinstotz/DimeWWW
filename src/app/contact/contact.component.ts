@@ -19,12 +19,9 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
-  //public contactusForm: FormGroup;
   private contactus: Contactus;
   public contactusResponse$: Observable<GenericResponse>;
-  public validSubmitCallback: Function;
   public contactusForm: FormGroup;
-  public email: MatFormField;
 
   matcher = new MyErrorStateMatcher();
 
@@ -57,7 +54,6 @@ ngOnInit() {
   }
 
   sendContactUs(contactusForm) {
-    console.log(contactusForm);
 
     if (contactusForm.controls.email.invalid ||
         contactusForm.controls.subject.invalid ||
@@ -76,12 +72,12 @@ ngOnInit() {
     this.contactusService.send(this.contactus).subscribe(
         (res: GenericResponse) => {
           console.log(res.message)
-          //this.displayDialog(res.message)
+          this.displayDialog(res.message)
           this.alertService.success(res.message);
       },
         (err: HttpErrorResponse) => {
           console.log(err.error.message)
-          //this.displayDialog(err.error.message)
+          this.displayDialog(err.error.message)
       }
     );
   }
