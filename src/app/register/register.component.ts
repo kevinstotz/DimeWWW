@@ -51,7 +51,6 @@ export class RegisterComponent implements OnInit  {
     }
 
     registerUser(registerForm) {
-
         if (registerForm.controls.email.invalid ||
             registerForm.controls.firstName.invalid ||
             registerForm.controls.lastName.invalid ||
@@ -73,11 +72,13 @@ export class RegisterComponent implements OnInit  {
         this.registerService.registerUser(this.register)
             .subscribe(
                 data => {
+                    this.registerForm.reset();
                     this.alertService.success('Registration successful.  Check Your email for Login Instructions', true);
                     this.loading = false;
                     //  this.router.navigate(['login']);
                 },
                 errorResponse => {
+                    this.registerForm.reset();
                     this.alertService.error(errorResponse.error.result);
                     this.loading = false;
                 });
