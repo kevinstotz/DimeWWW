@@ -8,6 +8,7 @@ import { PageErrorsModule }  from './modules/page-errors/index';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { DeviceDetectorModule } from 'ngx-device-detector';
 import { MatDialogModule, MatTableModule, MatFormFieldModule, MatInputModule } from '@angular/material';
+import { MatDividerModule } from '@angular/material/divider';
 import { MatCardModule, MatToolbarModule, MatIconModule, MatButtonModule } from '@angular/material';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
@@ -60,6 +61,7 @@ import { TermsAndConditionsComponent } from './terms-and-conditions/index';
 import { DimepiechartComponent } from './dimepiechart/index';
 import { SocialsigninComponent } from './socialsignin/index';
 import { ContactComponent } from './contact/index';
+import { DimetableComponent } from './dimetable/dimetable.component';
 
 export function getAuthServiceConfigs() {
   let config = new AuthServiceConfig(
@@ -130,7 +132,8 @@ export function getAuthServiceConfigs() {
         VerifyComponent,
         DimepiechartComponent,
         SocialsigninComponent,
-        ContactComponent
+        ContactComponent,
+        DimetableComponent
     ],
     entryComponents: [
         NewsletterResponseDialogComponent
@@ -140,6 +143,7 @@ export function getAuthServiceConfigs() {
         MatIconModule,
         MatButtonModule,
         MatMenuModule,
+        MatDividerModule,
         MatCardModule
     ],
     providers: [

@@ -17,6 +17,7 @@ import { TermsAndConditionsComponent } from './terms-and-conditions/index';
 
 const appRoutes: Routes = [
     { path: '',  component: HomeComponent },
+    { path: 'home',  component: HomeComponent },
     { path: 'login', component: LoginComponent },
     { path: 'logout', component: LogoutComponent },
     { path: 'register', component: RegisterComponent },

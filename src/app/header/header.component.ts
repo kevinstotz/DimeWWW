@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { AuthenticationService } from '../_services/index';
 import { MatMenuModule } from '@angular/material/menu';
 
+
+
 @Component({
   moduleId: 'module.id',
   selector: 'app-header',
