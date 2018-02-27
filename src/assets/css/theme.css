@@ -385,7 +385,7 @@ a:active {
 }
 
 .site-header.header-s2 .navbar-collapse ul.nav {
-	background: #E0600C
+	background: #21b082
 }
 
 .breadcrumb li:not(.active) a:hover {
@@ -690,10 +690,25 @@ a:active {
 }
 .banner-text {
 	align-content: center;
+	font-size: 24px;
 	padding: 40px 20px 40px 20px;
 }
 .banner-btn {
-	margin: 20px 20px 20px 20px;
-  padding: 40px 40px 10px 40px;
-	align-content: center;
+  padding: 10px 20px 30px 20px;
+	text-align: center;
+
+}
+
+/*      body part 2 SECTION  */
+
+.bodyPartTwo {
+	padding: 20px 10px 20px 10px;
+	height: 500;
+	max-height: 500;
+	min-height: 500;
+	background-color: #f8f8f8;
+}
+.investBox {
+	height: 500;
+	max-height: 500;
 }

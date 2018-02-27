@@ -1,22 +1,23 @@
 <section class="bodyPartTwo">
+
 	<div class="container-fluid">
-		<div class="investBox">
-			<div class="row">
-				<div class="col-sm-12 col-md-12 col-lg-12">
-					<app-dimetable></app-dimetable>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container-fluid">
-  	<div class="investBox">
+  	<div class="partTwoBox">
 			<div class="row">
 				<div class="col-sm-4 col-md-4 col-lg-4">
-					<h2>A smart way to invest</h2>
-					<p>The DIME is an open-cap, tokenized, cryptocurrency portfolio that tracks the top 10 cryptocurrencies with quarterly rebalancing. Purchasing a single DIME Token provides holders with a diverse cryptocurrency portfolio and saves individuals from the stress and technical expertise required to maintain secure digital wallets and private keys.
-					By holding a single DIME, users hold a diverse and secure portfolio of crypto assets including Bitcoin, Ether, Ripple and more.</p>
+					<mat-card style="height:500px;">
+					<mat-card-title style="text-align: center; font-size: 24px;">A smart way to invest<hr></mat-card-title>
+					<mat-card-content style="text-align: center; font-size: 16px;"><p>The DIME is an open-cap, tokenized, cryptocurrency portfolio that tracks the top 10 cryptocurrencies with quarterly rebalancing. Purchasing a single DIME Token provides holders with a diverse cryptocurrency portfolio and saves individuals from the stress and technical expertise required to maintain secure digital wallets and private keys.
+					By holding a single DIME, users hold a diverse and secure portfolio of crypto assets including Bitcoin, Ether, Ripple and more.</p></mat-card-content>
+					</mat-card>
 				</div>
-				<div class="col-sm-8 col-md-8 col-lg-8"><app-dimepiechart></app-dimepiechart></div>
+				<div class="col-sm-8 col-md-8 col-lg-8">
+					<mat-card style="height:500px">
+						<mat-card-content>
+							<mat-card-title style="text-align: center; font-size: 24px;">Current Distribution<hr></mat-card-title>
+							<app-dimepiechart></app-dimepiechart>
+						</mat-card-content>
+					</mat-card>
+				</div>
 			</div>
     </div>
   </div>
