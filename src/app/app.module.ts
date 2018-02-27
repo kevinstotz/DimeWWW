@@ -61,7 +61,7 @@ import { TermsAndConditionsComponent } from './terms-and-conditions/index';
 import { DimepiechartComponent } from './dimepiechart/index';
 import { SocialsigninComponent } from './socialsignin/index';
 import { ContactComponent } from './contact/index';
-import { DimetableComponent } from './dimetable/dimetable.component';
+import { DimetableComponent } from './dimetable/index';
 
 export function getAuthServiceConfigs() {
   let config = new AuthServiceConfig(

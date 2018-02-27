@@ -1,14 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
-@import 'assets/styles/css/bootstrap-4.0.0/css/bootstrap.css';
+// @import 'assets/styles/css/bootstrap-4.0.0/css/bootstrap.css';
 @import 'assets/styles/css/hover.css';
 
 @import 'assets/styles/css/animate.css';
 
 //@import 'assets/styles/css/fontawesome-all.css';
-//@import url('https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
+// @import url('https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
+//@import 'assets/styles/css/style.css';
+@import url('https://use.fontawesome.com/releases/v5.0.7/js/all.js');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-
-@import 'assets/styles/css/style.css';
-//@import 'assets/styles/css/responsive.css';
+@import 'assets/css/vendor.bundle.css';
+@import 'assets/css/style.css';
+@import 'assets/css/theme.css';
 
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';

@@ -19,7 +19,7 @@ body {
 	padding: 0px 0px 0px 0px;
 	margin: 0px 0px 0px 0px;
 	color:#2d2d2d;
-  min-height:                 768px;
+  min-height: 768px;
   height: 100%;
 
 }
@@ -427,7 +427,7 @@ height: 42px;line-height: 42px;right: 15px; bottom: 15px;-webkit-transition: all
   padding:10px 15px 10px 15px;
 
 }
-.meetTeam {padding:50px 0px 30px 0px; border-bottom: solid 2px #b6b6b6;}
+.meetTeam {padding:50px 0px 30px 0px;}
 .meetTeam h3 {font-size:36px; line-height:36px; color:#2d2d2d; padding-bottom:40px; text-align:center;}
 
 .team { text-align:center; margin-bottom:30px; }
@@ -435,11 +435,9 @@ height: 42px;line-height: 42px;right: 15px; bottom: 15px;-webkit-transition: all
   text-align:center;
   font-size:26px;
   line-height:2px;
-
   margin-bottom:35px
 }
 .team h4 span {
-
     padding:10px;
     background-color:#FFF;
   }
@@ -517,14 +515,6 @@ transform: translate(-50%,-50%);
 }
 
 
-/* ------------------------------------------------------ footer css ------------------------------------------------------*/
-
-
-.footerSection {
-  background-color:#21b082;
-  padding:10px 0px;
-  }
-
 
 .newsletter { margin-bottom:10px; padding:0px 0px 0px 70px; position:relative;}
 .newsletter h4 { font-size:20px; line-height:20px; color:#ffffff; padding-bottom:7px;}
@@ -542,42 +532,33 @@ transform: translate(-50%,-50%);
 .btnMore3.focus, .btnMore3:focus, .btnMore3:hover {color: #21b082; background-color:#fff; text-decoration: none; border: solid 1px #fff;}
 
 
+/* ------------------------------------------------------ footer css ------------------------------------------------------*/
+
+
+.footerSection {
+  background-color:#f2f2f2;
+  padding:10px 15px 10px 15px;
+}
 
 .footerAbout { margin-bottom:10px; padding:0px 0px 0px 100px; position:relative;}
 .footerAbout p { font-size:14px; color:#fff; line-height:20px; padding-bottom:35px;}
 .footerAbout h6 { font-size:15px; color:#fff; padding-bottom:5px;}
 
-.headerBottom { padding:10px 0px 0px 0px;}
-.headerBottom {text-align:center;}
-.headerBottom li {display:inline;}
-.headerBottom a {text-decoration:none; padding:0 8px; color:#fff;}
-.headerBottom a:hover { color:#21b082; cursor:pointer;}
-
-.headerBottom p { color:#fff; font-size:13px; padding:10px 0px 0px 0px;}
+.footer {padding:10px 0px 0px 0px;  border-bottom: solid 2px #b6b6b6;text-align:center;}
+.footer li {display:inline; color:#21b082;}
+.footer a {text-decoration:none; padding:0 8px; color:#484848;}
+.footer a:hover { color:#21b082; cursor:pointer;}
+.footer p { color:#21b082; font-size:13px; padding:10px 0px 0px 0px;}
 
 
-
-/* ------------------------------------------------------ charts css ------------------------------------------------------*/
-
-.bodyInnerPage {margin:67px 0px 0px 0px; padding:0px 0px 40px 0px; min-height: 800px}
-.bodyInnerPage h1 {font-size:38px; line-height:40px; color:#484848; padding-bottom:45px; text-align:center;}
-.chartindexPrices {border-bottom:none !important;}
-
-
-.chartPic { height: 469px; font-size: 0; text-align: center; max-width: 100%; position: relative; overflow: hidden; margin:40px 0px; }
-.chartPic img {
-  display: inline-block;
-  vertical-align: middle;
-  max-height: 100%;
-  max-width: 100%;
-  position:absolute;
-left: 50%;
-top: 50%;
-transform: translate(-50%,-50%);
--webkit-transform: translate(-50%,-50%);
--moz-transform: translate(-50%,-50%);
+.bodyInnerPage {
+  margin:67px 0px 0px 0px;
+  padding:0px 0px 40px 0px;
+  min-height: 800px;
 }
-
-.chartBox { width:100%; max-width:170px; margin:auto auto 20px auto; text-align:center;}
-.chartBox h4 { font-size:26px; line-height:30px; padding:20px 0px 5px 0px;}
-.chartBox p {}
+.bodyInnerPage h1 {
+  font-size:38px;
+  line-height:40px;
+  color:#484848;
+  text-align:center;
+}

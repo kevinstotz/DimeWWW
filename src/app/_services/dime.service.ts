@@ -24,4 +24,8 @@ export class DimeService {
     getDime() {
         return this.http.get<Dime[]>(this.environment.api.DIME, this.httpOptions);
     }
+
+    getTableChart() {
+        return this.http.get<Dime[]>(this.environment.api.DIME_TABLE_CHART, this.httpOptions);
+    }
 }

@@ -17,8 +17,12 @@ export class DimepiechartComponent implements OnInit {
 
    }
 
+   labelFormat(model) {
+      return(model);
+   }
+
    single: any[];
-   view: any[] = [600, 400];
+   view: any[] = [600, 500];
 
    // options
    showLegend = true;

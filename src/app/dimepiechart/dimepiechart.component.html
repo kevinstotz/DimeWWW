@@ -8,12 +8,14 @@
     [explodeSlices]="explodeSlices"
     [labels]="showLabels"
     [animations]="animations"
+    [labelFormatting]="labelFormat"
     [doughnut]="doughnut"
     [tooltipTemplate]="tooltipTemplate"
     [gradient]="showGradient"
     (select)="onSelect($event)">
 
     <ng-template #tooltipTemplate  let-model="model">
-      <h5>{{model.name}}: {{ model.value | number:'1.2-2' }}%</h5>
+			<img src="/assets/images/coins/{{model.name}}.png" height=15> {{model.name}}
+      <div>{{ model.value | number:'1.2-2' }}%</div>
     </ng-template>
   </ngx-charts-pie-chart>
