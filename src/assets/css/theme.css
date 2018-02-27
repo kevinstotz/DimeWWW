@@ -680,12 +680,11 @@ a:active {
     background: linear-gradient(to right, #21b082, #7ee7c6);
 }
 .banner-box {
-  margin: 20px 20px 20px 20px;
-	height: 300px;
-	max-height: 300px;
+  padding: 20px 20px 20px 20px;
+	height: 350px;
 }
 .banner-pic {
-  margin: 20px 20px 20px 20px;
+  margin: 20px 20px 30px 20px;
 	height: 100%;
 }
 .banner-text {
@@ -702,13 +701,42 @@ a:active {
 /*      body part 2 SECTION  */
 
 .bodyPartTwo {
-	padding: 20px 10px 20px 10px;
-	height: 500;
-	max-height: 500;
-	min-height: 500;
+	padding: 20px 20px 0px 20px;
+	height: 450;
 	background-color: #f8f8f8;
 }
-.investBox {
+.partTwoBox {
+
+}
+
+/*      body part 3 SECTION  */
+
+.bodyPartThree {
+	padding: 0px 20px 20px 20px;
 	height: 500;
-	max-height: 500;
+	background-color: #f8f8f8;
+}
+.partThreeBox {
+	padding: 20px 20px 20px 20px;
+}
+
+/*      body part 4 SECTION  */
+.bodyPartFour {
+	padding: 10px 10px 20px 20px;
+	height: 500;
+	background-color: #f8f8f8;
+}
+.partFourBox {
+padding: 20px 20px 20px 20px;
+}
+
+/*      body part 5 SECTION  */
+
+.bodyPartFive {
+	padding: 10px 10px 20px 20px;
+	height: 500;
+	background-color: #f8f8f8;
+}
+.partFiveBox {
+padding: 20px 20px 20px 20px;
 }

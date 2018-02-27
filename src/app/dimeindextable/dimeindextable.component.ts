@@ -10,7 +10,7 @@ import { AlertService, DimeService } from '../_services/index';
 export class DimeindextableComponent {
 
     multi: any[];
-    view = [600, 500];
+    view = [1024, 600];
     showXAxis = true;
     showYAxis = true;
     gradient = false;

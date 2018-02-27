@@ -22,16 +22,25 @@ export class DimepiechartComponent implements OnInit {
    }
 
    single: any[];
-   view: any[] = [600, 500];
+   view: any[] = [500, 500];
 
    // options
    showLegend = true;
-   legendTitle = "Currency";
+   legendTitle = "";
  // domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA']
    colorScheme = {
      domain: ['#7FC881', '#C0ACD7', '#FCC188', '#FEFF96', '#386BB3']
    };
-
+   customColors = [
+       {
+         name: "BTC",
+         value: '#0000ff'
+       },
+       {
+         name: "ETH",
+         value: '#00ff00'
+       }
+   ];
    // pie
    showLabels = true;
    explodeSlices = false;

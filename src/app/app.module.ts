@@ -45,6 +45,8 @@ import { BannerComponent } from './banner/index';
 import { Bodypart2Component } from './bodypart2/index';
 import { Bodypart3Component } from './bodypart3/index';
 import { Bodypart4Component } from './bodypart4/index';
+import { Bodypart5Component } from './bodypart5/index';
+import { Bodypart6Component } from './bodypart6/index';
 import { DimeindextableComponent } from './dimeindextable/index';
 import { TheteamComponent } from './theteam/index';
 import { PartnersComponent } from './partners/index';
@@ -113,6 +115,8 @@ export function getAuthServiceConfigs() {
         Bodypart2Component,
         Bodypart3Component,
         Bodypart4Component,
+        Bodypart5Component,
+        Bodypart6Component,
         DimeindextableComponent,
         DisclaimerComponent,
         FaqComponent,
