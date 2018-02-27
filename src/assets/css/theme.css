@@ -673,3 +673,27 @@ a:active {
 .contact-information .contact-entry h6 span {
 	color: #21b082
 }
+
+
+/*      BANNER SECTION  */
+.banner-section {
+    background: linear-gradient(to right, #21b082, #7ee7c6);
+}
+.banner-box {
+  margin: 20px 20px 20px 20px;
+	height: 300px;
+	max-height: 300px;
+}
+.banner-pic {
+  margin: 20px 20px 20px 20px;
+	height: 100%;
+}
+.banner-text {
+	align-content: center;
+	padding: 40px 20px 40px 20px;
+}
+.banner-btn {
+	margin: 20px 20px 20px 20px;
+  padding: 40px 40px 10px 40px;
+	align-content: center;
+}
