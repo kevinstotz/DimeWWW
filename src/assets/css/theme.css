@@ -677,14 +677,15 @@ a:active {
 
 /*      BANNER SECTION  */
 .banner-section {
-    background: linear-gradient(to right, #21b082, #7ee7c6);
+  background: linear-gradient(to right, #21b082, #7ee7c6);
 }
 .banner-box {
   padding: 20px 20px 20px 20px;
 	height: 350px;
 }
 .banner-pic {
-  margin: 20px 20px 30px 20px;
+	align-content: center;
+  margin: 20px 10px 30px 10px;
 	height: 100%;
 }
 .banner-text {
@@ -695,27 +696,21 @@ a:active {
 .banner-btn {
   padding: 10px 20px 30px 20px;
 	text-align: center;
-
 }
 
 /*      body part 2 SECTION  */
 
 .bodyPartTwo {
 	padding: 20px 20px 0px 20px;
-	height: 450;
 	background-color: #f8f8f8;
 }
 .partTwoBox {
-
 }
+
 
 /*      body part 3 SECTION  */
 hr.hrSize {
-width: 60%;
-margin-left: auto;
-margin-right: auto;
-size: 5px !important;
-color: #0e0300 !important;
+border-top-color: #999 !important;
 }
 
 .bodyPartThree {
@@ -754,6 +749,13 @@ padding: 20px 20px 20px 20px;
 	height: 500;
 	background-color: #f8f8f8;
 }
+.partSixBox {
+	padding: 20px 20px 20px 20px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 
 .footerSection {
 color:  #FFFFFF;

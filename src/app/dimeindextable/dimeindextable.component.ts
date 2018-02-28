@@ -15,10 +15,11 @@ export class DimeindextableComponent {
     showYAxis = true;
     gradient = false;
     showLegend = false;
+    activeEntries = [{name: '2017-01-07', value: 804}];
     showXAxisLabel = true;
-    //xAxisLabel = 'Date';
+    xAxisLabel = 'Net Asset Value';
     timeline = true;
-    showYAxisLabel = true;
+    showYAxisLabel = false;
     yAxisLabel = 'Value';
     autoScale = true;
     colorScheme = {
@@ -56,7 +57,7 @@ export class DimeindextableComponent {
           var formatter = new Intl.NumberFormat('en-US', {
               style: 'currency',
               currency: 'USD',
-              minimumFractionDigits: 2,
+              minimumFractionDigits: 0,
               // the default value for minimumFractionDigits depends on the currency
               // and is usually already 2
           });
