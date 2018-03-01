@@ -34,10 +34,10 @@ export class Environment  {
     private REGISTER_VERIFY_URL: string;
     private CONTACTUS_URL: string;
 
-    private DIME: string;
     private DIME_PIE_CHART: string;
     private DIME_TABLE_CHART: string;
-    
+    private DIME_LINE_CHART: string;
+    private DIME_REBALANCE_DATES_AND_VALUES: string;
 
     constructor() {
         this.SECURE = 'https://';
@@ -90,9 +90,10 @@ export class Environment  {
         this.LOGIN_URL = this.API_URL.concat(this.API_PATH, '/o/token/');
         this.REGISTER_URL = this.API_URL.concat(this.API_PATH, '/register/');
         this.REGISTER_VERIFY_URL = this.API_URL.concat(this.API_PATH, '/register/verify/');
-        this.DIME = this.API_URL.concat(this.API_PATH, '/dime/');
+        this.DIME_LINE_CHART = this.API_URL.concat(this.API_PATH, '/dime/linechart/');
         this.DIME_TABLE_CHART = this.API_URL.concat(this.API_PATH, '/dime/tablechart/');
         this.DIME_PIE_CHART = this.API_URL.concat(this.API_PATH, '/dime/piechart/');
+        this.DIME_REBALANCE_DATES_AND_VALUES = this.API_URL.concat(this.API_PATH, '/dime/rebalancedatesandvalues/');
         this.CONTACTUS_URL = this.API_URL.concat(this.API_PATH, '/contactus/');
 
         this.global = {
@@ -114,10 +115,11 @@ export class Environment  {
             'API_HOSTNAME':         this.API_HOSTNAME,
             'API_PATH':             this.API_PATH,
             'CONTACTUS_URL':        this.CONTACTUS_URL,
-            'DIME':                 this.DIME,
             'NEWSLETTER_URL':       this.NEWSLETTER_URL,
             'LOGIN_URL':            this.LOGIN_URL,
+            'DIME_LINE_CHART':      this.DIME_LINE_CHART,
             'DIME_PIE_CHART':       this.DIME_PIE_CHART,
+            'DIME_REBALANCE_DATES_AND_VALUES': this.DIME_REBALANCE_DATES_AND_VALUES,
             'DIME_TABLE_CHART':     this.DIME_TABLE_CHART,
             'REGISTER_URL':         this.REGISTER_URL,
             'REGISTER_VERIFY_URL':  this.REGISTER_VERIFY_URL

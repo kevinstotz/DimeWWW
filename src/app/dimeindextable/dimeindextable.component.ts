@@ -10,12 +10,15 @@ import { AlertService, DimeService } from '../_services/index';
 export class DimeindextableComponent {
 
     multi: any[];
+    referenceLines = [];
     view = [1024, 600];
     showXAxis = true;
+    showRefLabels = true;
+    showRefLines = true;
     showYAxis = true;
     gradient = false;
     showLegend = false;
-    activeEntries = [{name: '2017-01-07', value: 804}];
+    private activeEntries : any[] = [];
     showXAxisLabel = true;
     xAxisLabel = 'Net Asset Value';
     timeline = true;
@@ -28,13 +31,26 @@ export class DimeindextableComponent {
 
 
     constructor(private dimeService: DimeService) {
+/*
+      this.dimeService.getRebalanceDatesAndValues()
+        .subscribe(
+            data => {
+              console.log(data);
+              this.activeEntries =  = [{name: "2017-03-23", value:"14.20", series: "value"}];
+            },
+            errorResponse => {
+              console.log(errorResponse);
+            }
+        );
+*/
+
         this.dimeService.getDime()
           .subscribe(
               data => {
                 var multi = [ {
-                    "name": "Value",
+                    "name": "value",
                     "series":  data } ];
-                Object.assign(this, {multi });
+                Object.assign(this, { multi });
               },
               errorResponse => {
                 console.log(errorResponse);
@@ -44,12 +60,13 @@ export class DimeindextableComponent {
         Object.assign(this, { multi });
     }
 
-
     xAxisTickFormatting(value){
       var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",  "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
       var date1 = new Date(value);
-      return monthNames[date1.getMonth()] + " " + date1.getFullYear();
-
+      if ((date1.getDate() >= 11) && (date1.getDate() <= 19))  {
+        return monthNames[date1.getMonth()] + " " + date1.getFullYear();
+      }
+      return "";
     }
 
     yAxisTickFormatting(value){

@@ -22,10 +22,14 @@ export class DimeService {
     }
 
     getDime() {
-        return this.http.get<Dime[]>(this.environment.api.DIME, this.httpOptions);
+        return this.http.get<Dime[]>(this.environment.api.DIME_LINE_CHART, this.httpOptions);
     }
 
     getTableChart() {
         return this.http.get<Dime[]>(this.environment.api.DIME_TABLE_CHART, this.httpOptions);
+    }
+
+    getRebalanceDatesAndValues() {
+        return this.http.get<Dime[]>(this.environment.api.DIME_REBALANCE_DATES_AND_VALUES, this.httpOptions);
     }
 }
