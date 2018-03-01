@@ -70,15 +70,17 @@ export class ContactComponent implements OnInit {
       this.contactus.name = this.contactusForm.get('firstname').value;
       this.contactus.subject = this.contactusForm.get('subject').value;
       this.contactus.message = this.contactusForm.get('message').value;
+      this.alertService.success("Sending...");
       this.contactusService.send(this.contactus).subscribe(
           (res: GenericResponse) => {
+            this.contactusForm.reset();
             console.log(res.message)
-            //this.displayDialog(res.message)
             this.alertService.success(res.message);
+
         },
           (err: HttpErrorResponse) => {
             console.log(err.error.message)
-          //  this.displayDialog(err.error.message)
+            this.alertService.error(err.error.message);
         }
       );
     }

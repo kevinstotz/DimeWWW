@@ -64,6 +64,7 @@ import { DimepiechartComponent } from './dimepiechart/index';
 import { SocialsigninComponent } from './socialsignin/index';
 import { ContactComponent } from './contact/index';
 import { DimetableComponent } from './dimetable/index';
+import { AffiliateComponent } from './affiliate/index';
 
 export function getAuthServiceConfigs() {
   let config = new AuthServiceConfig(
@@ -137,7 +138,8 @@ export function getAuthServiceConfigs() {
         DimepiechartComponent,
         SocialsigninComponent,
         ContactComponent,
-        DimetableComponent
+        DimetableComponent,
+        AffiliateComponent,
     ],
     entryComponents: [
         NewsletterResponseDialogComponent

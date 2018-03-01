@@ -13,6 +13,7 @@ import { DisclaimerComponent }    from './disclaimer/index';
 import { FaqComponent }           from './faq/index';
 import { PrivacypolicyComponent } from './privacypolicy/index';
 import { ContactComponent }       from './contact/index';
+import { AffiliateComponent }       from './affiliate/index';
 import { TermsAndConditionsComponent } from './terms-and-conditions/index';
 
 const appRoutes: Routes = [
@@ -27,6 +28,7 @@ const appRoutes: Routes = [
     { path: 'privacy', component: PrivacypolicyComponent },
     { path: 'toc', component: TermsAndConditionsComponent },
     { path: 'contact', component: ContactComponent },
+    { path: 'affiliate', component: AffiliateComponent },
     { path: 'faq', component: FaqComponent },
 
     // otherwise redirect to home

@@ -1,7 +1,7 @@
 
 <section class="bodyPartTwo">
 	<div class="container">
-    <div class="bodyInnerPage">
+    <div class="contactUsPage">
 			<br />
 			<div class="row">
 				<div class="col-sm-3 col-md-3 col-lg-3"></div>
@@ -11,7 +11,6 @@
 							<mat-card-title><h4>Contact Us</h4></mat-card-title>
 						</mat-card-header>
 						<mat-card-content>
-
             	<form [formGroup]="contactusForm" name="contactusForm" (ngSubmit)="sendContactUs(contactusForm)">
                       <mat-form-field class="card-full-width">
                             <input matInput placeholder="Your Name"
@@ -51,13 +50,14 @@
                           <mat-error *ngIf="contactusForm.controls.message.hasError('required')">Message is <strong>required</strong></mat-error>
                       </mat-form-field>
 											<input matInput formControlName="url">
-											<button class="text-right" mat-button type="submit" color="primary">SEND</button>
+											<button class="text-left" mat-button type="submit" color="primary">SEND</button><alert  class="text-right" ></alert>
 									</form>
 									</mat-card-content>
 								</mat-card>
 							</div>
-							<div class="col-sm-3 col-md-3 col-lg-3"></div>
-					</div>
-				</div>
+				<div class="col-sm-3 col-md-3 col-lg-3"></div>
+			</div>
+			<br>
 		</div>
+	</div>
 </section>

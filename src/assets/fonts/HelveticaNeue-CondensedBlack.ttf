@@ -18,8 +18,8 @@
 
 
 
-  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/frameworks-7a12427f1445.css" integrity="sha512-ehJCfxRFqU8Lt/+Hwc4cvp41sPisCp1U2d03SlbM3aKVZcxiYDTVmBsAtOVgAtZ912JFOebwrPXr/JcDNd6bGA==" media="all" rel="stylesheet" />
-  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-9a96827cb922.css" integrity="sha512-mpaCfLkiGm0lO5keG4/5ccr1UNm2O+bK5k1ucCQLBVM3EQIBwYScL9CWOnO78869J04UQzs2DQQxvhNg+3qw0g==" media="all" rel="stylesheet" />
+  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/frameworks-0f6ba847cd15.css" integrity="sha512-D2uoR80VmfpHSI7szLCCukwLuShI4R3x3Sqp/BW8Il1z7VA2Dwsj0kyuVqwpEWiQQAqh96GMvkCgUrb/0Q2yiA==" media="all" rel="stylesheet" />
+  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-e69c716227ac.css" integrity="sha512-5pxxYiesk23cPuI3C/lCUr7kR/LI3SYl5mMtgBFiwUjHBMJc03Fty4TzxGFlTJTlNmS3NL9lYIURAYDIKii6UA==" media="all" rel="stylesheet" />
   
   
   
@@ -27,19 +27,19 @@
 
   <meta name="viewport" content="width=device-width">
   
-  <title>edx-fonts/OpenSans-Bold.eot at master · edx/edx-fonts</title>
+  <title>Lifehacker.me/HelveticaNeue-CondensedBlack.ttf at master · adachis/Lifehacker.me</title>
   <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
   <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
   <meta property="fb:app_id" content="1401488693436528">
 
     
-    <meta content="https://avatars0.githubusercontent.com/u/3179841?s=400&amp;v=4" property="og:image" /><meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="edx/edx-fonts" property="og:title" /><meta content="https://github.com/edx/edx-fonts" property="og:url" /><meta content="edx-fonts - Fonts for use in edX projects" property="og:description" />
+    <meta content="https://avatars0.githubusercontent.com/u/327643?s=400&amp;v=4" property="og:image" /><meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="adachis/Lifehacker.me" property="og:title" /><meta content="https://github.com/adachis/Lifehacker.me" property="og:url" /><meta content="Lifehacker.me - Customizable, personal landing page" property="og:description" />
 
   <link rel="assets" href="https://assets-cdn.github.com/">
-  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MjMyOTE0NjA2OjU4ODVmMGQ2ODg0YzdiZDc3ZjM3YzYyMjczN2ZlZjM1ZDA1ZTY4MTg5NWRmZTFjZjY1MjUxYWE4ODkzMjEzZTM=--4e722c61cd6a47dc5e3119b57d40ef8400e40893">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MjMyOTE0NjA2OjRjZmVmOTZmMDdkNzMzZGJiMWQ2M2UyYzE3NTUwYTBhNjg5ZjQ3YWRmYTgyMzY5NDlhN2E0ZDgxYWY4MGE2MTc=--40b14294f22c2676a8fea57c5494245275cbb152">
   <meta name="pjax-timeout" content="1000">
   <link rel="sudo-modal" href="/sessions/sudo_modal">
-  <meta name="request-id" content="C97B:6BCA:A6F5C1:14C2F24:5A959282" data-pjax-transient>
+  <meta name="request-id" content="ECA2:1157:19D44BD:3220E06:5A9864EB" data-pjax-transient>
   
 
   <meta name="selected-link" value="repo_source" data-pjax-transient>
@@ -49,7 +49,7 @@
   <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
     <meta name="google-analytics" content="UA-3769691-2">
 
-<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="https://collector.githubapp.com/github-external/browser_event" name="octolytics-event-url" /><meta content="C97B:6BCA:A6F5C1:14C2F24:5A959282" name="octolytics-dimension-request_id" /><meta content="iad" name="octolytics-dimension-region_edge" /><meta content="iad" name="octolytics-dimension-region_render" /><meta content="649489" name="octolytics-actor-id" /><meta content="kevinstotz" name="octolytics-actor-login" /><meta content="005879798a08238524a75370ab04bc3909890bddc62906d904a326499e8de160" name="octolytics-actor-hash" />
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="https://collector.githubapp.com/github-external/browser_event" name="octolytics-event-url" /><meta content="ECA2:1157:19D44BD:3220E06:5A9864EB" name="octolytics-dimension-request_id" /><meta content="iad" name="octolytics-dimension-region_edge" /><meta content="iad" name="octolytics-dimension-region_render" /><meta content="649489" name="octolytics-actor-id" /><meta content="kevinstotz" name="octolytics-actor-login" /><meta content="005879798a08238524a75370ab04bc3909890bddc62906d904a326499e8de160" name="octolytics-actor-hash" />
 <meta content="https://github.com/hydro_browser_events" name="hydro-events-url" />
 <meta content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" name="analytics-location" />
 
@@ -65,24 +65,24 @@
     <meta name="user-login" content="kevinstotz">
 
       <meta name="expected-hostname" content="github.com">
-    <meta name="js-proxy-site-detection-payload" content="ZTExNzc3MDNjMGVmNmEyZjZhYTUzOTk0OTg0NTJjMjM5MWNkNjZmYmQyZTM4NGZlOWUzY2Q1YTcyYjdkOWVkN3x7InJlbW90ZV9hZGRyZXNzIjoiMjQuNjEuNDEuMjQ1IiwicmVxdWVzdF9pZCI6IkM5N0I6NkJDQTpBNkY1QzE6MTRDMkYyNDo1QTk1OTI4MiIsInRpbWVzdGFtcCI6MTUxOTc1MTgyMiwiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
+    <meta name="js-proxy-site-detection-payload" content="YzVmNDAyZDcxMmQzMTE4MDllZmQxNzNkNmIxNWU2YTVhYTdkNzdkMzAxNTNlZDdjZjM3ZTg5ZTk3MzM4ODA2ZXx7InJlbW90ZV9hZGRyZXNzIjoiMjQuNjEuNDEuMjQ1IiwicmVxdWVzdF9pZCI6IkVDQTI6MTE1NzoxOUQ0NEJEOjMyMjBFMDY6NUE5ODY0RUIiLCJ0aW1lc3RhbXAiOjE1MTk5MzY3NTEsImhvc3QiOiJnaXRodWIuY29tIn0=">
 
-    <meta name="enabled-features" content="UNIVERSE_BANNER,FREE_TRIALS,MARKETPLACE_HERO_CARD_UPLOADER,MARKETPLACE_INSIGHTS,MARKETPLACE_INSIGHTS_CONVERSION_PERCENTAGES">
+    <meta name="enabled-features" content="UNIVERSE_BANNER,FREE_TRIALS,MARKETPLACE_INSIGHTS,MARKETPLACE_INSIGHTS_CONVERSION_PERCENTAGES">
 
   <meta name="html-safe-nonce" content="65a7216f45b6245a774695996e8c7a5a0904ec6b">
 
-  <meta http-equiv="x-pjax-version" content="f55e36d043c8e7ec099d430ad5ed00ef">
+  <meta http-equiv="x-pjax-version" content="b270a7239bb130f5eacf786d31f572b3">
   
 
-      <link href="https://github.com/edx/edx-fonts/commits/master.atom" rel="alternate" title="Recent Commits to edx-fonts:master" type="application/atom+xml">
+      <link href="https://github.com/adachis/Lifehacker.me/commits/master.atom" rel="alternate" title="Recent Commits to Lifehacker.me:master" type="application/atom+xml">
 
-  <meta name="description" content="edx-fonts - Fonts for use in edX projects">
-  <meta name="go-import" content="github.com/edx/edx-fonts git https://github.com/edx/edx-fonts.git">
+  <meta name="description" content="Lifehacker.me - Customizable, personal landing page">
+  <meta name="go-import" content="github.com/adachis/Lifehacker.me git https://github.com/adachis/Lifehacker.me.git">
 
-  <meta content="3179841" name="octolytics-dimension-user_id" /><meta content="edx" name="octolytics-dimension-user_login" /><meta content="24600708" name="octolytics-dimension-repository_id" /><meta content="edx/edx-fonts" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="true" name="octolytics-dimension-repository_is_fork" /><meta content="24517321" name="octolytics-dimension-repository_parent_id" /><meta content="clintonb/edx-fonts" name="octolytics-dimension-repository_parent_nwo" /><meta content="24517321" name="octolytics-dimension-repository_network_root_id" /><meta content="clintonb/edx-fonts" name="octolytics-dimension-repository_network_root_nwo" /><meta content="false" name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" />
+  <meta content="327643" name="octolytics-dimension-user_id" /><meta content="adachis" name="octolytics-dimension-user_login" /><meta content="943274" name="octolytics-dimension-repository_id" /><meta content="adachis/Lifehacker.me" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="943274" name="octolytics-dimension-repository_network_root_id" /><meta content="adachis/Lifehacker.me" name="octolytics-dimension-repository_network_root_nwo" /><meta content="false" name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" />
 
 
-    <link rel="canonical" href="https://github.com/edx/edx-fonts/blob/master/open-sans/fonts/Bold/OpenSans-Bold.eot" data-pjax-transient>
+    <link rel="canonical" href="https://github.com/adachis/Lifehacker.me/blob/master/fonts/HelveticaNeue-CondensedBlack.ttf" data-pjax-transient>
 
 
   <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
@@ -131,9 +131,9 @@
       <div class="d-flex">
             <div class="">
               <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
-  <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/edx/edx-fonts/search" class="js-site-search-form" data-scoped-search-url="/edx/edx-fonts/search" data-unscoped-search-url="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/adachis/Lifehacker.me/search" class="js-site-search-form" data-scoped-search-url="/adachis/Lifehacker.me/search" data-unscoped-search-url="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
     <label class="form-control header-search-wrapper js-chromeless-input-container">
-        <a href="/edx/edx-fonts/blob/master/open-sans/fonts/Bold/OpenSans-Bold.eot" class="header-search-scope no-underline">This repository</a>
+        <a href="/adachis/Lifehacker.me/blob/master/fonts/HelveticaNeue-CondensedBlack.ttf" class="header-search-scope no-underline">This repository</a>
       <input type="text"
         class="form-control header-search-input js-site-search-focus js-site-search-field is-clearable"
         data-hotkey="s"
@@ -212,6 +212,13 @@
 
 
 
+  <div class="dropdown-divider"></div>
+  <div class="dropdown-header">
+    <span title="adachis/Lifehacker.me">This repository</span>
+  </div>
+    <a class="dropdown-item" href="/adachis/Lifehacker.me/issues/new" data-ga-click="Header, create new issue">
+      New issue
+    </a>
 
       </ul>
     </details>
@@ -252,7 +259,7 @@
           Settings
         </a></li>
 
-        <li><!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="logout-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="B8LBtXtQBTbVna85UpJQpSTpn1EzfbppuRRpoD2ZiW//mUh+GE0AiwmYYfDFgv/kEiE3D6cNE0VmRjPlnTB6Tw==" /></div>
+        <li><!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="logout-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="qU0V+ymWkGS+zhCrEpc2C24HeLVd+GqMPXDY1Y/V5DBRFpwwSouV2WLL3mKFh5lKWM/Q68mIw6DiIoKQL3wXEA==" /></div>
           <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
             Sign out
           </button>
@@ -264,7 +271,7 @@
 
 
 
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="sr-only right-0" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="QMXUdB9wz+gbUqDT2gJtBOrB6qeVZffaMTlc7+xDLZS4nl2/fG3KVcdXbhpNEsJF3AlC+QEVXvbuawaqTOretA==" /></div>
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="sr-only right-0" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="4jqVKTKSmtxnkxZG5JkgkZFFmusuCXzQOGvZy74j7McaYRziUY+fYbuW2I9ziY/Qp40ytbp51fznOYOOHoof5w==" /></div>
           <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
             Sign out
           </button>
@@ -293,8 +300,6 @@
 
 
 
-  
-
 
 
   <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav  ">
@@ -302,10 +307,10 @@
 
       <ul class="pagehead-actions">
   <li>
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="Uuufu93RY3ueK2FE7ezdHX47m+2JhN9/0wotWD8V18MZVa23PcDyn0od4dVifN7ajY+o2e2W6lAmu27sVwYggg==" /></div>      <input class="form-control" id="repository_id" name="repository_id" type="hidden" value="24600708" />
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="V7lh17E7tlVVlE8GAgucHWxXhNlNhyEe9ouQaXSmMKMcB1PbUSonsYGiz5eNm5/an+O37SmVFDEDOtPdHLXH4g==" /></div>      <input class="form-control" id="repository_id" name="repository_id" type="hidden" value="943274" />
 
         <div class="select-menu js-menu-container js-select-menu">
-          <a href="/edx/edx-fonts/subscription"
+          <a href="/adachis/Lifehacker.me/subscription"
             class="btn btn-sm btn-with-count select-menu-button js-menu-target"
             role="button"
             aria-haspopup="true"
@@ -318,9 +323,9 @@
             </span>
           </a>
           <a class="social-count js-social-count"
-            href="/edx/edx-fonts/watchers"
-            aria-label="116 users are watching this repository">
-            116
+            href="/adachis/Lifehacker.me/watchers"
+            aria-label="9 users are watching this repository">
+            9
           </a>
 
         <div class="select-menu-modal-holder">
@@ -382,67 +387,64 @@
   <li>
     
   <div class="js-toggler-container js-social-container starring-container ">
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/edx/edx-fonts/unstar" class="starred js-social-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="Kcv8cWV16jEFgnQjw0OvQgs1q9ZfTFASe9slgv4LK9Mm+3B9S1cZL4wkbBi7FQrXnEKK+knTVdv/oZ7HXvCTfw==" /></div>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/adachis/Lifehacker.me/unstar" class="starred js-social-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="IdggZDjzs6XncpstOnB5HSw0OZxGcdPBaykxfMllcRkDsq6vE+CNn2GF7n4bppAUUWTv2oqIegtk9DbsiQA9bw==" /></div>
       <input type="hidden" name="context" value="repository"></input>
       <button
         type="submit"
         class="btn btn-sm btn-with-count js-toggler-target"
-        aria-label="Unstar this repository" title="Unstar edx/edx-fonts"
+        aria-label="Unstar this repository" title="Unstar adachis/Lifehacker.me"
         data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar">
         <svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"/></svg>
         Unstar
       </button>
-        <a class="social-count js-social-count" href="/edx/edx-fonts/stargazers"
-           aria-label="3 users starred this repository">
-          3
+        <a class="social-count js-social-count" href="/adachis/Lifehacker.me/stargazers"
+           aria-label="87 users starred this repository">
+          87
         </a>
 </form>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/edx/edx-fonts/star" class="unstarred js-social-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="xK4lM/hERkbCWRweKkx839hmq2k7Cl1HaWtl2Sg2QChh8MQi5ggOhTgEP3LtAtbwAVs14S/Tmg5kt6NlGOO1gQ==" /></div>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/adachis/Lifehacker.me/star" class="unstarred js-social-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="/KSTTHbb9zM+ZVqH9F07M3KjlW/OCcOBSDyFBxIDsm7vRj6VpOiwkRulGlmkDleI3xjWKyjEnHB802BSeb2v8w==" /></div>
       <input type="hidden" name="context" value="repository"></input>
       <button
         type="submit"
         class="btn btn-sm btn-with-count js-toggler-target"
-        aria-label="Star this repository" title="Star edx/edx-fonts"
+        aria-label="Star this repository" title="Star adachis/Lifehacker.me"
         data-ga-click="Repository, click star button, action:blob#show; text:Star">
         <svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"/></svg>
         Star
       </button>
-        <a class="social-count js-social-count" href="/edx/edx-fonts/stargazers"
-           aria-label="3 users starred this repository">
-          3
+        <a class="social-count js-social-count" href="/adachis/Lifehacker.me/stargazers"
+           aria-label="87 users starred this repository">
+          87
         </a>
 </form>  </div>
 
   </li>
 
   <li>
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/edx/edx-fonts/fork" class="btn-with-count" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="i1CaHTLYHR0JyVku9VgzwXImwO+wPyLQWvhZZA6tdez55kntrrZWr25d/OmdbvTlwz4xnMJNZrzAMvXhhk6FXQ==" /></div>
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/adachis/Lifehacker.me/fork" class="btn-with-count" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="eUZ7C0HcM7/15qfP+Q/LRFSfBVRYHzKDrKuzr23VQdtSMnXy8GMTi0Xd96bFKgHHmK1ueSbdqdYJsRhaImN7eQ==" /></div>
             <button
                 type="submit"
                 class="btn btn-sm btn-with-count"
                 data-ga-click="Repository, show fork modal, action:blob#show; text:Fork"
-                title="Fork your own copy of edx/edx-fonts to your account"
-                aria-label="Fork your own copy of edx/edx-fonts to your account">
+                title="Fork your own copy of adachis/Lifehacker.me to your account"
+                aria-label="Fork your own copy of adachis/Lifehacker.me to your account">
               <svg aria-hidden="true" class="octicon octicon-repo-forked" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
               Fork
             </button>
 </form>
-    <a href="/edx/edx-fonts/network" class="social-count"
-       aria-label="5 users forked this repository">
-      5
+    <a href="/adachis/Lifehacker.me/network" class="social-count"
+       aria-label="2 users forked this repository">
+      2
     </a>
   </li>
 </ul>
 
       <h1 class="public ">
-  <svg aria-hidden="true" class="octicon octicon-repo-forked" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
-  <span class="author" itemprop="author"><a href="/edx" class="url fn" rel="author">edx</a></span><!--
+  <svg aria-hidden="true" class="octicon octicon-repo" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+  <span class="author" itemprop="author"><a href="/adachis" class="url fn" rel="author">adachis</a></span><!--
 --><span class="path-divider">/</span><!--
---><strong itemprop="name"><a href="/edx/edx-fonts" data-pjax="#js-repo-pjax-container">edx-fonts</a></strong>
+--><strong itemprop="name"><a href="/adachis/Lifehacker.me" data-pjax="#js-repo-pjax-container">Lifehacker.me</a></strong>
 
-    <span class="fork-flag">
-      <span class="text">forked from <a href="/clintonb/edx-fonts">clintonb/edx-fonts</a></span>
-    </span>
 </h1>
 
     </div>
@@ -454,32 +456,39 @@
      data-pjax="#js-repo-pjax-container">
 
   <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
-    <a href="/edx/edx-fonts" class="js-selected-navigation-item selected reponav-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /edx/edx-fonts" itemprop="url">
+    <a href="/adachis/Lifehacker.me" class="js-selected-navigation-item selected reponav-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /adachis/Lifehacker.me" itemprop="url">
       <svg aria-hidden="true" class="octicon octicon-code" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg>
       <span itemprop="name">Code</span>
       <meta itemprop="position" content="1">
 </a>  </span>
 
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a href="/adachis/Lifehacker.me/issues" class="js-selected-navigation-item reponav-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /adachis/Lifehacker.me/issues" itemprop="url">
+        <svg aria-hidden="true" class="octicon octicon-issue-opened" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+        <span itemprop="name">Issues</span>
+        <span class="Counter">1</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
 
   <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
-    <a href="/edx/edx-fonts/pulls" class="js-selected-navigation-item reponav-item" data-hotkey="g p" data-selected-links="repo_pulls checks /edx/edx-fonts/pulls" itemprop="url">
+    <a href="/adachis/Lifehacker.me/pulls" class="js-selected-navigation-item reponav-item" data-hotkey="g p" data-selected-links="repo_pulls checks /adachis/Lifehacker.me/pulls" itemprop="url">
       <svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
       <span itemprop="name">Pull requests</span>
-      <span class="Counter">0</span>
+      <span class="Counter">1</span>
       <meta itemprop="position" content="3">
 </a>  </span>
 
-    <a href="/edx/edx-fonts/projects" class="js-selected-navigation-item reponav-item" data-hotkey="g b" data-selected-links="repo_projects new_repo_project repo_project /edx/edx-fonts/projects">
+    <a href="/adachis/Lifehacker.me/projects" class="js-selected-navigation-item reponav-item" data-hotkey="g b" data-selected-links="repo_projects new_repo_project repo_project /adachis/Lifehacker.me/projects">
       <svg aria-hidden="true" class="octicon octicon-project" height="16" version="1.1" viewBox="0 0 15 16" width="15"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
       Projects
       <span class="Counter" >0</span>
 </a>
-    <a href="/edx/edx-fonts/wiki" class="js-selected-navigation-item reponav-item" data-hotkey="g w" data-selected-links="repo_wiki /edx/edx-fonts/wiki">
+    <a href="/adachis/Lifehacker.me/wiki" class="js-selected-navigation-item reponav-item" data-hotkey="g w" data-selected-links="repo_wiki /adachis/Lifehacker.me/wiki">
       <svg aria-hidden="true" class="octicon octicon-book" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"/></svg>
       Wiki
 </a>
 
-  <a href="/edx/edx-fonts/pulse" class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph pulse /edx/edx-fonts/pulse">
+  <a href="/adachis/Lifehacker.me/pulse" class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph pulse /adachis/Lifehacker.me/pulse">
     <svg aria-hidden="true" class="octicon octicon-graph" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg>
     Insights
 </a>
@@ -493,11 +502,11 @@
   <div class="repository-content ">
 
     
-  <a href="/edx/edx-fonts/blob/6532b62e94a03fe2ee69e7500dbe241fd8c1f466/open-sans/fonts/Bold/OpenSans-Bold.eot" class="d-none js-permalink-shortcut" data-hotkey="y">Permalink</a>
+  <a href="/adachis/Lifehacker.me/blob/e981951fa503d240effd3852bf86ec767bd1a111/fonts/HelveticaNeue-CondensedBlack.ttf" class="d-none js-permalink-shortcut" data-hotkey="y">Permalink</a>
 
-  <!-- blob contrib key: blob_contributors:v21:873fac0a56bbdd8064e91a4ca29b167b -->
+  <!-- blob contrib key: blob_contributors:v21:aec92e541f1009a6becacf298ff222da -->
 
-  <div class="file-navigation js-zeroclipboard-container">
+  <div class="file-navigation">
     
 <div class="select-menu branch-select-menu js-menu-container js-select-menu float-left">
   <button class=" btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
@@ -536,18 +545,8 @@
         <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
 
 
-            <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/edx/edx-fonts/blob/gh-pages/open-sans/fonts/Bold/OpenSans-Bold.eot"
-               data-name="gh-pages"
-               data-skip-pjax="true"
-               rel="nofollow">
-              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
-              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
-                gh-pages
-              </span>
-            </a>
             <a class="select-menu-item js-navigation-item js-navigation-open selected"
-               href="/edx/edx-fonts/blob/master/open-sans/fonts/Bold/OpenSans-Bold.eot"
+               href="/adachis/Lifehacker.me/blob/master/fonts/HelveticaNeue-CondensedBlack.ttf"
                data-name="master"
                data-skip-pjax="true"
                rel="nofollow">
@@ -575,71 +574,55 @@
 </div>
 
     <div class="BtnGroup float-right">
-      <a href="/edx/edx-fonts/find/master"
+      <a href="/adachis/Lifehacker.me/find/master"
             class="js-pjax-capture-input btn btn-sm BtnGroup-item"
             data-pjax
             data-hotkey="t">
         Find file
       </a>
-      <button aria-label="Copy file path to clipboard" class="js-zeroclipboard btn btn-sm BtnGroup-item tooltipped tooltipped-s" data-copied-hint="Copied!" type="button">Copy path</button>
+      <clipboard-copy
+            for="blob-path"
+            role="button"
+            aria-label="Copy file path to clipboard"
+            class="btn btn-sm BtnGroup-item tooltipped tooltipped-s"
+            data-copied-hint="Copied!">
+        Copy path
+      </clipboard-copy>
     </div>
-    <div class="breadcrumb js-zeroclipboard-target">
-      <span class="repo-root js-repo-root"><span class="js-path-segment"><a href="/edx/edx-fonts" data-pjax="true"><span>edx-fonts</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a href="/edx/edx-fonts/tree/master/open-sans" data-pjax="true"><span>open-sans</span></a></span><span class="separator">/</span><span class="js-path-segment"><a href="/edx/edx-fonts/tree/master/open-sans/fonts" data-pjax="true"><span>fonts</span></a></span><span class="separator">/</span><span class="js-path-segment"><a href="/edx/edx-fonts/tree/master/open-sans/fonts/Bold" data-pjax="true"><span>Bold</span></a></span><span class="separator">/</span><strong class="final-path">OpenSans-Bold.eot</strong>
+    <div id="blob-path" class="breadcrumb">
+      <span class="repo-root js-repo-root"><span class="js-path-segment"><a href="/adachis/Lifehacker.me" data-pjax="true"><span>Lifehacker.me</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a href="/adachis/Lifehacker.me/tree/master/fonts" data-pjax="true"><span>fonts</span></a></span><span class="separator">/</span><strong class="final-path">HelveticaNeue-CondensedBlack.ttf</strong>
     </div>
   </div>
 
 
-  
-  <div class="commit-tease">
-      <span class="float-right">
-        <a class="commit-tease-sha" href="/edx/edx-fonts/commit/74374600032aeae1012342262d319078ca70ddfd" data-pjax>
-          7437460
-        </a>
-        <relative-time datetime="2014-09-27T03:30:54Z">Sep 27, 2014</relative-time>
-      </span>
-      <div>
-        <img alt="@clintonb" class="avatar" height="20" src="https://avatars2.githubusercontent.com/u/910510?s=40&amp;v=4" width="20" />
-        <a href="/clintonb" class="user-mention" rel="contributor">clintonb</a>
-          <a href="/edx/edx-fonts/commit/74374600032aeae1012342262d319078ca70ddfd" class="message" data-pjax="true" title="Added Montserrat and Open Sans">Added Montserrat and Open Sans</a>
-      </div>
+  <include-fragment class="commit-tease" src="/adachis/Lifehacker.me/contributors/master/fonts/HelveticaNeue-CondensedBlack.ttf">
+    <div>
+      Fetching contributors&hellip;
+    </div>
 
     <div class="commit-tease-contributors">
-      <button type="button" class="btn-link muted-link contributors-toggle" data-facebox="#blob_contributors_box">
-        <strong>1</strong>
-         contributor
-      </button>
-      
+      <img alt="" class="loader-loading float-left" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32-EAF2F5.gif" width="16" />
+      <span class="loader-error">Cannot retrieve contributors at this time</span>
     </div>
-
-    <div id="blob_contributors_box" style="display:none">
-      <h2 class="facebox-header" data-facebox-id="facebox-header">Users who have contributed to this file</h2>
-      <ul class="facebox-user-list" data-facebox-id="facebox-description">
-          <li class="facebox-user-list-item">
-            <img alt="@clintonb" height="24" src="https://avatars3.githubusercontent.com/u/910510?s=48&amp;v=4" width="24" />
-            <a href="/clintonb">clintonb</a>
-          </li>
-      </ul>
-    </div>
-  </div>
-
+</include-fragment>
 
   <div class="file">
     <div class="file-header">
   <div class="file-actions">
 
     <div class="BtnGroup">
-      <a href="/edx/edx-fonts/raw/master/open-sans/fonts/Bold/OpenSans-Bold.eot" class="btn btn-sm BtnGroup-item" id="raw-url">Download</a>
-      <a href="/edx/edx-fonts/commits/master/open-sans/fonts/Bold/OpenSans-Bold.eot" class="btn btn-sm BtnGroup-item" rel="nofollow">History</a>
+      <a href="/adachis/Lifehacker.me/raw/master/fonts/HelveticaNeue-CondensedBlack.ttf" class="btn btn-sm BtnGroup-item" id="raw-url">Download</a>
+      <a href="/adachis/Lifehacker.me/commits/master/fonts/HelveticaNeue-CondensedBlack.ttf" class="btn btn-sm BtnGroup-item" rel="nofollow">History</a>
     </div>
 
         <a class="btn-octicon tooltipped tooltipped-nw"
-           href="x-github-client://openRepo/https://github.com/edx/edx-fonts?branch=master&amp;filepath=open-sans%2Ffonts%2FBold%2FOpenSans-Bold.eot"
+           href="x-github-client://openRepo/https://github.com/adachis/Lifehacker.me?branch=master&amp;filepath=fonts%2FHelveticaNeue-CondensedBlack.ttf"
            aria-label="Open this file in GitHub Desktop"
            data-ga-click="Repository, open with desktop, type:windows">
             <svg aria-hidden="true" class="octicon octicon-device-desktop" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"/></svg>
         </a>
 
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/edx/edx-fonts/delete/master/open-sans/fonts/Bold/OpenSans-Bold.eot" class="inline-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="FFJQwH7ddTcxTjI2LUN7yZy/bFwqlKHzFJE3YfkPIatedv91rn6xZ3GGzZgap6EaPdI4b46EkuXxyQ3cgm2yOg==" /></div>
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/adachis/Lifehacker.me/delete/master/fonts/HelveticaNeue-CondensedBlack.ttf" class="inline-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="pvJfuYQW9yIpiHh7D6aMNCDJf0um3K38x+ajonBX7L8AA2vpRTvGIdoV3H22Se1NTOauGwdTo0tERlNBnjREKg==" /></div>
           <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
             aria-label="Fork this project and delete the file" data-disable-with>
             <svg aria-hidden="true" class="octicon octicon-trashcan" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
@@ -647,7 +630,7 @@
 </form>  </div>
 
   <div class="file-info">
-    108 KB
+    106 KB
   </div>
 </div>
 
@@ -655,7 +638,7 @@
 
   <div itemprop="text" class="blob-wrapper data type-text">
       <div class="image">
-          <a href="/edx/edx-fonts/blob/master/open-sans/fonts/Bold/OpenSans-Bold.eot?raw=true">View Raw</a>
+          <a href="/adachis/Lifehacker.me/blob/master/fonts/HelveticaNeue-CondensedBlack.ttf?raw=true">View Raw</a>
       </div>
   </div>
 
@@ -682,7 +665,7 @@
 <div class="footer container-lg px-3" role="contentinfo">
   <div class="position-relative d-flex flex-justify-between py-6 mt-6 f6 text-gray border-top border-gray-light ">
     <ul class="list-style-none d-flex flex-wrap ">
-      <li class="mr-3">&copy; 2018 <span title="0.21053s from unicorn-3116958828-csk2w">GitHub</span>, Inc.</li>
+      <li class="mr-3">&copy; 2018 <span title="0.42537s from unicorn-2526684393-np0w4">GitHub</span>, Inc.</li>
         <li class="mr-3"><a href="https://help.github.com/articles/github-terms-of-service/" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
         <li class="mr-3"><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
         <li class="mr-3"><a href="https://help.github.com/articles/github-security/" data-ga-click="Footer, go to security, text:security">Security</a></li>
@@ -717,9 +700,9 @@
 
 
     
-    <script crossorigin="anonymous" integrity="sha512-ayq/dv5ggrTCJCGJ3tUwJSkbgdCXSV0/Vd014mYmtEkp2VUu+FbmFS9l5LYzOHfDIRF9MoSKhcbzc4sYWZ3RiA==" src="https://assets-cdn.github.com/assets/frameworks-6b2abf76fe60.js" type="application/javascript"></script>
+    <script crossorigin="anonymous" integrity="sha512-8hfks50vcmA+MqfsLFujoYKb7mZVTcRD7AWco96d0D0vNbr3mfZYOPfFuHRKvHoM+oAMV6RWLjaZgzvfoXjwFw==" src="https://assets-cdn.github.com/assets/frameworks-f217e4b39d2f.js" type="application/javascript"></script>
     
-    <script async="async" crossorigin="anonymous" integrity="sha512-DdAh2A7275VvvYV+NmSPxuw74vz/jdvbgcYyiQ45WAsT6gq43F+aEBvv7p2NS1Y8IH9Ht0iuGIvTuzT3BGholQ==" src="https://assets-cdn.github.com/assets/github-0dd021d80ef6.js" type="application/javascript"></script>
+    <script async="async" crossorigin="anonymous" integrity="sha512-M1nddtpwIFxDGNscjlDwTXcMaxMnZK3TUm9P1ht1Gv+7iqQLM/ol9bUf0lZaXU2qbVpLFKV5ms443Ib8JkDBKA==" src="https://assets-cdn.github.com/assets/github-3359dd76da70.js" type="application/javascript"></script>
     
     
     

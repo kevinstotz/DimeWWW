@@ -16,7 +16,7 @@ h6.color-secondary,
 .h3.color-secondary,
 .h4.color-secondary,
 .h5.color-secondary,
-.h6.color-secondary {
+.h6.color-secondary {<h3><u>Keep It Simple</u></h3>
 	color: #21b082
 }
 
@@ -690,7 +690,8 @@ a:active {
 }
 .banner-text {
 	align-content: center;
-	font-size: 24px;
+	font-size: 26px;
+	font-family: Helvetica;
 	padding: 40px 20px 40px 20px;
 }
 .banner-btn {
@@ -729,7 +730,7 @@ border-top-color: #999 !important;
 	background-color: #f8f8f8;
 }
 .partFourBox {
-padding: 20px 20px 20px 20px;
+	padding: 20px 20px 20px 20px;
 }
 
 /*      body part 5 SECTION  */
@@ -765,7 +766,7 @@ padding: 20px 20px 20px 20px;
 	margin-bottom:30px;
 }
 .meetTeam {padding:50px 0px 30px 0px;}
-.meetTeam h3 {font-size:36px; line-height:36px; color:#2d2d2d; padding-bottom:40px; text-align:center;}
+.meetTeam h3 {color:#2d2d2d; padding-bottom:40px; text-align:center;}
 
 .teamBoxPic {
 	height: 100px;
@@ -792,10 +793,18 @@ padding: 20px 20px 20px 20px;
 	-webkit-transform: translate(-50%,-50%);
 	-moz-transform: translate(-50%,-50%);
 }
-
+.contactUsPage {
+	text-align: center;
+	max-width: 100%;
+}
 
 .footerSection {
 color:  #FFFFFF;
 padding: 20px 20px 20px 20px;
 background-color: #3c3c3c;
+}
+
+.social-card {
+	padding: 20px 20px 20px 20px;
+
 }
