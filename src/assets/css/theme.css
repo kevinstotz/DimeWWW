@@ -746,12 +746,12 @@ padding: 20px 20px 20px 20px;
 
 
 .bodyPartSix {
-	padding: 10px 10px 20px 20px;
+	padding: 10px 10px 0px 20px;
 	height: 500;
 	background-color: #f8f8f8;
 }
 .partSixBox {
-	padding: 20px 20px 20px 20px;
+	padding: 20px 20px 0px 20px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -765,7 +765,7 @@ padding: 20px 20px 20px 20px;
 	text-align:center;
 	margin-bottom:30px;
 }
-.meetTeam {padding:50px 0px 30px 0px;}
+.meetTeam {padding:20px 0px 30px 0px;}
 .meetTeam h3 {color:#2d2d2d; padding-bottom:40px; text-align:center;}
 
 .teamBoxPic {
