@@ -20,10 +20,10 @@ export class DimeindextableComponent {
     showLegend = false;
     private activeEntries : any[] = [];
     showXAxisLabel = true;
-    xAxisLabel = 'Net Asset Value';
+    xAxisLabel = '';
     timeline = true;
     showYAxisLabel = false;
-    yAxisLabel = 'Value';
+    yAxisLabel = 'Net Asset Value';
     autoScale = true;
     colorScheme = {
         domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA']

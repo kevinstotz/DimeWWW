@@ -15,6 +15,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { LoadingModule } from 'ngx-loading';
 //Ngx-Charts
 import {NgxChartsModule} from '@swimlane/ngx-charts';
+import { Chart } from 'chart.js';
 
 import {
     SocialLoginModule,
@@ -65,6 +66,7 @@ import { SocialsigninComponent } from './socialsignin/index';
 import { ContactComponent } from './contact/index';
 import { DimetableComponent } from './dimetable/index';
 import { AffiliateComponent } from './affiliate/index';
+import { DimelineComponent } from './dimeline/index';
 
 export function getAuthServiceConfigs() {
   let config = new AuthServiceConfig(
@@ -140,6 +142,7 @@ export function getAuthServiceConfigs() {
         ContactComponent,
         DimetableComponent,
         AffiliateComponent,
+        DimelineComponent,
     ],
     entryComponents: [
         NewsletterResponseDialogComponent
