@@ -706,6 +706,7 @@ a:active {
 	background-color: #f8f8f8;
 }
 .partTwoBox {
+
 }
 
 
@@ -741,13 +742,13 @@ border-top-color: #999 !important;
 	background-color: #f8f8f8;
 }
 .partFiveBox {
-padding: 20px 20px 20px 20px;
+	padding: 20px 20px 20px 20px;
 }
 
 
 .bodyPartSix {
 	padding: 10px 10px 0px 20px;
-	height: 500;
+	height: 600;
 	background-color: #f8f8f8;
 }
 .partSixBox {

@@ -10,29 +10,44 @@ import { AlertService, DimeService } from '../_services/index';
 })
 
 export class DimelineComponent implements OnInit {
-  private chart : Chart;
-  private dimeDates = ["Value", "Date"];
+  private lineChart : Chart;
+  private lineLabels : any[] = [];
+  private lineData : number[] = [];
+  private lineOptions : object = {
+     title: {
+       display: false,
+         text: 'Composition of The Dime'
+     },
+     scales: {
+           xAxes: [{
+               type: 'time',
+               distribution: 'series',
+               time: {
+                    displayFormats: {
+                        quarter: 'MMM YYYY'
+                    }
+                }
+           }]
+       },
+       tooltips: {}
+  };
 
-
+  private lineDataObject : object = {
+    type: 'line',
+    data: {
+        labels: [],
+        datasets: [{
+            data: '',
+            label: '',
+            borderColor: "#3e95cd",
+            fill: false
+        }]
+     },
+     options: this.lineOptions
+  };
 
   constructor(private dimeService: DimeService) {
-  }
 
-  deserialize(json, clazz) {
-      var instance = new clazz();
-      for(var prop in json) {
-          if(!json.hasOwnProperty(prop)) {
-              continue;
-          }
-
-          if(typeof json[prop] === 'object') {
-              instance[prop] = this.deserialize(json[prop], clazz);
-          } else {
-              instance[prop] = json[prop];
-          }
-      }
-
-      return instance;
   }
 
   ngOnInit() {}
@@ -40,33 +55,20 @@ export class DimelineComponent implements OnInit {
   ngAfterViewInit() {
     var items: any[] = [];
     var objs : object = {};
+    var dateLabels : Date[] = [];
+
     this.dimeService.getDime()
       .subscribe(
           data => {
             for (var i = 0; i < data.length; i++) {
-              var obj = data[i];
-              objs['x'] = new Date(obj.name);
-              objs['y'] = <number> obj.value;
-              console.log(objs);
-              items.push(objs);
+                var obj = data[i];
+                dateLabels[i] = new Date(obj.name);
+                this.lineData[i]  = obj.value;
             }
-            this.chart = new Chart('canvas', {
-                type: 'line',
-                data: [items],
-                options: {
-                  legend: {
-                    display: true
-                  },
-                  scales: {
-                    xAxes: [{
-                      display: true
-                    }],
-                    yAxes: [{
-                      display: true
-                    }],
-                  }
-                }
-              });
+
+            this.lineDataObject['data']['labels'] = dateLabels;
+            this.lineDataObject['data']['datasets'] = [{ data: this.lineData, label: 'The DIME', borderColor: "#3e95cd", fill: false }];
+            this.lineChart = new Chart('line-chart', this.lineDataObject ) ;
           },
           errorResponse => {
             console.log(errorResponse);

@@ -22,7 +22,7 @@ export class DimeindextableComponent {
     showXAxisLabel = true;
     xAxisLabel = '';
     timeline = true;
-    showYAxisLabel = false;
+    showYAxisLabel = true;
     yAxisLabel = 'Net Asset Value';
     autoScale = true;
     colorScheme = {
