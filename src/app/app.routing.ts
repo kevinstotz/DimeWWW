@@ -28,7 +28,7 @@ const appRoutes: Routes = [
     { path: 'privacy', component: PrivacypolicyComponent },
     { path: 'toc', component: TermsAndConditionsComponent },
     { path: 'contact', component: ContactComponent },
-    { path: 'affiliate', component: AffiliateComponent },
+    { path: 'affiliates', component: AffiliateComponent },
     { path: 'faq', component: FaqComponent },
 
     // otherwise redirect to home

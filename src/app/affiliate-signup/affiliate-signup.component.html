@@ -1,0 +1,61 @@
+
+
+					<mat-card class="register-card">
+						<mat-card-header>
+							<mat-card-title><h4>Affiliate Signup</h4></mat-card-title>
+							<mat-card-subtitle><h6><alert></alert></h6></mat-card-subtitle>
+						</mat-card-header>
+						<mat-card-content>
+							<form [formGroup]="registerAffiliateForm" name="registerAffiliateForm" (ngSubmit)="registerAffiliate(registerAffiliateForm)">
+
+									<mat-form-field class="card-full-width">
+												<input matInput placeholder="Company Name"
+															formControlName="companyName">
+											<mat-hint></mat-hint>
+											<mat-error *ngIf=" !registerAffiliateForm.controls.companyName.hasError('required')">Please enter a Company</mat-error>
+											<mat-error *ngIf="registerAffiliateForm.controls.companyName.hasError('required')">Company is <strong>required</strong></mat-error>
+									</mat-form-field>
+
+        					<mat-form-field class="card-full-width">
+												<input matInput placeholder="First Name"
+															formControlName="firstName">
+											<mat-hint></mat-hint>
+											<mat-error *ngIf=" !registerAffiliateForm.controls.firstName.hasError('required')">Please enter a valid First name</mat-error>
+											<mat-error *ngIf="registerAffiliateForm.controls.firstName.hasError('required')">First Name is <strong>required</strong></mat-error>
+									</mat-form-field>
+
+									<mat-form-field class="card-full-width">
+												<input matInput placeholder="Last Name"
+															formControlName="lastName">
+											<mat-hint></mat-hint>
+											<mat-error *ngIf=" !registerAffiliateForm.controls.lastName.hasError('required')">Please enter a valid Last name</mat-error>
+											<mat-error *ngIf="registerAffiliateForm.controls.lastName.hasError('required')">Last Name is <strong>required</strong></mat-error>
+									</mat-form-field>
+
+									<mat-form-field class="card-full-width">
+												<input matInput placeholder="Email"
+															formControlName="email">
+											<mat-hint></mat-hint>
+											<mat-error *ngIf=" !registerAffiliateForm.controls.email.hasError('required')">Please enter a valid email</mat-error>
+											<mat-error *ngIf="registerAffiliateForm.controls.email.hasError('required')">Email is <strong>required</strong></mat-error>
+									</mat-form-field>
+
+                  <mat-form-field class="card-full-width">
+												<input matInput placeholder="Zipcode"
+															[errorStateMatcher]="matcher"
+															formControlName="zipCode">
+											<mat-hint>5 digits</mat-hint>
+											<mat-error *ngIf=" !registerAffiliateForm.controls.zipCode.hasError('required')">Please enter a valid zipcode</mat-error>
+											<mat-error *ngIf="registerAffiliateForm.controls.zipCode.hasError('required')">Zipcode is <strong>required</strong></mat-error>
+									</mat-form-field>
+
+									<input matInput formControlName="url">
+									<div>
+                    <alert></alert>
+										<button class="pull-right" mat-button type="submit" color="primary">Register</button>
+										<br /><br />
+									</div>
+
+	          </form>
+						</mat-card-content>
+					</mat-card>

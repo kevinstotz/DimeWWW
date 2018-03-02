@@ -41,7 +41,7 @@ export class DimepiechartComponent implements OnInit {
             for (var i = 0; i < data.length; i++) {
                  var obj = data[i];
                  items[i] = +obj.value;
-                 labels[i] = obj.name;
+                 labels[i] = String(obj.name);
             }
             pieData['datasets'] = [{
                 data: items,

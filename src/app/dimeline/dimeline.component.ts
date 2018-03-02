@@ -11,25 +11,72 @@ import { AlertService, DimeService } from '../_services/index';
 
 export class DimelineComponent implements OnInit {
   private lineChart : Chart;
+  public displayData : Object = { name: "kevin", value: 94, timestamp: 43 };
   private lineLabels : any[] = [];
   private lineData : number[] = [];
+
   private lineOptions : object = {
      title: {
        display: false,
          text: 'Composition of The Dime'
      },
      scales: {
-           xAxes: [{
+          xAxes: [
+             {
                type: 'time',
                distribution: 'series',
                time: {
                     displayFormats: {
                         quarter: 'MMM YYYY'
+                      }
                     }
+              }
+            ],
+          yAxes: [
+            {
+              ticks: {
+                    callback: function(label, index, labels) {
+                        return '$'+label/1000+'k';
+                    }
+                },
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Net Asset Value'
                 }
-           }]
-       },
-       tooltips: {}
+            }
+          ]
+     },
+     tooltips: {
+       xPadding: 8,
+       yPadding: 8,
+       borderWidth: 2,
+       intersect: false,
+       callbacks: {
+                label: function(tooltipItem, data) {
+                  var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                  var dateObject = new Date(data['labels'][tooltipItem.index]);
+                  var label = document.getElementById("date").innerHTML = 'Date: ' + months[dateObject.getMonth()] + ' ' + dateObject.getDate() + ', ' + dateObject.getFullYear();
+                  var value = parseFloat(data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index]);
+                  value = document.getElementById("value").innerHTML = 'Value: $' + value.toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
+                  return label + ' -> '+ value;
+                },
+                title: function(tooltipItem[], data) {
+
+                },
+                labelColor: function(tooltipItem, chart) {
+                    return {
+                        borderColor: 'rgb(255, 255, 0)',
+                        backgroundColor: 'rgb(255, 255, 0)'
+                    }
+                },
+                labelTextColor:function(tooltipItem, chart){
+                    return '#FFF';
+                },
+                footer: function(tooltipItem[], data) {
+                  //console.log(data);
+                }
+        }
+     }
   };
 
   private lineDataObject : object = {
@@ -38,7 +85,7 @@ export class DimelineComponent implements OnInit {
         labels: [],
         datasets: [{
             data: '',
-            label: '',
+            label: 'label',
             borderColor: "#3e95cd",
             fill: false
         }]

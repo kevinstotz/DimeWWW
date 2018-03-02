@@ -2,7 +2,7 @@ import { Environment } from '../environments/index';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable }   from 'rxjs/Observable';
-import { GenericResponse, Register, RegisterVerify } from '../_models/index';
+import { GenericResponse, Register, RegisterVerify, Affiliate } from '../_models/index';
 
 
 @Injectable()
@@ -23,6 +23,10 @@ export class RegisterService {
 
     verifyRegisterEmail(registerVerify: RegisterVerify) {
         return this.http.get<GenericResponse>(this.environment.api.REGISTER_VERIFY_URL + registerVerify.authentication_code, this.httpOptions);
+    }
+
+    registerAffiliate(affiliate: Affiliate) {
+        return this.http.post<GenericResponse>(this.environment.api.REGISTER_AFFILIATE_URL, affiliate, this.httpOptions);
     }
 
 }

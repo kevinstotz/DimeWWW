@@ -32,6 +32,7 @@ export class Environment  {
     private LOGIN_URL: string;
     private REGISTER_URL: string;
     private REGISTER_VERIFY_URL: string;
+    private REGISTER_AFFILIATE_URL: string;
     private CONTACTUS_URL: string;
 
     private DIME_PIE_CHART: string;
@@ -89,6 +90,7 @@ export class Environment  {
         this.NEWSLETTER_URL = this.API_URL.concat(this.API_PATH + '/newsletter');
         this.LOGIN_URL = this.API_URL.concat(this.API_PATH, '/o/token/');
         this.REGISTER_URL = this.API_URL.concat(this.API_PATH, '/register/');
+        this.REGISTER_AFFILIATE_URL = this.API_URL.concat(this.API_PATH, '/affiliate/register/');
         this.REGISTER_VERIFY_URL = this.API_URL.concat(this.API_PATH, '/register/verify/');
         this.DIME_LINE_CHART = this.API_URL.concat(this.API_PATH, '/dime/linechart/');
         this.DIME_TABLE_CHART = this.API_URL.concat(this.API_PATH, '/dime/tablechart/');
@@ -122,7 +124,8 @@ export class Environment  {
             'DIME_REBALANCE_DATES_AND_VALUES': this.DIME_REBALANCE_DATES_AND_VALUES,
             'DIME_TABLE_CHART':     this.DIME_TABLE_CHART,
             'REGISTER_URL':         this.REGISTER_URL,
-            'REGISTER_VERIFY_URL':  this.REGISTER_VERIFY_URL
+            'REGISTER_VERIFY_URL':  this.REGISTER_VERIFY_URL,
+            'REGISTER_AFFILIATE_URL':this.REGISTER_AFFILIATE_URL
         }
     }
 }
