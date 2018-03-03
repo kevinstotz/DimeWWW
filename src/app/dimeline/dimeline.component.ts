@@ -61,7 +61,7 @@ export class DimelineComponent implements OnInit {
                   return label + ' -> '+ value;
                 },
                 title: function(tooltipItem[], data) {
-
+                    return;
                 },
                 labelColor: function(tooltipItem, chart) {
                     return {
@@ -73,7 +73,7 @@ export class DimelineComponent implements OnInit {
                     return '#FFF';
                 },
                 footer: function(tooltipItem[], data) {
-                  //console.log(data);
+                  return;
                 }
         }
      }
