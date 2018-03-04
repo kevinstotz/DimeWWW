@@ -57,10 +57,11 @@ export class DimelineComponent implements OnInit {
                   var dateObject = new Date(data['labels'][tooltipItem.index]);
                   var label = document.getElementById("date").innerHTML = 'Date: ' + months[dateObject.getMonth()] + ' ' + dateObject.getDate() + ', ' + dateObject.getFullYear();
                   var value = parseFloat(data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index]);
-                  value = document.getElementById("value").innerHTML = 'Value: $' + value.toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
+                  let t:number =  parseFloat(value.toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,'));
+                  document.getElementById("value").innerHTML = String(t);
                   return label + ' -> '+ value;
                 },
-                title: function(tooltipItem[], data) {
+                title: function(tooltipItem, data) {
                     return;
                 },
                 labelColor: function(tooltipItem, chart) {
@@ -72,7 +73,7 @@ export class DimelineComponent implements OnInit {
                 labelTextColor:function(tooltipItem, chart){
                     return '#FFF';
                 },
-                footer: function(tooltipItem[], data) {
+                footer: function(tooltipItem, data) {
                   return;
                 }
         }
