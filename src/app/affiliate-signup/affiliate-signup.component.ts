@@ -42,6 +42,11 @@ export class AffiliateSignupComponent implements OnInit {
                 Validators.required,
                 Validators.minLength(4)
             ]],
+            'phoneNumber' : ['', [
+                Validators.required,
+                Validators.minLength(10),
+                Validators.pattern('^\+?\d{2}[- ]?\d{3}[- ]?\d{5}$')
+            ]],
             'zipCode' : ['', [
                 Validators.required,
                 Validators.minLength(5)
@@ -51,23 +56,25 @@ export class AffiliateSignupComponent implements OnInit {
 
       }
 
-      registerAffiliate(registerAffiliateForm) {
+      registerAffiliate(registerAffiliateForm: any, formDirective: FormGroupDirective) {
           if (registerAffiliateForm.controls.email.invalid ||
               registerAffiliateForm.controls.firstName.invalid ||
               registerAffiliateForm.controls.lastName.invalid ||
               registerAffiliateForm.controls.companyName.invalid ||
-              registerAffiliateForm.controls.zipCode.invalid ) {
+              registerAffiliateForm.controls.phoneNumber.invalid ||
+              registerAffiliateForm.controls.zipCode.invalid) {
               this.registerAffiliateForm.reset();
               return;
           }
-
-          if (this.registerAffiliateForm.get('url').value != '' ) { return;}
+          console.log(this.registerAffiliateForm.get('url').value);
+          if (this.registerAffiliateForm.get('url').value != "" ) { console.log("F"); return;}
           this.affiliate = new Affiliate();
 
           this.affiliate.email = this.registerAffiliateForm.get('email').value;
           this.affiliate.firstName = this.registerAffiliateForm.get('firstName').value;
           this.affiliate.lastName = this.registerAffiliateForm.get('lastName').value;
           this.affiliate.zipCode = this.registerAffiliateForm.get('zipCode').value;
+          this.affiliate.phoneNumber = this.registerAffiliateForm.get('phoneNumber').value;
           this.affiliate.companyName = this.registerAffiliateForm.get('companyName').value;
 
           this.loading = true;

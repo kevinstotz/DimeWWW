@@ -2,10 +2,11 @@
 
 					<mat-card class="register-card">
 						<mat-card-header>
-							<mat-card-title><h4>Affiliate Signup</h4></mat-card-title>
+							<mat-card-title class="al-center" style="align: center;"><h4>Affiliate Signup</h4></mat-card-title>
 							<mat-card-subtitle><h6><alert></alert></h6></mat-card-subtitle>
 						</mat-card-header>
 						<mat-card-content>
+							<hr>
 							<form [formGroup]="registerAffiliateForm" name="registerAffiliateForm" (ngSubmit)="registerAffiliate(registerAffiliateForm)">
 
 									<mat-form-field class="card-full-width">
@@ -40,20 +41,29 @@
 											<mat-error *ngIf="registerAffiliateForm.controls.email.hasError('required')">Email is <strong>required</strong></mat-error>
 									</mat-form-field>
 
-                  <mat-form-field class="card-full-width">
-												<input matInput placeholder="Zipcode"
-															[errorStateMatcher]="matcher"
-															formControlName="zipCode">
-											<mat-hint>5 digits</mat-hint>
-											<mat-error *ngIf=" !registerAffiliateForm.controls.zipCode.hasError('required')">Please enter a valid zipcode</mat-error>
-											<mat-error *ngIf="registerAffiliateForm.controls.zipCode.hasError('required')">Zipcode is <strong>required</strong></mat-error>
+									<mat-form-field class="card-full-width">
+												<input matInput placeholder="Phone Number"
+																ng-pattern="phoneNumbr" ng-model="phone"
+															formControlName="phoneNumber">
+											<mat-hint>10 digits</mat-hint>
+											<mat-error *ngIf=" !registerAffiliateForm.controls.phoneNumber.hasError('required')">Please enter a valid phone number</mat-error>
+											<mat-error *ngIf="registerAffiliateForm.controls.phoneNumber.hasError('required')">Phone number is <strong>required</strong></mat-error>
 									</mat-form-field>
 
-									<input matInput formControlName="url">
+                  <mat-form-field class="card-full-width">
+												<input matInput placeholder="Zip code"
+															formControlName="zipCode">
+											<mat-hint>5 digits</mat-hint>
+											<mat-error *ngIf=" !registerAffiliateForm.controls.zipCode.hasError('required')">Please enter a valid zip code</mat-error>
+											<mat-error *ngIf="registerAffiliateForm.controls.zipCode.hasError('required')">Zip code is <strong>required</strong></mat-error>
+									</mat-form-field>
+
+									<input matInput formControlName="url" placeholder="" value="">
 									<div>
-                    <alert></alert>
 										<button class="pull-right" mat-button type="submit" color="primary">Register</button>
-										<br /><br />
+										<br />
+										<a href="/assets/affiliates/Affiliates.pdf" style="font-size: 12px; vertical-align: bottom;" class="pull-left" target="_blank">Agreement</a>
+
 									</div>
 
 	          </form>

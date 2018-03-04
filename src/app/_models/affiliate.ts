@@ -4,4 +4,5 @@ export class Affiliate {
   firstName: string;
   lastName: string;
   zipCode: string;
+  phoneNumber: string;
 }
