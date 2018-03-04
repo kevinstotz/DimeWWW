@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable }   from 'rxjs/Observable';
-import { Dime } from '../_models/index';
+import { Dime, DimeLineChart } from '../_models/index';
 import { Environment } from '../environments/index';
 import 'rxjs/add/operator/map';
 
@@ -21,15 +21,12 @@ export class DimeService {
         return this.http.get<Dime[]>(this.environment.api.DIME_PIE_CHART, this.httpOptions);
     }
 
-    getDime() {
-        return this.http.get<Dime[]>(this.environment.api.DIME_LINE_CHART, this.httpOptions);
+    getLineChart() {
+        return this.http.get<DimeLineChart[]>(this.environment.api.DIME_LINE_CHART, this.httpOptions);
     }
 
     getTableChart() {
-        return this.http.get<Dime[]>(this.environment.api.DIME_TABLE_CHART, this.httpOptions);
+        return this.http.get<DimeLineChart[]>(this.environment.api.DIME_TABLE_CHART, this.httpOptions);
     }
 
-    getRebalanceDatesAndValues() {
-        return this.http.get<Dime[]>(this.environment.api.DIME_REBALANCE_DATES_AND_VALUES, this.httpOptions);
-    }
 }

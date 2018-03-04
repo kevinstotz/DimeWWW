@@ -44,7 +44,7 @@ export class DimeindextableComponent {
         );
 */
 
-        this.dimeService.getDime()
+        this.dimeService.getTableChart()
           .subscribe(
               data => {
                 var multi = [ {

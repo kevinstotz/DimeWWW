@@ -1,4 +1,9 @@
 export class Dime {
-  name: number;
+  name: string;
   value: number;
+}
+export class DimeLineChart {
+  name: string;
+  value: number;
+  rebalance: number;
 }

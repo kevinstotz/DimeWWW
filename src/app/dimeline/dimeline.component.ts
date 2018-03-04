@@ -1,6 +1,5 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { Chart } from 'chart.js';
-import { Dime } from '../_models/index';
 import { AlertService, DimeService } from '../_services/index';
 
 @Component({
@@ -57,9 +56,9 @@ export class DimelineComponent implements OnInit {
                   var dateObject = new Date(data['labels'][tooltipItem.index]);
                   var label = document.getElementById("date").innerHTML = 'Date: ' + months[dateObject.getMonth()] + ' ' + dateObject.getDate() + ', ' + dateObject.getFullYear();
                   var value = parseFloat(data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index]);
-                  let t:number =  parseFloat(value.toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,'));
-                  document.getElementById("value").innerHTML = String(t);
-                  return label + ' -> '+ value;
+                  let t:string = value.toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
+                  document.getElementById("value").innerHTML = t;
+                  return label + ' -> $'+ t;
                 },
                 title: function(tooltipItem, data) {
                     return;
@@ -87,7 +86,7 @@ export class DimelineComponent implements OnInit {
         datasets: [{
             data: '',
             label: 'label',
-            borderColor: "#3e95cd",
+            borderColor: "#21b082",
             fill: false
         }]
      },
@@ -101,21 +100,31 @@ export class DimelineComponent implements OnInit {
   ngOnInit() {}
 
   ngAfterViewInit() {
-    var items: any[] = [];
-    var objs : object = {};
     var dateLabels : Date[] = [];
+    var pointBackgroundColors = [];
+    var pointHoverRadius = [];
+    var pointRadius = [];
 
-    this.dimeService.getDime()
+    this.dimeService.getLineChart()
       .subscribe(
           data => {
             for (var i = 0; i < data.length; i++) {
                 var obj = data[i];
-                dateLabels[i] = new Date(obj.name);
+                dateLabels[i] = new Date(obj.name + ' 00:00:00');
                 this.lineData[i]  = obj.value;
+                if (obj.rebalance == 0) {
+                  pointBackgroundColors[i]= "#FFF100";
+                  pointHoverRadius[i] = 4;
+                  pointRadius[i] = 2;
+                } else {
+                  pointBackgroundColors[i]= "#BE0081";
+                  pointHoverRadius[i] = 8;
+                  pointRadius[i] = 6;
+                }
             }
 
             this.lineDataObject['data']['labels'] = dateLabels;
-            this.lineDataObject['data']['datasets'] = [{ data: this.lineData, label: 'The DIME', borderColor: "#3e95cd", fill: false }];
+            this.lineDataObject['data']['datasets'] = [{ data: this.lineData, pointRadius: pointRadius, pointHoverRadius: pointHoverRadius, pointBackgroundColor: pointBackgroundColors, label: 'The DIME', borderColor: "#21b082", fill: false }];
             this.lineChart = new Chart('line-chart', this.lineDataObject ) ;
           },
           errorResponse => {
