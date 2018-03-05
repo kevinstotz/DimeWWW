@@ -36,7 +36,7 @@ export class NewsletterComponent implements OnInit {
   displayDialog(message) {
       let dialogRef = this.dialog.open(NewsletterResponseDialogComponent, {
          height: '80px',
-         width: '200px',
+         width: '180px',
          data: { message: message }
      });
   }

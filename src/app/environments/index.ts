@@ -28,6 +28,7 @@ export class Environment  {
     private WEBSITE_URL: string;
     private WEBSITE_PORT: number;
 
+    private FORGOT_PASSWORD_URL: string;
     private NEWSLETTER_URL: string;
     private LOGIN_URL: string;
     private REGISTER_URL: string;
@@ -87,7 +88,8 @@ export class Environment  {
         }
         if (environment.envName == 'qa') {}
         if (environment.envName == '') {console.log("env not found");}
-        this.NEWSLETTER_URL = this.API_URL.concat(this.API_PATH + '/newsletter');
+        this.NEWSLETTER_URL = this.API_URL.concat(this.API_PATH + '/newsletter/');
+        this.FORGOT_PASSWORD_URL = this.API_URL.concat(this.API_PATH + '/forgot-password/');
         this.LOGIN_URL = this.API_URL.concat(this.API_PATH, '/o/token/');
         this.REGISTER_URL = this.API_URL.concat(this.API_PATH, '/register/');
         this.REGISTER_AFFILIATE_URL = this.API_URL.concat(this.API_PATH, '/affiliate/register/');
@@ -124,6 +126,7 @@ export class Environment  {
             'DIME_REBALANCE_DATES_AND_VALUES': this.DIME_REBALANCE_DATES_AND_VALUES,
             'DIME_TABLE_CHART':     this.DIME_TABLE_CHART,
             'REGISTER_URL':         this.REGISTER_URL,
+            'FORGOT_PASSWORD_URL':  this.FORGOT_PASSWORD_URL,
             'REGISTER_VERIFY_URL':  this.REGISTER_VERIFY_URL,
             'REGISTER_AFFILIATE_URL':this.REGISTER_AFFILIATE_URL
         }

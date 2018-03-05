@@ -6,6 +6,7 @@ import { User, Authentication } from '../_models/index';
 import { SocialsigninComponent } from '../socialsignin/index';
 import { FormsModule, FormControl, FormGroup, FormBuilder, FormGroupDirective, Validators, NgForm } from '@angular/forms';
 import { MatDialog, MatFormField } from '@angular/material';
+import { ForgotPasswordComponent } from '../forgot-password/index';
 
 
 @Component({
@@ -24,6 +25,7 @@ export class LoginComponent implements OnInit {
     constructor(
         private route: ActivatedRoute,
         private router: Router,
+        public dialog: MatDialog,
         private formBuilder: FormBuilder,
         private authenticationService: AuthenticationService,
         private alertService: AlertService) {
@@ -48,6 +50,14 @@ export class LoginComponent implements OnInit {
           });
         // get return url from route parameters or default to '/'
         //this.returnUrl = this.route.snapshot.queryParams['dashboard'] || '/';
+    }
+
+    displayDialog(message) {
+        let dialogRef = this.dialog.open(ForgotPasswordComponent, {
+           height: '225px',
+           width: '350px',
+           data: { message: message }
+       });
     }
 
     login(loginFormSubmitted) {

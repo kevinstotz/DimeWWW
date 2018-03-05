@@ -9,3 +9,4 @@ export * from './oauth2';
 export * from './dime';
 export * from './contactus';
 export * from './affiliate';
+export * from './forgot-password';

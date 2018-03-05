@@ -67,7 +67,8 @@ import { ContactComponent } from './contact/index';
 import { DimetableComponent } from './dimetable/index';
 import { AffiliateComponent } from './affiliate/index';
 import { DimelineComponent } from './dimeline/index';
-import { AffiliateSignupComponent } from './affiliate-signup/affiliate-signup.component';
+import { AffiliateSignupComponent } from './affiliate-signup/index';
+import { ForgotPasswordComponent } from './forgot-password/index';
 
 export function getAuthServiceConfigs() {
   let config = new AuthServiceConfig(
@@ -145,9 +146,11 @@ export function getAuthServiceConfigs() {
         AffiliateComponent,
         DimelineComponent,
         AffiliateSignupComponent,
+        ForgotPasswordComponent,
     ],
     entryComponents: [
-        NewsletterResponseDialogComponent
+        NewsletterResponseDialogComponent,
+        ForgotPasswordComponent
     ],
     exports: [
         MatToolbarModule,

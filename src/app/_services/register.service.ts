@@ -2,7 +2,7 @@ import { Environment } from '../environments/index';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable }   from 'rxjs/Observable';
-import { GenericResponse, Register, RegisterVerify, Affiliate } from '../_models/index';
+import { GenericResponse, Register, RegisterVerify, Affiliate, ForgotPassword } from '../_models/index';
 
 
 @Injectable()
@@ -27,6 +27,10 @@ export class RegisterService {
 
     registerAffiliate(affiliate: Affiliate) {
         return this.http.post<GenericResponse>(this.environment.api.REGISTER_AFFILIATE_URL, affiliate, this.httpOptions);
+    }
+
+    forgotPassword(forgotPassword: ForgotPassword) {
+        return this.http.post<GenericResponse>(this.environment.api.FORGOT_PASSWORD_URL, forgotPassword, this.httpOptions);
     }
 
 }
