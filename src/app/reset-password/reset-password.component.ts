@@ -5,7 +5,6 @@ import { AlertService, RegisterService } from '../_services/index';
 import { ResetPassword, GenericResponse } from '../_models/index';
 import { FormsModule, FormControl, FormGroup, FormBuilder, Validators, NgForm } from '@angular/forms';
 import { MatDialog, MatFormField } from '@angular/material';
-import * as sha256 from "fast-sha256";
 
 @Component({
   selector: 'app-reset-password',
@@ -31,7 +30,6 @@ export class ResetPasswordComponent implements OnInit {
           this.returnUrl= "";
           this.environment = new Environment();
           this.route.params.subscribe(params => {
-            console.log(params);
             this.authorizationCode = params['authorizationCode'];
           });
     }
@@ -76,8 +74,6 @@ export class ResetPasswordComponent implements OnInit {
         this.passwordResetForm.reset();
         return;
     }
-
-    let hashed_pw = sha256.pbkdf2(passwordResetForm.controls.password.value, this.dec("dd") , 10, 64); // returns derived key
 
     this.loading = true;
     this.resetPassword.password = passwordResetForm.controls.password.value;
