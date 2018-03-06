@@ -1,8 +1,8 @@
 import { Environment } from '../environments/index';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable }   from 'rxjs/Observable';
-import { GenericResponse, Register, RegisterVerify, Affiliate, ForgotPassword } from '../_models/index';
+import { Observable } from 'rxjs/Observable';
+import { GenericResponse, Register, RegisterVerify, Affiliate, ForgotPassword, ResetPassword } from '../_models/index';
 
 
 @Injectable()
@@ -33,4 +33,7 @@ export class RegisterService {
         return this.http.post<GenericResponse>(this.environment.api.FORGOT_PASSWORD_URL, forgotPassword, this.httpOptions);
     }
 
+    resetPassword(resetPassword: ResetPassword) {
+        return this.http.post<GenericResponse>(this.environment.api.RESET_PASSWORD_URL, resetPassword, this.httpOptions);
+    }
 }

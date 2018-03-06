@@ -28,13 +28,14 @@ export class Environment  {
     private WEBSITE_URL: string;
     private WEBSITE_PORT: number;
 
+    private CONTACTUS_URL: string;
     private FORGOT_PASSWORD_URL: string;
-    private NEWSLETTER_URL: string;
     private LOGIN_URL: string;
+    private NEWSLETTER_URL: string;
+    private RESET_PASSWORD_URL: string;
     private REGISTER_URL: string;
     private REGISTER_VERIFY_URL: string;
     private REGISTER_AFFILIATE_URL: string;
-    private CONTACTUS_URL: string;
 
     private DIME_PIE_CHART: string;
     private DIME_TABLE_CHART: string;
@@ -88,9 +89,10 @@ export class Environment  {
         }
         if (environment.envName == 'qa') {}
         if (environment.envName == '') {console.log("env not found");}
-        this.NEWSLETTER_URL = this.API_URL.concat(this.API_PATH + '/newsletter/');
         this.FORGOT_PASSWORD_URL = this.API_URL.concat(this.API_PATH + '/forgot-password/');
         this.LOGIN_URL = this.API_URL.concat(this.API_PATH, '/o/token/');
+        this.NEWSLETTER_URL = this.API_URL.concat(this.API_PATH + '/newsletter/');
+        this.RESET_PASSWORD_URL = this.API_URL.concat(this.API_PATH + '/reset-password/');
         this.REGISTER_URL = this.API_URL.concat(this.API_PATH, '/register/');
         this.REGISTER_AFFILIATE_URL = this.API_URL.concat(this.API_PATH, '/affiliate/register/');
         this.REGISTER_VERIFY_URL = this.API_URL.concat(this.API_PATH, '/register/verify/');
@@ -125,8 +127,9 @@ export class Environment  {
             'DIME_PIE_CHART':       this.DIME_PIE_CHART,
             'DIME_REBALANCE_DATES_AND_VALUES': this.DIME_REBALANCE_DATES_AND_VALUES,
             'DIME_TABLE_CHART':     this.DIME_TABLE_CHART,
-            'REGISTER_URL':         this.REGISTER_URL,
             'FORGOT_PASSWORD_URL':  this.FORGOT_PASSWORD_URL,
+            'RESET_PASSWORD_URL':   this.RESET_PASSWORD_URL,
+            'REGISTER_URL':         this.REGISTER_URL,
             'REGISTER_VERIFY_URL':  this.REGISTER_VERIFY_URL,
             'REGISTER_AFFILIATE_URL':this.REGISTER_AFFILIATE_URL
         }

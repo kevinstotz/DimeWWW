@@ -13,8 +13,9 @@ import { DisclaimerComponent }    from './disclaimer/index';
 import { FaqComponent }           from './faq/index';
 import { PrivacypolicyComponent } from './privacypolicy/index';
 import { ContactComponent }       from './contact/index';
-import { AffiliateComponent }       from './affiliate/index';
+import { AffiliateComponent }     from './affiliate/index';
 import { TermsAndConditionsComponent } from './terms-and-conditions/index';
+import { ResetPasswordComponent } from './reset-password/index';
 
 const appRoutes: Routes = [
     { path: '',  component: HomeComponent },
@@ -23,6 +24,7 @@ const appRoutes: Routes = [
     { path: 'logout', component: LogoutComponent },
     { path: 'register', component: RegisterComponent },
     { path: 'register/verify/:authenticationCode', component: VerifyComponent },
+    { path: 'resetpassword/:authorizationCode', component: ResetPasswordComponent },
     { path: 'about', component: AboutComponent },
     { path: 'disclaimer', component: DisclaimerComponent },
     { path: 'privacy', component: PrivacypolicyComponent },

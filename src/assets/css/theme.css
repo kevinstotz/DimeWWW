@@ -830,3 +830,19 @@ background-color: #3c3c3c;
 	width: 80%;
 	height: 100%;
 }
+
+.passwordResetSection {
+	color:  #FFFFFF;
+	padding: 20px 20px 20px 20px;
+}
+.passwordResetPage {
+	text-align: center;
+	max-width: 100%;
+	height: 400px;
+}
+.passwordResetCard {
+	margin: 40px 0px 40px 0px;
+	text-align: center;
+	padding: 20px 20px 20px 20px;
+	background-color: #f1f8f8;
+}
