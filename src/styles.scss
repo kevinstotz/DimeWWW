@@ -5,8 +5,20 @@
 //@import 'assets/styles/css/style.css';
 @import url('https://use.fontawesome.com/releases/v5.0.7/js/all.js');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
 @import 'assets/css/vendor.bundle.css';
 @import 'assets/css/style.css';
 @import 'assets/css/theme.css';
 
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '~@angular/material/theming';
+
+// Define a custom typography config that overrides the font-family as well as the
+// `headlines` and `body-1` levels.
+$custom-typography: mat-typography-config(
+  $font-family: "'Work Sans', sans-serif",
+  $headline: mat-typography-level(32px, 48px, 700),
+  $body-1: mat-typography-level(16px, 24px, 500)
+);
+@include mat-card-typography($custom-typography);
+//@include mat-card-title-typography($custom-typography);
