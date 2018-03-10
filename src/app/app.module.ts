@@ -6,16 +6,15 @@ import { FormsModule, FormGroup, FormControl, ReactiveFormsModule } from '@angul
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { PageErrorsModule }  from './modules/page-errors/index';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
-import { DeviceDetectorModule } from 'ngx-device-detector';
+// import { DeviceDetectorModule } from 'ngx-device-detector';
 import { MatDialogModule, MatTableModule, MatFormFieldModule, MatInputModule } from '@angular/material';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatCardModule, MatToolbarModule, MatIconModule, MatButtonModule } from '@angular/material';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { LoadingModule } from 'ngx-loading';
-//Ngx-Charts
-import {NgxChartsModule} from '@swimlane/ngx-charts';
 import { Chart } from 'chart.js';
+import { Buffer } from 'buffer';
 
 import {
     SocialLoginModule,
@@ -94,7 +93,7 @@ export function getAuthServiceConfigs() {
         AppRoutingModule,
         BrowserModule,
         BrowserAnimationsModule,
-        DeviceDetectorModule.forRoot(),
+        // DeviceDetectorModule.forRoot(),
         FormsModule,
         HttpClientModule,
         LoadingModule,
@@ -108,7 +107,6 @@ export function getAuthServiceConfigs() {
         MatToolbarModule,
         MatProgressSpinnerModule,
         MDBBootstrapModule.forRoot(),
-        NgxChartsModule,
         PageErrorsModule,
         ReactiveFormsModule,
         SocialLoginModule

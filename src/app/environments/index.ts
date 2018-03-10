@@ -31,6 +31,7 @@ export class Environment  {
     private CONTACTUS_URL: string;
     private FORGOT_PASSWORD_URL: string;
     private LOGIN_URL: string;
+    private GET_USER_ID_URL: string;
     private NEWSLETTER_URL: string;
     private RESET_PASSWORD_URL: string;
     private REGISTER_URL: string;
@@ -91,6 +92,7 @@ export class Environment  {
         if (environment.envName == '') {console.log("env not found");}
         this.FORGOT_PASSWORD_URL = this.API_URL.concat(this.API_PATH + '/forgot-password/');
         this.LOGIN_URL = this.API_URL.concat(this.API_PATH, '/o/token/');
+        this.GET_USER_ID_URL = this.API_URL.concat(this.API_PATH, '/account/');
         this.NEWSLETTER_URL = this.API_URL.concat(this.API_PATH + '/newsletter/');
         this.RESET_PASSWORD_URL = this.API_URL.concat(this.API_PATH + '/reset-password/');
         this.REGISTER_URL = this.API_URL.concat(this.API_PATH, '/register/');
@@ -123,6 +125,7 @@ export class Environment  {
             'CONTACTUS_URL':        this.CONTACTUS_URL,
             'NEWSLETTER_URL':       this.NEWSLETTER_URL,
             'LOGIN_URL':            this.LOGIN_URL,
+            'GET_USER_ID_URL':      this.GET_USER_ID_URL,
             'DIME_LINE_CHART':      this.DIME_LINE_CHART,
             'DIME_PIE_CHART':       this.DIME_PIE_CHART,
             'DIME_REBALANCE_DATES_AND_VALUES': this.DIME_REBALANCE_DATES_AND_VALUES,

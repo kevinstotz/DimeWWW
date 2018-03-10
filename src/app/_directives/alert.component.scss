@@ -1,8 +1,6 @@
-div.error-message {
-    display: flex;
-    max-width: 400px;
-    flex-direction: column;
-    width: 100%;
-    display:inline;
-    line-height: 1.5;
+.error-message {
+	max-width: 400px;
+	flex-direction: column;
+	display: inline;
+	line-height: 1.5;
 }

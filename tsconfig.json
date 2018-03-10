@@ -1,20 +1,21 @@
 ﻿{
   "compilerOptions": {
-    "baseUrl": "",
+    "baseUrl": "C:/Users/kevin/OneDrive/Work/software/dime/DimeWWW/node_modules",
     "declaration": false,
-    "outDir": "../dist/out-tsc",
-    "rootDir": "./",
+    "outDir": "./dist/out-tsc",
+    "rootDir": "",
     "paths": {
-      "*": ["src/*"]
+      "*": ["./*"]
     },
     "typeRoots": [
-      "../node_modules/@types"
+      "./node_modules/@types"
     ],
+
     "mapRoot": "./",
-    "module": "es6",
+    "module": "es2015",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "lib": [ "es6", "dom" ],
+    "lib": [ "es2015", "DOM" ],
     "moduleResolution": "node",
     "noImplicitAny": false,
     "removeComments": true,
@@ -22,8 +23,8 @@
     "suppressImplicitAnyIndexErrors": true,
     "target": "es5"
   },
-
-  "include": ["../node_modules/angular-bootstrap-md/**/*.ts",  "../src/**/*.ts"],
+  "include": ["./node_modules/angular-bootstrap-md/**/*.ts",  "src/**/*.ts"],
+  "exclude": ["**/*.spec.ts"],
   "compileOnSave": true,
   "buildOnSave": true
 }

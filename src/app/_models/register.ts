@@ -1,4 +1,4 @@
-import { DeviceInfo } from 'ngx-device-detector';
+// import { DeviceInfo } from 'ngx-device-detector';
 import { Status } from './index';
 
 export class Register {
@@ -8,6 +8,6 @@ export class Register {
   lastName: string;
   zipCode: string;
   ipAddress: string;
-  deviceInfo: DeviceInfo;
+//  deviceInfo: DeviceInfo;
   status: Status;
 }

@@ -5,6 +5,8 @@ import { AlertService, RegisterService } from '../_services/index';
 import { ResetPassword, GenericResponse } from '../_models/index';
 import { FormsModule, FormControl, FormGroup, FormBuilder, Validators, NgForm } from '@angular/forms';
 import { MatDialog, MatFormField } from '@angular/material';
+import { Buffer } from 'buffer';
+
 
 @Component({
   selector: 'app-reset-password',

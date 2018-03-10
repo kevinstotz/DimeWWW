@@ -2,7 +2,7 @@
 import { Router } from '@angular/router';
 import { Register, GenericResponse } from '../_models/index';
 import { AlertService, RegisterService } from '../_services/index';
-import { DeviceDetectorService } from 'ngx-device-detector';
+// import { DeviceDetectorService } from 'ngx-device-detector';
 import { FormsModule, FormControl, FormGroup, FormBuilder, FormGroupDirective, Validators, NgForm } from '@angular/forms';
 import { MatDialog, MatFormField } from '@angular/material';
 import { Observable } from 'rxjs/Rx';
@@ -24,7 +24,7 @@ export class RegisterComponent implements OnInit  {
         private router: Router,
         private formBuilder: FormBuilder,
         private registerService: RegisterService,
-        private deviceService: DeviceDetectorService,
+      //  private deviceService: DeviceDetectorService,
         private alertService: AlertService) { }
 
     ngOnInit() {
@@ -68,7 +68,7 @@ export class RegisterComponent implements OnInit  {
         this.register.zipCode = this.registerForm.get('zipCode').value;
 
         this.loading = true;
-        this.register.deviceInfo = this.deviceService.getDeviceInfo();
+      //  this.register.deviceInfo = this.deviceService.getDeviceInfo();
         this.registerService.registerUser(this.register)
             .subscribe(
                 data => {

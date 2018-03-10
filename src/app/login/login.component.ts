@@ -1,7 +1,7 @@
 import { Environment } from '../environments/index';
 ﻿import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
-import { AlertService, AuthenticationService } from '../_services/index';
+import { AlertService, AuthenticationService, UserService } from '../_services/index';
 import { User, Authentication } from '../_models/index';
 import { SocialsigninComponent } from '../socialsignin/index';
 import { FormsModule, FormControl, FormGroup, FormBuilder, FormGroupDirective, Validators, NgForm } from '@angular/forms';
@@ -25,6 +25,7 @@ export class LoginComponent implements OnInit {
     constructor(
         private route: ActivatedRoute,
         private router: Router,
+        private userService: UserService,
         private dialog: MatDialog,
         private formBuilder: FormBuilder,
         private authenticationService: AuthenticationService,
@@ -33,6 +34,7 @@ export class LoginComponent implements OnInit {
             this.loading = false;
             this.returnUrl= "";
             this.environment = new Environment();
+
         }
 
     ngOnInit() {
@@ -77,12 +79,12 @@ export class LoginComponent implements OnInit {
       this.authenticationService.login(loginFormSubmitted.value.username, loginFormSubmitted.value.password)
           .subscribe(
                 (authenticationResponse: Authentication) => {
-                  window.location.href=this.environment.global.DASHBOARD_URL;
+                  this.userService.getIdByUsername(loginFormSubmitted.value.username);
                   this.loading = false;
               },
               error => {
                   this.loginForm.reset();
-                  this.alertService.error(error.error.error_description);
+                  this.alertService.error(error.error);
                   this.loading = false;
               });
     }

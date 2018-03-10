@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { AlertService, DimeService } from '../_services/index';
 
 @Component({

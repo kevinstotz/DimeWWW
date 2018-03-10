@@ -52,6 +52,9 @@ export class AuthenticationService implements OnInit {
         localStorage.removeItem('currentUser');
         sessionStorage.removeItem('currentUser');
         this.cookieService.remove('currentUser', this.cookieOptions);
+        localStorage.removeItem('Id');
+        sessionStorage.removeItem('Id');
+        this.cookieService.remove('Id', this.cookieOptions);
     }
 
     isLoggedIn() {
