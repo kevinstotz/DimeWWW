@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-bodypart4',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Bodypart4Component implements OnInit {
 
-  constructor() { }
+  constructor() {
+
+  }
 
   ngOnInit() {
   }

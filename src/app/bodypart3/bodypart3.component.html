@@ -3,22 +3,52 @@
   			<div class="partThreeBox">
         		<div class="row">
 
-		          	<div class="col-sm-7 col-md-7 col-sm-7 fadeInRight">
+		          	<div class="col-7">
 		         	    	<div class=""><img src="/assets/images/bodypart3/homePic3.jpg" alt=""></div>
 		            </div>
 
-		          	<div class="col-sm-5 col-md-5 col-sm-5 fadeInLeft">
+		          	<div class="col-5 ">
 		              	<div class="muturalFundCon">
 					            	<h3><u>Own The Digital Asset Class</u></h3>
-					              	<p>In 2017, the digital asset class stormed into the public consciousness.  If you had purchased 100 DIMEs in January of 2017 and sold them in January of 2018, you could have profited over $30,000.  We believe there is still a ton of room for growth in this new technology.</p>
-													<p>The DIME lets you invest more broadly in the asset class.  Instead of guessing whether a cryptocurrency will be Amazon.com or Pets.com, buy a DIME and rise with the crypto tide.</p>
-													<p><i>Simple Investing</i></p>
+					              	<p><i>Simple Investing</i></p>
 													<p>Investing in cryptocurrency is technical and confusing.  By purchasing a DIME, you leave the details to the experts and let us implement the market's safest security practices, while you sit back and enjoy the gains.</p>
 										</div>
 		            </div>
+						</div>
+						<hr class="hrSize">
+						<div class="row">
+							<div class="col-12">
+									<ngx-carousel
+											[inputs]="carouselTile"
+								      (carouselLoad)="carouselTileLoad($event)">
 
-            </div>
+											<ngx-item NgxCarouselItem *ngFor="let Tile of carouselTileItems" class="bannerstyle">
+												<div class="container">
+													<div class="row">
+															<div class="col-8">
+																<h5>{{Tile.name}}</h5>
+															</div>
+															<div class="col-4">
+																<a href="http://www.news.com"><img height="50px" width="50px" src="/assets/images/coins/{{Tile.name}}-50x50.png"></a>
+
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-12">
+							                	<div><span class="font-weight-bold">Price:</span><span>  {{Tile.end_price | currency : symbol : 2}} <i class="far fa-arrow-alt-circle-up"></i></span></div>
+																<div><span class="font-weight-bold">Dime Comp:</span><span> {{Tile.percent_of_dime | number : '1.2-2'}}%</span></div>
+															</div>
+														</div>
+													</div>
+					            </ngx-item>
+
+						          <span><button NgxCarouselPrev class='leftRs'><i class="fas fa-angle-left"></i></button>
+						          <button NgxCarouselNext class='rightRs'><i class="fas fa-angle-right"></i></button></span>
+							     </ngx-carousel>
+							 </div>
+						</div>
+					<hr class="hrSize">
         </div>
-				<hr class="hrSize">
+
     </div>
 </section>

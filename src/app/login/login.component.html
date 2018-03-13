@@ -1,16 +1,15 @@
 
 <section class="bodyPartTwo">
 	<div class="container">
-    <div class="bodyInnerPage fadeInDown">
-      ﻿<div class="row">
-				<div class="col-sm-1 col-md-1 col-lg-1"></div>
-				<div class="col-sm-6 col-md-6 col-lg-6">
-					<mat-card class="login-card">
+    <div class="bodydInnerPage">
+      ﻿<div class="row justify-content-center">
+				<div class="col-6">
+					<mat-card class="loginx-card">
 						<mat-card-header>
 							<mat-card-title><h4>Email Login</h4></mat-card-title>
 							<mat-card-subtitle></mat-card-subtitle>
 						</mat-card-header>
-						<mat-card-content style="height:30px;">
+						<mat-card-content>
 							<form [formGroup]="loginForm" name="registerForm" (ngSubmit)="login(loginForm)">
 									<mat-form-field class="card-full-width">
 												<input matInput
@@ -33,10 +32,10 @@
 									</mat-form-field>
 									<div>
 										<span><alert class="pull-left"></alert>
+											<br />
 										<button class="pull-right" mat-button type="submit" color="primary">Login</button></span>
-										<br />
-										<div><button mat-button type="button" (click)="displayDialog('FD')">Forgot Password?</button></div>
-										<br />
+										<div><button class="pull-left" mat-button type="button" color="primary" (click)="displayDialog('FD')">Forgot Password?</button></div>
+
 									</div>
 
 	          </form>
@@ -44,9 +43,8 @@
 					</mat-card>
 
 				</div>
-				<div class="col-sm-1 col-md-1 col-lg-1"></div>
-				<div class="col-sm-4 col-md-4 col-lg-4">
-					<mat-card class="social-card">
+				<div class="col-md-auto">
+					<mat-card class="socialcard">
 						<mat-card-header>
 							<mat-card-title><h4>Social Logins</h4></mat-card-title>
 						</mat-card-header>

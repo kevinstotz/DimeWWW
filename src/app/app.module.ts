@@ -1,10 +1,13 @@
 ﻿import { NgModule, NO_ERRORS_SCHEMA }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { CookieModule, CookieService  } from 'ngx-cookie';
+import { Buffer } from 'buffer';
 import { BrowserAnimationsModule } from  '@angular/platform-browser/animations';
+import { Chart } from 'chart.js';
+import { CookieModule, CookieService  } from 'ngx-cookie';
 import { FormsModule, FormGroup, FormControl, ReactiveFormsModule } from '@angular/forms';
+import 'hammerjs';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { PageErrorsModule }  from './modules/page-errors/index';
+import { LoadingModule } from 'ngx-loading';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 // import { DeviceDetectorModule } from 'ngx-device-detector';
 import { MatDialogModule, MatTableModule, MatFormFieldModule, MatInputModule } from '@angular/material';
@@ -12,9 +15,9 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatCardModule, MatToolbarModule, MatIconModule, MatButtonModule } from '@angular/material';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-import { LoadingModule } from 'ngx-loading';
-import { Chart } from 'chart.js';
-import { Buffer } from 'buffer';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgxCarouselModule } from 'ngx-carousel';
+import { PageErrorsModule }  from './modules/page-errors/index';
 
 import {
     SocialLoginModule,
@@ -107,6 +110,8 @@ export function getAuthServiceConfigs() {
         MatToolbarModule,
         MatProgressSpinnerModule,
         MDBBootstrapModule.forRoot(),
+        NgbModule.forRoot(),
+        NgxCarouselModule,
         PageErrorsModule,
         ReactiveFormsModule,
         SocialLoginModule

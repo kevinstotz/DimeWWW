@@ -44,20 +44,21 @@ export class NewsletterComponent implements OnInit {
   subscribe() {
     if (this.newsletterForm.controls.email.invalid) {
         this.newsletterForm.reset();
-        this.displayDialog("Invalid Email");
+        this.alertService.success("Invalid Email");
         return;
     }
     this.newsletter = new Newsletter();
     this.newsletter.email = this.newsletterForm.get('email').value;
     this.newsletterService.subscribeNewsletter(this.newsletter).subscribe(
         (res: GenericResponse) => {
-          this.displayDialog(res.message);
+          //this.displayDialog(res.message);
           this.newsletterForm.reset();
           this.alertService.success(res.message);
       },
         (err: HttpErrorResponse) => {
           this.newsletterForm.reset();
-          this.displayDialog(err.error.message)
+          this.alertService.success(err.error.message);
+          //this.displayDialog(err.error.message)
       }
     );
 
