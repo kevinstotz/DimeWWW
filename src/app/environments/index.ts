@@ -29,6 +29,7 @@ export class Environment  {
     private WEBSITE_PORT: number;
 
     private CONTACTUS_URL: string;
+    private COIN_NEWS_URL: string;
     private FORGOT_PASSWORD_URL: string;
     private LOGIN_URL: string;
     private GET_USER_ID_URL: string;
@@ -38,10 +39,10 @@ export class Environment  {
     private REGISTER_VERIFY_URL: string;
     private REGISTER_AFFILIATE_URL: string;
 
-    private DIME_PIE_CHART: string;
-    private DIME_TABLE_CHART: string;
-    private DIME_LINE_CHART: string;
-    private DIME_REBALANCE_DATES_AND_VALUES: string;
+    private DIME_PIE_CHART_URL: string;
+    private DIME_TABLE_CHART_URL: string;
+    private DIME_LINE_CHART_URL: string;
+    private DIME_REBALANCE_DATES_AND_VALUES_URL: string;
 
     constructor() {
         this.SECURE = 'https://';
@@ -93,16 +94,17 @@ export class Environment  {
         this.FORGOT_PASSWORD_URL = this.API_URL.concat(this.API_PATH + '/forgot-password/');
         this.LOGIN_URL = this.API_URL.concat(this.API_PATH, '/o/token/');
         this.GET_USER_ID_URL = this.API_URL.concat(this.API_PATH, '/account/');
+        this.COIN_NEWS_URL = this.API_URL.concat(this.API_PATH + '/dime/coinnews/');
+        this.CONTACTUS_URL = this.API_URL.concat(this.API_PATH, '/contactus/');
         this.NEWSLETTER_URL = this.API_URL.concat(this.API_PATH + '/newsletter/');
         this.RESET_PASSWORD_URL = this.API_URL.concat(this.API_PATH + '/reset-password/');
         this.REGISTER_URL = this.API_URL.concat(this.API_PATH, '/register/');
         this.REGISTER_AFFILIATE_URL = this.API_URL.concat(this.API_PATH, '/affiliate/register/');
         this.REGISTER_VERIFY_URL = this.API_URL.concat(this.API_PATH, '/register/verify/');
-        this.DIME_LINE_CHART = this.API_URL.concat(this.API_PATH, '/dime/linechart/');
-        this.DIME_TABLE_CHART = this.API_URL.concat(this.API_PATH, '/dime/tablechart/');
-        this.DIME_PIE_CHART = this.API_URL.concat(this.API_PATH, '/dime/piechart/');
-        this.DIME_REBALANCE_DATES_AND_VALUES = this.API_URL.concat(this.API_PATH, '/dime/rebalancedatesandvalues/');
-        this.CONTACTUS_URL = this.API_URL.concat(this.API_PATH, '/contactus/');
+        this.DIME_LINE_CHART_URL = this.API_URL.concat(this.API_PATH, '/dime/linechart/');
+        this.DIME_TABLE_CHART_URL = this.API_URL.concat(this.API_PATH, '/dime/tablechart/');
+        this.DIME_PIE_CHART_URL = this.API_URL.concat(this.API_PATH, '/dime/piechart/');
+        this.DIME_REBALANCE_DATES_AND_VALUES_URL = this.API_URL.concat(this.API_PATH, '/dime/rebalancedatesandvalues/');
 
         this.global = {
             'PRODUCTION':         this.PRODUCTION,
@@ -122,14 +124,15 @@ export class Environment  {
             'API_URL':              this.API_URL,
             'API_HOSTNAME':         this.API_HOSTNAME,
             'API_PATH':             this.API_PATH,
+            'COIN_NEWS_URL':        this.COIN_NEWS_URL,
             'CONTACTUS_URL':        this.CONTACTUS_URL,
             'NEWSLETTER_URL':       this.NEWSLETTER_URL,
             'LOGIN_URL':            this.LOGIN_URL,
             'GET_USER_ID_URL':      this.GET_USER_ID_URL,
-            'DIME_LINE_CHART':      this.DIME_LINE_CHART,
-            'DIME_PIE_CHART':       this.DIME_PIE_CHART,
-            'DIME_REBALANCE_DATES_AND_VALUES': this.DIME_REBALANCE_DATES_AND_VALUES,
-            'DIME_TABLE_CHART':     this.DIME_TABLE_CHART,
+            'DIME_LINE_CHART_URL':  this.DIME_LINE_CHART_URL,
+            'DIME_PIE_CHART_URL':   this.DIME_PIE_CHART_URL,
+            'DIME_REBALANCE_DATES_AND_VALUES_URL': this.DIME_REBALANCE_DATES_AND_VALUES_URL,
+            'DIME_TABLE_CHART_URL': this.DIME_TABLE_CHART_URL,
             'FORGOT_PASSWORD_URL':  this.FORGOT_PASSWORD_URL,
             'RESET_PASSWORD_URL':   this.RESET_PASSWORD_URL,
             'REGISTER_URL':         this.REGISTER_URL,

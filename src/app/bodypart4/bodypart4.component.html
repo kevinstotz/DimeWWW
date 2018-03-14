@@ -4,14 +4,14 @@
 
 	        	<div class="row">
 
-            		<div class="col-12">
+            		<div class="col-4">
                 		<div class="muturalFundCon">
 			                	<h3><u>Keep It Simple</u></h3>
 			                  	<p>Investing in Bitcoin is complicated.  Investing in a diverse and secure portfolio of ten digital assets is extremely complicated and by all accounts not feasible for the average investor.  The DIME solves this problem, allowing users to hold a secure and diverse portfolio of cryptocurrencies through the possession of a single ERC-20 Token.</p>
 			              </div>
                 </div>
 
-								<div class="col-12">
+								<div class="col-8">
 									<mat-card style="height:100%; text-align: center;">
 										<mat-card-content style="text-align: center; font-size: 18px; height:90%;">
 											<mat-card-title style="text-align:center; font-weight: 500; background-color: #FFF; font-size: 26px;"><u>Composition of The Dime</u></mat-card-title>
@@ -20,11 +20,49 @@
 									</mat-card>
                 </div>
 
-								<div class="col-12">
-	
-								</div>
-            </div>
-        </div>
-				<hr class="hrSize">
+						</div>
+<hr class="hrSize">
+					</div>
+
+			</div>
+			<div class="container">
+				<div class="partFourBox">
+						<div class="row">
+
+							<div class="col-12">
+									<ngx-carousel
+											[inputs]="carouselCoinNews"
+											(carouselLoad)="carouselCoinNewsLoad($event)">
+
+											<ngx-item NgxCarouselItem *ngFor="let NewsArticle of carouselCoinNewsItems" class="bannerstyle">
+												<div class="container">
+														<div class="row">
+																<div class="col-12">
+																	<h5>{{NewsArticle[0].symbol}} News</h5>
+																</div>
+														</div>
+														<div class="row">
+															<div class="col-12">
+																<a href="https://{{NewsArticle[0].domain}}/" target="_blank"><p><em>{{NewsArticle[0].title.slice(0, 22)}}...</em></p></a>
+																<a href="https://{{NewsArticle[1].domain}}/" target="_blank"><p><em>{{NewsArticle[1].title.slice(0, 22)}}...</em></p></a>
+																<a href="https://{{NewsArticle[2].domain}}/" target="_blank"><p><em>{{NewsArticle[2].title.slice(0, 22)}}...</em></p></a>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-12 text-right">
+																<div><small><span class="font-weight-light">{{NewsArticle[0].date |  date:'yyyy-MM-dd' }}</span></small></div>
+															</div>
+														</div>
+													</div>
+											</ngx-item>
+
+											<span><button NgxCarouselPrev class='leftRs'><i class="fas fa-angle-left"></i></button>
+											<button NgxCarouselNext class='rightRs'><i class="fas fa-angle-right"></i></button></span>
+									 </ngx-carousel>
+						  </div>
+
+						</div>
+						<hr class="hrSize">
+				</div>
     </div>
 </section>

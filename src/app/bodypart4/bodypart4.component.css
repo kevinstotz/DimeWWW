@@ -1,0 +1,16 @@
+ngx-item.item {
+      background-color: #fff;
+      text-align: left;
+      padding: 10px 20px 20px 10px;
+      border-left: 2px solid #c8c8c8;
+      border-right: 2px solid #c8c8c8;
+  }
+
+.leftRs {
+  top: 0;
+}
+
+.rightRs {
+
+  top: 0;
+}

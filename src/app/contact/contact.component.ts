@@ -23,19 +23,22 @@ export class ContactComponent implements OnInit {
   private contactus: Contactus;
   public contactusResponse$: Observable<GenericResponse>;
   public contactusForm: FormGroup;
-
   matcher = new MyErrorStateMatcher();
 
   constructor(private alertService: AlertService,
               public dialog: MatDialog,
               private formBuilder: FormBuilder,
-              private contactusService: ContactusService) { }
+              private contactusService: ContactusService) {
+
+  }
 
   ngOnInit() {
     this.contactusForm = this.formBuilder.group({
+        floatLabel: 'auto',
+        hideRequired: false,
         'email' : ['', [
             Validators.required,
-            Validators.pattern("[^ @]*@[^ @]*")
+            Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,6}$")
         ]],
         'subject' : ['', [
             Validators.required,
@@ -49,7 +52,7 @@ export class ContactComponent implements OnInit {
             Validators.required,
             Validators.minLength(4)
         ]],
-        'url': ['',   Validators.required]
+        'url': ['', Validators.required]
       });
 
     }
@@ -60,7 +63,6 @@ export class ContactComponent implements OnInit {
           contactusForm.controls.subject.invalid ||
           contactusForm.controls.message.invalid ||
           contactusForm.controls.firstname.invalid ) {
-          this.contactusForm.reset();
           return;
       }
 

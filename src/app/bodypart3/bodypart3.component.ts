@@ -11,15 +11,14 @@ export class Bodypart3Component implements OnInit {
   private isLoadingResults = true;
   public carouselTileItems: Array<any>;
   public carouselTile: NgxCarousel;
+
   constructor(private dimeService: DimeService) {
 
        this.dimeService.getTableChart()
        .subscribe(
            data => {
              this.carouselTileItems = data;
-             console.log(this.carouselTileItems);
              this.isLoadingResults = false;
-             //this.resultsLength = data.total_count;
            },
            errorResponse => {
              this.isLoadingResults = false;

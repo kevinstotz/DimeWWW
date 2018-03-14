@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable }   from 'rxjs/Observable';
-import { Dime, DimeLineChart } from '../_models/index';
+import { Dime, DimeLineChart, CoinNews } from '../_models/index';
 import { Environment } from '../environments/index';
 import 'rxjs/add/operator/map';
 
@@ -18,15 +18,40 @@ export class DimeService {
     }
 
     getPieChart() {
-        return this.http.get<Dime[]>(this.environment.api.DIME_PIE_CHART, this.httpOptions);
+        return this.http.get<Dime[]>(this.environment.api.DIME_PIE_CHART_URL, this.httpOptions);
     }
 
     getLineChart() {
-        return this.http.get<DimeLineChart[]>(this.environment.api.DIME_LINE_CHART, this.httpOptions);
+        return this.http.get<DimeLineChart[]>(this.environment.api.DIME_LINE_CHART_URL, this.httpOptions);
     }
 
     getTableChart() {
-        return this.http.get<DimeLineChart[]>(this.environment.api.DIME_TABLE_CHART, this.httpOptions);
+        return this.http.get<DimeLineChart[]>(this.environment.api.DIME_TABLE_CHART_URL, this.httpOptions);
     }
 
+    getCoinNews(): Observable<CoinNews[]> {
+        return this.http.get<CoinNews[]>(this.environment.api.COIN_NEWS_URL, this.httpOptions).map( (response: any) => {
+            if (!response) {
+              console.log("no response");
+              return false;
+            }
+            if ( (!response.status) || (!response.message) ) {
+              console.log("no response or status");
+              return false;
+            }
+            if (+response.status != 0) {
+              console.log("status != 0");
+              return false;
+            }
+            if (+response.message != 0) {
+              console.log("message != 0");
+              return false;
+            }
+            return JSON.parse(response.result);
+          },
+        error => {
+            console.log(error);
+        });
+    }
+// 781-647-1430
 }

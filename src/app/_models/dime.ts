@@ -7,3 +7,9 @@ export class DimeLineChart {
   value: number;
   rebalance: number;
 }
+export class CoinNews {
+  title: string;
+  date: string;
+  symbol: string;
+  domain: string;
+}
