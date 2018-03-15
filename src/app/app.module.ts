@@ -10,6 +10,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { LoadingModule } from 'ngx-loading';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 // import { DeviceDetectorModule } from 'ngx-device-detector';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatDialogModule, MatTableModule, MatFormFieldModule, MatInputModule } from '@angular/material';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatCardModule, MatToolbarModule, MatIconModule, MatButtonModule } from '@angular/material';
@@ -50,7 +51,6 @@ import { Bodypart3Component } from './bodypart3/index';
 import { Bodypart4Component } from './bodypart4/index';
 import { Bodypart5Component } from './bodypart5/index';
 import { Bodypart6Component } from './bodypart6/index';
-import { DimeindextableComponent } from './dimeindextable/index';
 import { TheteamComponent } from './theteam/index';
 import { PartnersComponent } from './partners/index';
 import { ScrollComponent } from './scroll/index';
@@ -96,12 +96,12 @@ export function getAuthServiceConfigs() {
         AppRoutingModule,
         BrowserModule,
         BrowserAnimationsModule,
-        // DeviceDetectorModule.forRoot(),
         FormsModule,
         HttpClientModule,
         LoadingModule,
         MatButtonModule,
         MatCardModule,
+        MatCheckboxModule,
         MatDialogModule,
         MatFormFieldModule,
         MatMenuModule,
@@ -126,7 +126,6 @@ export function getAuthServiceConfigs() {
         Bodypart4Component,
         Bodypart5Component,
         Bodypart6Component,
-        DimeindextableComponent,
         DisclaimerComponent,
         FaqComponent,
         FooterComponent,
@@ -158,12 +157,13 @@ export function getAuthServiceConfigs() {
         ForgotPasswordComponent
     ],
     exports: [
-        MatToolbarModule,
-        MatIconModule,
         MatButtonModule,
-        MatMenuModule,
+        MatCardModule,
+        MatCheckboxModule,
         MatDividerModule,
-        MatCardModule
+        MatMenuModule,
+        MatToolbarModule,
+        MatIconModule
     ],
     providers: [
         AuthGuard,
@@ -187,7 +187,7 @@ export function getAuthServiceConfigs() {
         }
         // provider used to create fake backend
     ],
-    schemas: [ NO_ERRORS_SCHEMA ],
+  //  schemas: [ NO_ERRORS_SCHEMA ],
     bootstrap: [AppComponent]
 })
 

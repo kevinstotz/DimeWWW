@@ -235,9 +235,10 @@ a:active {
 	border: 2px solid #21b082
 }
 
-.site-header .quote-btn .btn:hover {
+.site-header .btn:hover {
 	border-color: #21b082;
-	color: #21b082
+	color: #21b082;
+
 }
 
 .topbar .social li a:hover {
@@ -354,21 +355,22 @@ a:active {
 
 .site-header.header-s2 .navbar-nav li a:hover,
 .site-header.header-s2 .navbar-nav li a:focus {
-	background: #21b082
+	background: #21b082;
 }
 
 .site-header.header-s2 .navbar-nav li.active>a {
-	background: #21b082
+	background: #21b082;
 }
 
 .site-header.header-s2 .navbar-nav li.quote-btn .btn {
 	background: #21b082;
-	border-color: #21b082
+	border-color: #21b082;
 }
 
 .site-header.header-s2 .navbar-nav li.quote-btn .btn:hover {
 	border-color: #188160;
 	background: #188160;
+	color: #000;
 }
 
 .site-header.header-s2 .navbar-nav .dropdown-menu li:hover>a {

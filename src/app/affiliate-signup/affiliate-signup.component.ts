@@ -28,7 +28,7 @@ export class AffiliateSignupComponent implements OnInit {
         this.registerAffiliateForm = this.formBuilder.group({
             'email' : ['', [
                 Validators.required,
-                Validators.pattern("[^ @]*@[^ @]*")
+                Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,6}$")
             ]],
             'lastName'  : ['', [
                 Validators.required,
@@ -45,7 +45,7 @@ export class AffiliateSignupComponent implements OnInit {
             'phoneNumber' : ['', [
                 Validators.required,
                 Validators.minLength(10),
-                Validators.pattern('^\+?\d{2}[- ]?\d{3}[- ]?\d{5}$')
+                Validators.pattern("[0-9]{3}[\s-]+[0-9]{3}[\s-]+[0-9]{4}$")
             ]],
             'zipCode' : ['', [
                 Validators.required,
@@ -63,7 +63,6 @@ export class AffiliateSignupComponent implements OnInit {
               registerAffiliateForm.controls.companyName.invalid ||
               registerAffiliateForm.controls.phoneNumber.invalid ||
               registerAffiliateForm.controls.zipCode.invalid) {
-              this.registerAffiliateForm.reset();
               return;
           }
           console.log(this.registerAffiliateForm.get('url').value);

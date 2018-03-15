@@ -13,7 +13,7 @@
 												<input matInput placeholder="Company Name"
 															formControlName="companyName">
 											<mat-hint></mat-hint>
-											<mat-error *ngIf=" !registerAffiliateForm.controls.companyName.hasError('required')">Please enter a Company</mat-error>
+											<mat-error *ngIf=" !registerAffiliateForm.controls.companyName.hasError('required')">Invalid Company</mat-error>
 											<mat-error *ngIf="registerAffiliateForm.controls.companyName.hasError('required')">Company is <strong>required</strong></mat-error>
 									</mat-form-field>
 
@@ -21,7 +21,7 @@
 												<input matInput placeholder="First Name"
 															formControlName="firstName">
 											<mat-hint></mat-hint>
-											<mat-error *ngIf=" !registerAffiliateForm.controls.firstName.hasError('required')">Please enter a valid First name</mat-error>
+											<mat-error *ngIf=" !registerAffiliateForm.controls.firstName.hasError('required')">Invalid First name</mat-error>
 											<mat-error *ngIf="registerAffiliateForm.controls.firstName.hasError('required')">First Name is <strong>required</strong></mat-error>
 									</mat-form-field>
 
@@ -29,7 +29,7 @@
 												<input matInput placeholder="Last Name"
 															formControlName="lastName">
 											<mat-hint></mat-hint>
-											<mat-error *ngIf=" !registerAffiliateForm.controls.lastName.hasError('required')">Please enter a valid Last name</mat-error>
+											<mat-error *ngIf=" !registerAffiliateForm.controls.lastName.hasError('required')">Invalid valid Last name</mat-error>
 											<mat-error *ngIf="registerAffiliateForm.controls.lastName.hasError('required')">Last Name is <strong>required</strong></mat-error>
 									</mat-form-field>
 
@@ -37,7 +37,7 @@
 												<input matInput placeholder="Email"
 															formControlName="email">
 											<mat-hint></mat-hint>
-											<mat-error *ngIf=" !registerAffiliateForm.controls.email.hasError('required')">Please enter a valid email</mat-error>
+											<mat-error *ngIf=" !registerAffiliateForm.controls.email.hasError('required')">Invalid valid email</mat-error>
 											<mat-error *ngIf="registerAffiliateForm.controls.email.hasError('required')">Email is <strong>required</strong></mat-error>
 									</mat-form-field>
 
@@ -45,8 +45,8 @@
 												<input matInput placeholder="Phone Number"
 																ng-pattern="phoneNumbr" ng-model="phone"
 															formControlName="phoneNumber">
-											<mat-hint>10 digits</mat-hint>
-											<mat-error *ngIf=" !registerAffiliateForm.controls.phoneNumber.hasError('required')">Please enter a valid phone number</mat-error>
+											<mat-hint>111-222-3333</mat-hint>
+											<mat-error *ngIf=" !registerAffiliateForm.controls.phoneNumber.hasError('required')">Invalid phone number</mat-error>
 											<mat-error *ngIf="registerAffiliateForm.controls.phoneNumber.hasError('required')">Phone number is <strong>required</strong></mat-error>
 									</mat-form-field>
 
@@ -54,7 +54,7 @@
 												<input matInput placeholder="Zip code"
 															formControlName="zipCode">
 											<mat-hint>5 digits</mat-hint>
-											<mat-error *ngIf=" !registerAffiliateForm.controls.zipCode.hasError('required')">Please enter a valid zip code</mat-error>
+											<mat-error *ngIf=" !registerAffiliateForm.controls.zipCode.hasError('required')">Invalid zip code</mat-error>
 											<mat-error *ngIf="registerAffiliateForm.controls.zipCode.hasError('required')">Zip code is <strong>required</strong></mat-error>
 									</mat-form-field>
 

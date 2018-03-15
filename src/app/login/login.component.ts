@@ -48,7 +48,8 @@ export class LoginComponent implements OnInit {
             'password' : ['', [
                 Validators.required,
                 Validators.minLength(8)
-            ]]
+            ]],
+            'remember' : ['' ]
           });
         // get return url from route parameters or default to '/'
         //this.returnUrl = this.route.snapshot.queryParams['dashboard'] || '/';
@@ -56,7 +57,7 @@ export class LoginComponent implements OnInit {
 
     displayDialog(message) {
         let dialogRef = this.dialog.open(ForgotPasswordComponent, {
-           height: '225px',
+           height: '235px',
            width: '350px',
            data: { message: message }
        });
@@ -84,7 +85,8 @@ export class LoginComponent implements OnInit {
               },
               error => {
                   this.loginForm.reset();
-                  this.alertService.error(error.error);
+                  console.log(error.error.error_description);
+                  this.alertService.error(error.error.error_description);
                   this.loading = false;
               });
     }
