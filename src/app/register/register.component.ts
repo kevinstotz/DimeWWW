@@ -1,4 +1,4 @@
-﻿import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Register, GenericResponse } from '../_models/index';
 import { AlertService, RegisterService, UserAgentService } from '../_services/index';

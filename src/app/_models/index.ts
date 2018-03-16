@@ -1,4 +1,4 @@
-﻿export * from './user';
+export * from './user';
 ﻿export * from './newsletter';
 export * from './generic-response';
 export * from './register';

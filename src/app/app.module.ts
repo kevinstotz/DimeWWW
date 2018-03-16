@@ -1,4 +1,4 @@
-﻿import { NgModule, NO_ERRORS_SCHEMA }      from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { Buffer } from 'buffer';
 import { BrowserAnimationsModule } from  '@angular/platform-browser/animations';
