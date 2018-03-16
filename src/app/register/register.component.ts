@@ -30,18 +30,22 @@ export class RegisterComponent implements OnInit  {
       this.registerForm = this.formBuilder.group({
           'email' : ['', [
               Validators.required,
-              Validators.pattern("[^ @]*@[^ @]*")
+              Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,6}$"),
+              Validators.minLength(4)
           ]],
           'lastName'  : ['', [
               Validators.required,
+              Validators.pattern("^[a-z0-9A-Z-]{4,}$"),
               Validators.minLength(4)
           ]],
           'firstName' : ['', [
               Validators.required,
+              Validators.pattern("^[a-z0-9A-Z-]{4,}$"),
               Validators.minLength(4)
           ]],
           'zipCode' : ['', [
               Validators.required,
+              Validators.pattern("[0-9]{5,}"),
               Validators.minLength(5)
           ]],
           'url': ['',  Validators.required]
@@ -54,7 +58,7 @@ export class RegisterComponent implements OnInit  {
             registerForm.controls.firstName.invalid ||
             registerForm.controls.lastName.invalid ||
             registerForm.controls.zipCode.invalid ) {
-            this.registerForm.reset();
+            //this.registerForm.reset();
             return;
         }
 
@@ -71,7 +75,7 @@ export class RegisterComponent implements OnInit  {
         this.registerService.registerUser(this.register)
             .subscribe(
                 data => {
-                    this.registerForm.reset();
+                    //this.registerForm.reset();
                     this.alertService.success('Registration successful.  Check Your email for Login Instructions', true);
                     this.loading = false;
                     //  this.router.navigate(['login']);

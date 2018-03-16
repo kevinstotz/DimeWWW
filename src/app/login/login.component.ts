@@ -43,7 +43,7 @@ export class LoginComponent implements OnInit {
         this.loginForm = this.formBuilder.group({
             'username' : ['', [
                 Validators.required,
-                Validators.pattern("[^ @]*@[^ @]*")
+                Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,6}$")
             ]],
             'password' : ['', [
                 Validators.required,
