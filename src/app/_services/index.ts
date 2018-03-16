@@ -5,3 +5,4 @@ export * from './newsletter.service';
 export * from './register.service';
 export * from './dime.service';
 export * from './contactus.service';
+export * from './user-agent.service';

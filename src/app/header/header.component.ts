@@ -13,8 +13,9 @@ import { MatMenuModule } from '@angular/material/menu';
 export class HeaderComponent implements OnInit {
   private isUserLoggedIn: boolean;
 
-  constructor(private authenticationService: AuthenticationService) { }
-
+  constructor(private authenticationService: AuthenticationService) {
+  }
+  
   ngOnInit() {
       this.isUserLoggedIn = this.authenticationService.isLoggedIn();
   }

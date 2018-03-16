@@ -9,7 +9,6 @@ import 'hammerjs';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { LoadingModule } from 'ngx-loading';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
-// import { DeviceDetectorModule } from 'ngx-device-detector';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatDialogModule, MatTableModule, MatFormFieldModule, MatInputModule } from '@angular/material';
 import { MatDividerModule } from '@angular/material/divider';
@@ -28,8 +27,6 @@ import {
 
 import {} from 'jasmine';
 
-// used to create fake backend
-import { fakeBackendProvider } from './_helpers/index';
 import { AppComponent }  from './app.component';
 import { AppRoutingModule }        from './app.routing';
 import { AlertComponent } from './_directives/index';
@@ -37,7 +34,7 @@ import { AuthGuard } from './_guards/index';
 import { JwtInterceptor } from './_helpers/index';
 
 import { AlertService, AuthenticationService, UserService } from './_services/index';
-import { RegisterService, NewsletterService, DimeService } from './_services/index';
+import { RegisterService, NewsletterService, DimeService, UserAgentService } from './_services/index';
 import { ContactusService } from './_services/index';
 
 import { HomeComponent } from './home/index';
@@ -172,9 +169,9 @@ export function getAuthServiceConfigs() {
         ContactusService,
         CookieService,
         DimeService,
-        fakeBackendProvider,
         NewsletterService,
         RegisterService,
+        UserAgentService,
         UserService,
         {
             provide: HTTP_INTERCEPTORS,
@@ -185,7 +182,7 @@ export function getAuthServiceConfigs() {
             provide: AuthServiceConfig,
             useFactory: getAuthServiceConfigs
         }
-        // provider used to create fake backend
+
     ],
   //  schemas: [ NO_ERRORS_SCHEMA ],
     bootstrap: [AppComponent]

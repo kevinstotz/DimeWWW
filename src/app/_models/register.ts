@@ -1,5 +1,5 @@
-// import { DeviceInfo } from 'ngx-device-detector';
-import { Status } from './index';
+
+import { Status, UserAgent } from './index';
 
 export class Register {
   email: string;
@@ -8,6 +8,6 @@ export class Register {
   lastName: string;
   zipCode: string;
   ipAddress: string;
-//  deviceInfo: DeviceInfo;
+  userAgent: UserAgent;
   status: Status;
 }

@@ -11,3 +11,5 @@ export * from './contactus';
 export * from './affiliate';
 export * from './forgot-password';
 export * from './resetPassword';
+export * from './userAgent';
+export * from './geoLocation';
