@@ -30,17 +30,17 @@ export class RegisterComponent implements OnInit  {
       this.registerForm = this.formBuilder.group({
           'email' : ['', [
               Validators.required,
-              Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,6}$"),
+              Validators.pattern("^[a-z0-9._%+-]+@([a-z0-9A-Z-]{2,}\.)+[a-zA-Z]{2,6}$"),
               Validators.minLength(4)
           ]],
           'lastName'  : ['', [
               Validators.required,
-              Validators.pattern("^[a-z0-9A-Z-]{4,}$"),
+              Validators.pattern("^[a-z0-9A-Z-]{2,}$"),
               Validators.minLength(2)
           ]],
           'firstName' : ['', [
               Validators.required,
-              Validators.pattern("^[a-z0-9A-Z-]{4,}$"),
+              Validators.pattern("^[a-z0-9A-Z-]{2,}$"),
               Validators.minLength(2)
           ]],
           'zipCode' : ['', [
