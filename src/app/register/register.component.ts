@@ -36,12 +36,12 @@ export class RegisterComponent implements OnInit  {
           'lastName'  : ['', [
               Validators.required,
               Validators.pattern("^[a-z0-9A-Z-]{4,}$"),
-              Validators.minLength(4)
+              Validators.minLength(2)
           ]],
           'firstName' : ['', [
               Validators.required,
               Validators.pattern("^[a-z0-9A-Z-]{4,}$"),
-              Validators.minLength(4)
+              Validators.minLength(2)
           ]],
           'zipCode' : ['', [
               Validators.required,
