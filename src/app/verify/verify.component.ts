@@ -35,8 +35,8 @@ export class VerifyComponent implements OnInit {
     this.registerService.verifyRegisterEmail(this.registerVerify)
         .subscribe(
             data => {
-                this.alertService.success('Verification successful', true);
-                this.router.navigate(['login']);
+                this.alertService.success('Verification successful.  Check Your email for Password.', true);
+                //this.router.navigate(['login']);
             },
             error => {
                 this.alertService.error(error.error.result);
