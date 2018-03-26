@@ -36,6 +36,9 @@ export class AuthenticationService implements OnInit {
                 // login successful if there's a jwt token in the response
                 if (authenticationResponse && authenticationResponse.access_token) {
                     // store user details and jwt token in local storage to keep user logged in between page refreshes
+                    var t = new Date();
+                    t.setSeconds(t.getSeconds() + authenticationResponse.expires_in);
+                    authenticationResponse.expires = t.getTime() / 1000;
                     localStorage.setItem('currentUser', JSON.stringify(authenticationResponse));
                     sessionStorage.setItem('currentUser', JSON.stringify(authenticationResponse));
                     this.cookieService.put('currentUser', JSON.stringify(authenticationResponse), this.cookieOptions);
