@@ -63,7 +63,6 @@ import { TermsAndConditionsComponent } from './terms-and-conditions/index';
 import { DimepiechartComponent } from './dimepiechart/index';
 import { SocialsigninComponent } from './socialsignin/index';
 import { ContactComponent } from './contact/index';
-import { DimetableComponent } from './dimetable/index';
 import { AffiliateComponent } from './affiliate/index';
 import { DimelineComponent } from './dimeline/index';
 import { AffiliateSignupComponent } from './affiliate-signup/index';
@@ -142,7 +141,6 @@ export function getAuthServiceConfigs() {
         DimepiechartComponent,
         SocialsigninComponent,
         ContactComponent,
-        DimetableComponent,
         AffiliateComponent,
         DimelineComponent,
         AffiliateSignupComponent,
