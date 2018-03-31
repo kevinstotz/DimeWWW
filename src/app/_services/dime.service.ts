@@ -25,6 +25,10 @@ export class DimeService {
         return this.http.get<DimeLineChart[]>(this.environment.api.DIME_LINE_CHART_URL + chart + "/", this.httpOptions);
     }
 
+    getTableChart(chart) {
+        return this.http.get<DimeLineChart[]>(this.environment.api.DIME_TABLE_CHART_URL + chart + "/", this.httpOptions);
+    }
+
     getCoinNews(chart): Observable<CoinNews[]> {
         return this.http.get<CoinNews[]>(this.environment.api.COIN_NEWS_URL + chart + "/", this.httpOptions).map( (response: any) => {
             if (!response) {
