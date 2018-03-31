@@ -115,7 +115,7 @@ module.exports = {
       }
     ),
     new ExtractTextPlugin("styles.css"),
-    new TsConfigPathsPlugin({ tsconfig: __dirname + '/src/tsconfig.json', compiler : 'typescript'} ),
+    new TsConfigPathsPlugin({ tsconfig: __dirname + '/tsconfig.json', compiler : 'typescript'} ),
     new webpack.optimize.UglifyJsPlugin({ mangle: false, sourcemap: true }),
   ],
 };

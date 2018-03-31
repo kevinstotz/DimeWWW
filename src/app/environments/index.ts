@@ -74,16 +74,16 @@ export class Environment  {
             this.PROTOCOL = this.SECURE;
             this.DOMAIN = '.yogishouse.com';
 
-            this.API_HOSTNAME = 'api-dime';
+            this.API_HOSTNAME = 'api';
             this.API_PORT = 443;
             this.API_PATH = '/api';
             this.API_URL = this.PROTOCOL.concat(this.API_HOSTNAME, this.DOMAIN);
 
-            this.DASHBOARD_HOSTNAME = 'dashboard-dime';
+            this.DASHBOARD_HOSTNAME = 'dashboard';
             this.DASHBOARD_PORT = 443;
             this.DASHBOARD_URL = this.PROTOCOL.concat(this.DASHBOARD_HOSTNAME, this.DOMAIN);
 
-            this.WEBSITE_HOSTNAME = 'www-dime';
+            this.WEBSITE_HOSTNAME = 'www';
             this.WEBSITE_PORT = 443;
             this.WEBSITE_URL = this.PROTOCOL.concat(this.WEBSITE_HOSTNAME, this.DOMAIN);
 
