@@ -14,7 +14,7 @@ export class Bodypart3Component implements OnInit {
 
   constructor(private dimeService: DimeService) {
 
-       this.dimeService.getTableChart()
+       this.dimeService.getTableChart(153)
        .subscribe(
            data => {
              this.carouselTileItems = data;

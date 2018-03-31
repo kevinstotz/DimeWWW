@@ -49,7 +49,7 @@ export class DimepiechartComponent implements OnInit {
          labels: ['Red','Yellow','Blue']
      };
 
-     this.dimeService.getPieChart()
+     this.dimeService.getPieChart(153)
      .subscribe(
          data => {
             for (var i = 0; i < data.length; i++) {
@@ -76,7 +76,7 @@ export class DimepiechartComponent implements OnInit {
    }
 
    constructor(private dimeService: DimeService) {
-     this.dimeService.getPieChart()
+     this.dimeService.getPieChart(153)
      .subscribe(
          data => {
 

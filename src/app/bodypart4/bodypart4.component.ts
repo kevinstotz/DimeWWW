@@ -18,7 +18,7 @@ export class Bodypart4Component implements OnInit {
 
   constructor(private dimeService: DimeService) {
 
-       this.dimeService.getCoinNews().subscribe(
+       this.dimeService.getCoinNews(153).subscribe(
            data => {
              this.carouselCoinNewsItems = data;
              this.isLoadingResults = false;

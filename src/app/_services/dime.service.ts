@@ -17,20 +17,20 @@ export class DimeService {
         };
     }
 
-    getPieChart() {
-        return this.http.get<Dime[]>(this.environment.api.DIME_PIE_CHART_URL, this.httpOptions);
+    getPieChart(chart) {
+        return this.http.get<Dime[]>(this.environment.api.DIME_PIE_CHART_URL + chart + "/", this.httpOptions);
     }
 
-    getLineChart() {
-        return this.http.get<DimeLineChart[]>(this.environment.api.DIME_LINE_CHART_URL, this.httpOptions);
+    getLineChart(chart) {
+        return this.http.get<DimeLineChart[]>(this.environment.api.DIME_LINE_CHART_URL + chart + "/", this.httpOptions);
     }
 
-    getTableChart() {
-        return this.http.get<DimeLineChart[]>(this.environment.api.DIME_TABLE_CHART_URL, this.httpOptions);
+    getTableChart(chart) {
+        return this.http.get<DimeLineChart[]>(this.environment.api.DIME_TABLE_CHART_URL + chart + "/", this.httpOptions);
     }
 
-    getCoinNews(): Observable<CoinNews[]> {
-        return this.http.get<CoinNews[]>(this.environment.api.COIN_NEWS_URL, this.httpOptions).map( (response: any) => {
+    getCoinNews(chart): Observable<CoinNews[]> {
+        return this.http.get<CoinNews[]>(this.environment.api.COIN_NEWS_URL + chart + "/", this.httpOptions).map( (response: any) => {
             if (!response) {
               console.log("no response");
               return false;

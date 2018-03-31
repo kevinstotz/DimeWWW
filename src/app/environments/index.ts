@@ -94,17 +94,17 @@ export class Environment  {
         this.FORGOT_PASSWORD_URL = this.API_URL.concat(this.API_PATH + '/forgot-password/');
         this.LOGIN_URL = this.API_URL.concat(this.API_PATH, '/o/token/');
         this.GET_USER_ID_URL = this.API_URL.concat(this.API_PATH, '/account/');
-        this.COIN_NEWS_URL = this.API_URL.concat(this.API_PATH + '/fund/ud10/coinnews/');
+        this.COIN_NEWS_URL = this.API_URL.concat(this.API_PATH + '/fund/coinnews/');
         this.CONTACTUS_URL = this.API_URL.concat(this.API_PATH, '/contactus/');
         this.NEWSLETTER_URL = this.API_URL.concat(this.API_PATH + '/newsletter/');
         this.RESET_PASSWORD_URL = this.API_URL.concat(this.API_PATH + '/reset-password/');
         this.REGISTER_URL = this.API_URL.concat(this.API_PATH, '/register/user/');
         this.REGISTER_AFFILIATE_URL = this.API_URL.concat(this.API_PATH, '/register/affiliate/');
         this.REGISTER_VERIFY_URL = this.API_URL.concat(this.API_PATH, '/register/verify/');
-        this.DIME_LINE_CHART_URL = this.API_URL.concat(this.API_PATH, '/fund/ud10/linechart/');
-        this.DIME_TABLE_CHART_URL = this.API_URL.concat(this.API_PATH, '/fund/ud10/tablechart/');
-        this.DIME_PIE_CHART_URL = this.API_URL.concat(this.API_PATH, '/fund/ud10/piechart/');
-        this.DIME_REBALANCE_DATES_AND_VALUES_URL = this.API_URL.concat(this.API_PATH, '/fund/ud10/rebalancedatesandvalues/');
+        this.DIME_TABLE_CHART_URL = this.API_URL.concat(this.API_PATH, '/fund/tablechart/');
+        this.DIME_LINE_CHART_URL = this.API_URL.concat(this.API_PATH, '/fund/linechart/');
+        this.DIME_PIE_CHART_URL = this.API_URL.concat(this.API_PATH, '/fund/piechart/');
+        this.DIME_REBALANCE_DATES_AND_VALUES_URL = this.API_URL.concat(this.API_PATH, '/fund/rebalancedatesandvalues/');
 
         this.global = {
             'PRODUCTION':         this.PRODUCTION,

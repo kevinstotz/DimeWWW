@@ -1,6 +1,8 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { Chart } from 'chart.js';
 import { AlertService, DimeService } from '../_services/index';
+import { DimeLineChart } from '../_models/index';
+
 
 @Component({
   selector: 'app-dimeline',
@@ -17,7 +19,7 @@ export class DimelineComponent implements OnInit {
   private lineOptions : object = {
      title: {
        display: false,
-         text: 'Composition of The Dime'
+         text: 'Composition of The Fund'
      },
      scales: {
           xAxes: [
@@ -105,21 +107,22 @@ export class DimelineComponent implements OnInit {
     var pointHoverRadius = [];
     var pointRadius = [];
 
-    this.dimeService.getLineChart()
+    this.dimeService.getLineChart(153)
       .subscribe(
           data => {
+            let dimeLineChart: DimeLineChart;
             for (var i = 0; i < data.length; i++) {
-                var obj = data[i];
-                dateLabels[i] = new Date(obj.name + ' 00:00:00');
-                this.lineData[i]  = obj.value;
-                if (obj.rebalance == 0) {
+                dimeLineChart = data[i];
+                dateLabels[i] = new Date(dimeLineChart.name + ' 00:00:00');
+                this.lineData[i]  = dimeLineChart.value;
+                if (dimeLineChart.rebalance == 0) {
                   pointBackgroundColors[i]= "#FFF100";
                   pointHoverRadius[i] = 4;
                   pointRadius[i] = 2;
                 } else {
                   pointBackgroundColors[i]= "#BE0081";
                   pointHoverRadius[i] = 8;
-                  pointRadius[i] = 6;
+                  pointRadius[i] = 1;
                 }
             }
 

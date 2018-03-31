@@ -29,7 +29,7 @@ export class DimetableComponent implements OnInit {
   ngOnInit() {
     this.isLoadingResults = true;
     // If the user changes the sort order, reset back to the first page.
-    this.dimeService.getTableChart()
+    this.dimeService.getTableChart(153)
     .subscribe(
         data => {
           //this.dataSource = data;

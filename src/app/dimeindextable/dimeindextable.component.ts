@@ -43,7 +43,7 @@ export class DimeindextableComponent {
         );
 */
 
-        this.dimeService.getTableChart()
+        this.dimeService.getTableChart(153)
           .subscribe(
               data => {
                 var multi = [ {
