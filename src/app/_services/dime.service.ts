@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable }   from 'rxjs/Observable';
-import { Dime, DimeLineChart, CoinNews } from '../_models/index';
+import { Dime, DimeLineChart, DimeTableChart, CoinNews } from '../_models/index';
 import { Environment } from '../environments/index';
 import 'rxjs/add/operator/map';
 
@@ -26,7 +26,7 @@ export class DimeService {
     }
 
     getTableChart(chart: number) {
-        return this.http.get<DimeLineChart[]>(this.environment.api.DIME_TABLE_CHART_URL + chart + "/", this.httpOptions);
+        return this.http.get<DimeTableChart[]>(this.environment.api.DIME_TABLE_CHART_URL + chart + "/", this.httpOptions);
     }
 
     getCoinNews(chart: number): Observable<CoinNews[]> {

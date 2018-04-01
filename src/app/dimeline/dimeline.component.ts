@@ -30,7 +30,7 @@ export class DimelineComponent implements OnInit {
                distribution: 'series',
                time: {
                     displayFormats: {
-                        quarter: 'MMM YYYY'
+                        quarter: 'MM YY'
                       }
                     }
               }
@@ -39,7 +39,7 @@ export class DimelineComponent implements OnInit {
             {
               ticks: {
                     callback: function(label, index, labels) {
-                        return '$'+label/1000+'k';
+                        return '$'+label/100+'k';
                     }
                 },
                 scaleLabel: {
@@ -58,10 +58,10 @@ export class DimelineComponent implements OnInit {
                 label: function(tooltipItem, data) {
                   var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
                   var dateObject = new Date(data['labels'][tooltipItem.index]);
-                  var label = document.getElementById("date").innerHTML = 'Date: ' + months[dateObject.getMonth()] + ' ' + dateObject.getDate() + ', ' + dateObject.getFullYear();
-                  var value = parseFloat(data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index]);
+                  var label = document.getElementById("date").innerHTML = 'Date: ' + months[dateObject.getMonth()] + ' ' + dateObject.getDate() + ', ' + dateObject.getYear();
+                  var value = 10.0 * parseFloat(data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index]);
                   let t:string = value.toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
-                  document.getElementById("value").innerHTML = t;
+                  document.getElementById("value").innerHTML = 'Value: ' + t;
                   return label + ' -> $'+ t;
                 },
                 title: function(tooltipItem, data) {
@@ -130,7 +130,7 @@ export class DimelineComponent implements OnInit {
             }
 
             this.lineDataObject['data']['labels'] = dateLabels;
-            this.lineDataObject['data']['datasets'] = [{ data: this.lineData, pointRadius: pointRadius, pointHoverRadius: pointHoverRadius, pointBackgroundColor: pointBackgroundColors, label: 'The DIME', borderColor: "#21b082", fill: false }];
+            this.lineDataObject['data']['datasets'] = [{ data: this.lineData, pointRadius: pointRadius, pointHoverRadius: pointHoverRadius, pointBackgroundColor: pointBackgroundColors, label: 'The UD10', borderColor: "#21b082", fill: false }];
             this.lineChart = new Chart('line-chart', this.lineDataObject ) ;
           },
           errorResponse => {

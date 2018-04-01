@@ -22,8 +22,6 @@ export class DimetableComponent implements OnInit {
   private isLoadingResults = true;
   private isRateLimitReached = false;
 
-  @ViewChild(MatSort) sort: MatSort;
-
   constructor(private dimeService: DimeService) {
     this.environment = new Environment();
   }

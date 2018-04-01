@@ -13,3 +13,11 @@ export class CoinNews {
   symbol: string;
   domain: string;
 }
+export class DimeTableChart {
+  rank: number;
+  name: string;
+  value: number;
+  percent: number;
+  market_cap: number;
+  end_price: number;
+}
