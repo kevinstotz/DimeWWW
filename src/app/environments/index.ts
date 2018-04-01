@@ -40,6 +40,7 @@ export class Environment  {
     private REGISTER_AFFILIATE_URL: string;
 
     private DIME_PIE_CHART_URL: string;
+    private DEFAULT_INDEX_FUND: number;
     private DIME_TABLE_CHART_URL: string;
     private DIME_LINE_CHART_URL: string;
     private DIME_REBALANCE_DATES_AND_VALUES_URL: string;
@@ -67,6 +68,7 @@ export class Environment  {
             this.WEBSITE_URL = this.PROTOCOL.concat(this.WEBSITE_HOSTNAME, this.DOMAIN, ":", this.WEBSITE_PORT.toString());
 
             this.COOKIE_EXPIRATION = new Date(new Date().setFullYear(new Date().getFullYear() + 1));
+            this.DEFAULT_INDEX_FUND = 153;
         }
         if (environment.envName == 'prod') {
           //  enableProdMode();
@@ -88,6 +90,7 @@ export class Environment  {
             this.WEBSITE_URL = this.PROTOCOL.concat(this.WEBSITE_HOSTNAME, this.DOMAIN);
 
             this.COOKIE_EXPIRATION = new Date(new Date().setFullYear(new Date().getFullYear() + 1));
+            this.DEFAULT_INDEX_FUND = 1;
         }
         if (environment.envName == 'qa') {}
         if (environment.envName == '') {console.log("env not found");}
@@ -116,7 +119,8 @@ export class Environment  {
             'WEBSITE_PORT':       this.WEBSITE_PORT,
             'WEBSITE_URL':        this.WEBSITE_URL,
             'WEBSITE_HOSTNAME':   this.WEBSITE_HOSTNAME,
-            'WEBSITE_HOME':       "/"
+            'WEBSITE_HOME':       "/",
+            'DEFAULT_INDEX_FUND': this.DEFAULT_INDEX_FUND
         }
 
         this.api = {

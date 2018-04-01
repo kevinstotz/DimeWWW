@@ -2,6 +2,7 @@ import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { Chart } from 'chart.js';
 import { AlertService, DimeService } from '../_services/index';
 import { DimeLineChart } from '../_models/index';
+import { Environment } from '../environments/index';
 
 
 @Component({
@@ -12,6 +13,7 @@ import { DimeLineChart } from '../_models/index';
 
 export class DimelineComponent implements OnInit {
   private lineChart : Chart;
+  private environment: Environment;
   public displayData : Object = { name: "kevin", value: 94, timestamp: 43 };
   private lineLabels : any[] = [];
   private lineData : number[] = [];
@@ -95,8 +97,9 @@ export class DimelineComponent implements OnInit {
      options: this.lineOptions
   };
 
-  constructor(private dimeService: DimeService) {
 
+  constructor(private dimeService: DimeService) {
+    this.environment = new Environment();
   }
 
   ngOnInit() {}
@@ -107,7 +110,7 @@ export class DimelineComponent implements OnInit {
     var pointHoverRadius = [];
     var pointRadius = [];
 
-    this.dimeService.getLineChart(153)
+    this.dimeService.getLineChart(this.environment.global.DEFAULT_INDEX_FUND)
       .subscribe(
           data => {
             let dimeLineChart: DimeLineChart;
@@ -118,11 +121,11 @@ export class DimelineComponent implements OnInit {
                 if (dimeLineChart.rebalance == 0) {
                   pointBackgroundColors[i]= "#FFF100";
                   pointHoverRadius[i] = 4;
-                  pointRadius[i] = 2;
+                  pointRadius[i] = 1;
                 } else {
                   pointBackgroundColors[i]= "#BE0081";
                   pointHoverRadius[i] = 8;
-                  pointRadius[i] = 1;
+                  pointRadius[i] = 3;
                 }
             }
 

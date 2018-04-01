@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertService, DimeService } from '../_services/index';
+import { Environment } from '../environments/index';
+
 
 @Component({
   selector: 'app-dimeindextable',
@@ -7,7 +9,7 @@ import { AlertService, DimeService } from '../_services/index';
   styleUrls: ['./dimeindextable.component.css']
 })
 export class DimeindextableComponent {
-
+    private environment: Environment;
     multi: any[];
     referenceLines = [];
     view = [1024, 600];
@@ -30,33 +32,21 @@ export class DimeindextableComponent {
 
 
     constructor(private dimeService: DimeService) {
-/*
-      this.dimeService.getRebalanceDatesAndValues()
+      this.environment = new Environment();
+      this.dimeService.getTableChart(this.environment.global.DEFAULT_INDEX_FUND)
         .subscribe(
             data => {
-              console.log(data);
-              this.activeEntries =  = [{name: "2017-03-23", value:"14.20", series: "value"}];
+              var multi = [ {
+                  "name": "value",
+                  "series":  data } ];
+              Object.assign(this, { multi });
             },
             errorResponse => {
               console.log(errorResponse);
             }
         );
-*/
-
-        this.dimeService.getTableChart(153)
-          .subscribe(
-              data => {
-                var multi = [ {
-                    "name": "value",
-                    "series":  data } ];
-                Object.assign(this, { multi });
-              },
-              errorResponse => {
-                console.log(errorResponse);
-              }
-          );
-        var multi = [];
-        Object.assign(this, { multi });
+      var multi = [];
+      Object.assign(this, { multi });
     }
 
     xAxisTickFormatting(value){

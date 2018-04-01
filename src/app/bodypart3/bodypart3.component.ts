@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { NgxCarousel, NgxCarouselStore } from 'ngx-carousel';
 import { DimeService } from '../_services/index';
+import { Environment } from '../environments/index';
+
 
 @Component({
   selector: 'app-bodypart3',
@@ -9,11 +11,12 @@ import { DimeService } from '../_services/index';
 })
 export class Bodypart3Component implements OnInit {
   private isLoadingResults = true;
-  public carouselTileItems: Array<any>;
-  public carouselTile: NgxCarousel;
+  private carouselTileItems: Array<any>;
+  private carouselTile: NgxCarousel;
+  public environment: Environment;
+
 
   constructor(private dimeService: DimeService) {
-
        this.dimeService.getTableChart(153)
        .subscribe(
            data => {
@@ -23,7 +26,7 @@ export class Bodypart3Component implements OnInit {
            errorResponse => {
              this.isLoadingResults = false;
              console.log(errorResponse);
-       });
+    });
   }
 
   ngOnInit() {
@@ -66,9 +69,8 @@ export class Bodypart3Component implements OnInit {
        touch: false,
        easing: 'ease'
      }
-
-
    }
+
    public carouselTileLoad(evt: any) {
 
      const len = this.carouselTileItems.length

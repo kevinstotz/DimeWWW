@@ -4,7 +4,7 @@ import { NgxCarousel, NgxCarouselStore } from 'ngx-carousel';
 import { DimeService } from '../_services/index';
 import { CoinNews } from '../_models/index';
 import { DatePipe } from '@angular/common';
-
+import { Environment } from '../environments/index';
 
 @Component({
   selector: 'app-bodypart4',
@@ -15,18 +15,19 @@ export class Bodypart4Component implements OnInit {
   private isLoadingResults = true;
   public carouselCoinNewsItems: Array<any>;
   public carouselCoinNews: NgxCarousel;
+  public environment: Environment;
 
   constructor(private dimeService: DimeService) {
-
-       this.dimeService.getCoinNews(153).subscribe(
-           data => {
-             this.carouselCoinNewsItems = data;
-             this.isLoadingResults = false;
-           },
-           errorResponse => {
-             this.isLoadingResults = false;
-             console.log(errorResponse);
-       });
+     this.environment = new Environment();
+     this.dimeService.getCoinNews(this.environment.global.DEFAULT_INDEX_FUND).subscribe(
+         data => {
+           this.carouselCoinNewsItems = data;
+           this.isLoadingResults = false;
+         },
+         errorResponse => {
+           this.isLoadingResults = false;
+           console.log(errorResponse);
+     });
 
   }
 
@@ -74,9 +75,7 @@ export class Bodypart4Component implements OnInit {
 
    }
    public carouselCoinNewsLoad(evt: any) {
-
      const len = this.carouselCoinNewsItems.length
-
        for (let i = len; i < len ; i++) {
          this.carouselCoinNewsItems.push(i);
        }

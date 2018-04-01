@@ -7,7 +7,7 @@ import { map } from 'rxjs/operators/map';
 import { startWith } from 'rxjs/operators/startWith';
 import { switchMap } from 'rxjs/operators/switchMap';
 import { AlertService, DimeService } from '../_services/index';
-
+import { Environment } from '../environments/index';
 
 @Component({
   selector: 'app-dimetable',
@@ -15,21 +15,23 @@ import { AlertService, DimeService } from '../_services/index';
   styleUrls: ['./dimetable.component.scss']
 })
 export class DimetableComponent implements OnInit {
-  displayedColumns = ['number', 'name', 'price', 'percentage', 'market_cap'];
-  dataSource = new MatTableDataSource();
-
-  resultsLength = 0;
-  isLoadingResults = true;
-  isRateLimitReached = false;
+  private displayedColumns = ['number', 'name', 'price', 'percentage', 'market_cap'];
+  private dataSource = new MatTableDataSource();
+  private environment: Environment;
+  private resultsLength = 0;
+  private isLoadingResults = true;
+  private isRateLimitReached = false;
 
   @ViewChild(MatSort) sort: MatSort;
 
-  constructor(private dimeService: DimeService) { }
+  constructor(private dimeService: DimeService) {
+    this.environment = new Environment();
+  }
 
   ngOnInit() {
     this.isLoadingResults = true;
     // If the user changes the sort order, reset back to the first page.
-    this.dimeService.getTableChart(153)
+    this.dimeService.getTableChart(this.environment.global.DEFAULT_INDEX_FUND)
     .subscribe(
         data => {
           //this.dataSource = data;
