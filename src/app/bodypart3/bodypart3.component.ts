@@ -13,12 +13,11 @@ export class Bodypart3Component implements OnInit {
   private isLoadingResults = true;
   private carouselTileItems: Array<any>;
   private carouselTile: NgxCarousel;
-  public environment: Environment;
-
+  private environment: Environment;
 
   constructor(private dimeService: DimeService) {
     this.environment = new Environment();
-    this.dimeService.getTableChart(153)
+    this.dimeService.getTableChart(this.environment.global.DEFAULT_INDEX_FUND)
     .subscribe(
        data => {
          this.carouselTileItems = data;
