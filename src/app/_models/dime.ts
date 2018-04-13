@@ -1,8 +1,8 @@
-export class Dime {
+export class Fund {
   name: string;
   value: number;
 }
-export class DimeLineChart {
+export class FundLineChart {
   name: string;
   value: number;
   rebalance: number;
@@ -13,7 +13,7 @@ export class CoinNews {
   symbol: string;
   domain: string;
 }
-export class DimeTableChart {
+export class FundTableChart {
   rank: number;
   name: string;
   value: number;

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgxCarousel, NgxCarouselStore } from 'ngx-carousel';
 import { DimeService } from '../_services/index';
 import { Environment } from '../environments/index';
-
+import { FundTableChart, GenericResponse } from '../_models/index';
 
 @Component({
   selector: 'app-bodypart3',
@@ -11,7 +11,7 @@ import { Environment } from '../environments/index';
 })
 export class Bodypart3Component implements OnInit {
   private isLoadingResults = true;
-  private carouselTileItems: Array<any>;
+  private carouselTileItems: Array<FundTableChart>;
   private carouselTile: NgxCarousel;
   private environment: Environment;
 
@@ -19,11 +19,11 @@ export class Bodypart3Component implements OnInit {
     this.environment = new Environment();
     this.dimeService.getTableChart(this.environment.global.DEFAULT_INDEX_FUND)
     .subscribe(
-       data => {
-         this.carouselTileItems = data;
+       ( dimeTableChart : FundTableChart[] ) => {
+         this.carouselTileItems = dimeTableChart;
          this.isLoadingResults = false;
        },
-       errorResponse => {
+       ( errorResponse: GenericResponse) => {
          this.isLoadingResults = false;
          console.log(errorResponse);
     });
@@ -72,10 +72,9 @@ export class Bodypart3Component implements OnInit {
    }
 
    public carouselTileLoad(evt: any) {
-
      const len = this.carouselTileItems.length
        for (let i = len; i < len ; i++) {
-         this.carouselTileItems.push(i);
+         //this.carouselTileItems.push(i);
        }
    }
 
