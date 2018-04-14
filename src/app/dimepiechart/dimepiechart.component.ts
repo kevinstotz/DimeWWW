@@ -1,7 +1,7 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { AlertService, DimeService } from '../_services/index';
 import { Chart } from 'chart.js';
-import { Dime } from '../_models/index';
+import { Fund } from '../_models/index';
 import { Environment } from '../environments/index';
 
 @Component({
@@ -28,7 +28,7 @@ export class DimepiechartComponent implements OnInit {
    var pieOptions : object = {
       title: {
         display: false,
-          text: 'Composition of The Dime'
+          text: 'Composition of Fund'
       },
       tooltips: {
         xPadding: 8,

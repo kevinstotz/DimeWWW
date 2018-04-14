@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable }   from 'rxjs/Observable';
-import { Dime, DimeLineChart, DimeTableChart, CoinNews } from '../_models/index';
+import { Fund, FundLineChart, FundTableChart, CoinNews } from '../_models/index';
 import { Environment } from '../environments/index';
 import 'rxjs/add/operator/map';
 
@@ -18,15 +18,15 @@ export class DimeService {
     }
 
     getPieChart(chart: number) {
-        return this.http.get<Dime[]>(this.environment.api.DIME_PIE_CHART_URL + chart + "/", this.httpOptions);
+        return this.http.get<Fund[]>(this.environment.api.DIME_PIE_CHART_URL + chart + "/", this.httpOptions);
     }
 
     getLineChart(chart: number) {
-        return this.http.get<DimeLineChart[]>(this.environment.api.DIME_LINE_CHART_URL + chart + "/", this.httpOptions);
+        return this.http.get<FundLineChart[]>(this.environment.api.DIME_LINE_CHART_URL + chart + "/", this.httpOptions);
     }
 
     getTableChart(chart: number) {
-        return this.http.get<DimeTableChart[]>(this.environment.api.DIME_TABLE_CHART_URL + chart + "/", this.httpOptions);
+        return this.http.get<FundTableChart[]>(this.environment.api.DIME_TABLE_CHART_URL + chart + "/", this.httpOptions);
     }
 
     getCoinNews(chart: number): Observable<CoinNews[]> {
@@ -53,5 +53,5 @@ export class DimeService {
             console.log(error);
         });
     }
-// 781-647-1430
+
 }

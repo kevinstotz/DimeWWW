@@ -68,6 +68,7 @@ import { DimelineComponent } from './dimeline/index';
 import { AffiliateSignupComponent } from './affiliate-signup/index';
 import { ForgotPasswordComponent } from './forgot-password/index';
 import { ResetPasswordComponent } from './reset-password/index';
+import { CurrencyComponent } from './currency/currency.component';
 
 export function getAuthServiceConfigs() {
   let config = new AuthServiceConfig(
@@ -146,6 +147,7 @@ export function getAuthServiceConfigs() {
         AffiliateSignupComponent,
         ForgotPasswordComponent,
         ResetPasswordComponent,
+        CurrencyComponent,
     ],
     entryComponents: [
         NewsletterResponseDialogComponent,

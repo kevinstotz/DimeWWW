@@ -1,7 +1,7 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { Chart } from 'chart.js';
 import { AlertService, DimeService } from '../_services/index';
-import { DimeLineChart } from '../_models/index';
+import { FundLineChart } from '../_models/index';
 import { Environment } from '../environments/index';
 
 
@@ -58,7 +58,7 @@ export class DimelineComponent implements OnInit {
                 label: function(tooltipItem, data) {
                   var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
                   var dateObject = new Date(data['labels'][tooltipItem.index]);
-                  var label = document.getElementById("date").innerHTML = 'Date: ' + months[dateObject.getMonth()] + ' ' + dateObject.getDate() + ', ' + dateObject.getFullYear();
+                  var label = document.getElementById("date").innerHTML = 'Date: ' + months[dateObject.getMonth()] + ' ' + dateObject.getDate() + ', ' + String(dateObject.getFullYear()).substring(2, 4);
                   var value = 100.0 * parseFloat(data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index]);
                   let t:string = value.toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
                   document.getElementById("value").innerHTML = 'Value: ' + t;
@@ -113,12 +113,12 @@ export class DimelineComponent implements OnInit {
     this.dimeService.getLineChart(this.environment.global.DEFAULT_INDEX_FUND)
       .subscribe(
           data => {
-            let dimeLineChart: DimeLineChart;
+            let fundLineChart: FundLineChart;
             for (var i = 0; i < data.length; i++) {
-                dimeLineChart = data[i];
-                dateLabels[i] = new Date(dimeLineChart.name + ' 00:00:00');
-                this.lineData[i]  = dimeLineChart.value;
-                if (dimeLineChart.rebalance == 0) {
+                fundLineChart = data[i];
+                dateLabels[i] = new Date(fundLineChart.name + ' 00:00:00');
+                this.lineData[i]  = fundLineChart.value;
+                if (fundLineChart.rebalance == 0) {
                   pointBackgroundColors[i]= "#FFF100";
                   pointHoverRadius[i] = 4;
                   pointRadius[i] = 1;
